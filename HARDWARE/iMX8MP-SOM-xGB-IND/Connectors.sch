@@ -1,0 +1,4985 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 3 3
+Title "iMX8MPLUS-SOM"
+Date "2023-05-18"
+Rev "B"
+Comp "OLIMEX LTD, Bulgaria"
+Comment1 "<c> 2023"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L OLIMEX_Connectors:BH40S GPIO?
+U 1 1 63092321
+P 17000 2000
+AR Path="/62F332D0/62F5EF89/63092321" Ref="GPIO?"  Part="1" 
+AR Path="/62F332D0/63092321" Ref="GPIO1"  Part="1" 
+F 0 "GPIO1" H 16950 3100 50  0000 C CNN
+F 1 "YA-V36P-2X20-LF" H 16950 1000 50  0000 C CNN
+F 2 "OLIMEX_Connectors-FP:GPCB127SMT-02X20(YA-V36P-2X20-LF)" H 16970 1950 20  0001 C CNN
+F 3 "" H 17000 2100 60  0000 C CNN
+	1    17000 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16400 1000 16400 1100
+Wire Wire Line
+	16400 1000 16700 1000
+Wire Wire Line
+	16400 1100 16700 1100
+Connection ~ 16400 1000
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 6309232B
+P 17500 800
+AR Path="/62F332D0/62F5EF89/6309232B" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/6309232B" Ref="#PWR0161"  Part="1" 
+F 0 "#PWR0161" H 17500 550 50  0001 C CNN
+F 1 "GND" H 17500 650 50  0000 C CNN
+F 2 "" H 17500 800 60  0000 C CNN
+F 3 "" H 17500 800 60  0000 C CNN
+	1    17500 800 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	17200 1000 17500 1000
+Wire Wire Line
+	17500 800  17500 1000
+Wire Wire Line
+	17500 1000 17500 1100
+Wire Wire Line
+	17500 1100 17200 1100
+Connection ~ 17500 1000
+Wire Wire Line
+	17200 1200 17500 1200
+Wire Wire Line
+	17500 1200 17500 1100
+Connection ~ 17500 1100
+Wire Wire Line
+	17200 1300 17500 1300
+Wire Wire Line
+	17500 1300 17500 1200
+Connection ~ 17500 1200
+Wire Wire Line
+	16400 3500 16400 3700
+Wire Wire Line
+	16400 3700 16700 3700
+Connection ~ 16400 3700
+Wire Wire Line
+	16400 3700 16400 3800
+Wire Wire Line
+	16400 3800 16700 3800
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 63092347
+P 17500 3500
+AR Path="/62F332D0/62F5EF89/63092347" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63092347" Ref="#PWR0162"  Part="1" 
+F 0 "#PWR0162" H 17500 3250 50  0001 C CNN
+F 1 "GND" H 17500 3350 50  0000 C CNN
+F 2 "" H 17500 3500 60  0000 C CNN
+F 3 "" H 17500 3500 60  0000 C CNN
+	1    17500 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	17200 3700 17500 3700
+Wire Wire Line
+	17500 3500 17500 3700
+Wire Wire Line
+	17500 3700 17500 3800
+Wire Wire Line
+	17500 3800 17200 3800
+Connection ~ 17500 3700
+Wire Wire Line
+	16700 1200 16400 1200
+Wire Wire Line
+	16400 1200 16400 1100
+Connection ~ 16400 1100
+Wire Wire Line
+	16700 1300 16400 1300
+Wire Wire Line
+	16400 1300 16400 1200
+Connection ~ 16400 1200
+$Comp
+L OLIMEX_Power:+5V #PWR?
+U 1 1 630923C5
+P 16400 800
+AR Path="/56344A84/630923C5" Ref="#PWR?"  Part="1" 
+AR Path="/563556AE/630923C5" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/62F5EF89/630923C5" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/630923C5" Ref="#PWR0159"  Part="1" 
+F 0 "#PWR0159" H 16400 650 50  0001 C CNN
+F 1 "+5V" H 16400 950 50  0000 C CNN
+F 2 "" H 16400 800 60  0000 C CNN
+F 3 "" H 16400 800 60  0000 C CNN
+	1    16400 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16400 800  16400 1000
+$Comp
+L OLIMEX_Connectors:BH40S GPIO?
+U 1 1 630923CC
+P 17000 4700
+AR Path="/62F332D0/62F5EF89/630923CC" Ref="GPIO?"  Part="1" 
+AR Path="/62F332D0/630923CC" Ref="GPIO2"  Part="1" 
+F 0 "GPIO2" H 16950 5800 50  0000 C CNN
+F 1 "YA-V36P-2X20-LF" H 16950 3700 50  0000 C CNN
+F 2 "OLIMEX_Connectors-FP:GPCB127SMT-02X20(YA-V36P-2X20-LF)" H 16970 4650 20  0001 C CNN
+F 3 "" H 17000 4800 60  0000 C CNN
+	1    17000 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_IC:MIMX8MP_BGA548 U1
+U 2 1 6314AE4F
+P 1000 1000
+F 0 "U1" H 1957 1189 60  0000 C CNN
+F 1 "MIMX8ML8CVNKZAB(FCBGA548)" H 1957 1083 60  0000 C CNN
+F 2 "OLIMEX_IC-FP:FCBGA548_Pitch-0.5mm_Ball-0.25mm_Dimensions-15x15x1.5mm" H 1000 1000 60  0001 C CNN
+F 3 "https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-processors/i-mx-8m-plus-arm-cortex-a53-machine-learning-vision-multimedia-and-industrial-iot:IMX8MPLUS?fpsp=1&tab=Documentation_Tab" H 1000 1000 60  0001 C CNN
+	2    1000 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1400 4000 1400
+Text Label 3100 1400 0    60   ~ 0
+USB1_VBUS_3V3
+Wire Wire Line
+	2900 1500 4000 1500
+Text Label 3100 1500 0    60   ~ 0
+USB1_D_N
+Wire Wire Line
+	2900 1600 4000 1600
+Text Label 3100 1600 0    60   ~ 0
+USB1_D_P
+NoConn ~ 2900 1700
+Wire Wire Line
+	2900 2000 4000 2000
+Text Label 3100 2000 0    60   ~ 0
+USB1_TX_N
+Wire Wire Line
+	2900 2100 4000 2100
+Text Label 3100 2100 0    60   ~ 0
+USB1_TX_P
+Wire Wire Line
+	2900 2300 4000 2300
+Text Label 3100 2300 0    60   ~ 0
+USB1_RX_N
+Wire Wire Line
+	2900 2400 4000 2400
+Text Label 3100 2400 0    60   ~ 0
+USB1_RX_P
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 631EA2E0
+P 3350 2600
+AR Path="/631EA2E0" Ref="R?"  Part="1" 
+AR Path="/62F332D0/631EA2E0" Ref="R20"  Part="1" 
+F 0 "R20" H 3350 2500 50  0000 C CNN
+F 1 "200R/1%/R0402" H 3350 2700 50  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 3350 2530 30  0001 C CNN
+F 3 "" V 3350 2600 30  0000 C CNN
+	1    3350 2600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3200 2600 2900 2600
+Wire Wire Line
+	3800 2600 3500 2600
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 63210658
+P 3800 2600
+AR Path="/62F332D0/62F5EF89/63210658" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63210658" Ref="#PWR0155"  Part="1" 
+F 0 "#PWR0155" H 3800 2350 50  0001 C CNN
+F 1 "GND" V 3800 2425 50  0000 C CNN
+F 2 "" H 3800 2600 60  0000 C CNN
+F 3 "" H 3800 2600 60  0000 C CNN
+	1    3800 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 6323A9BC
+P 3350 4400
+AR Path="/6323A9BC" Ref="R?"  Part="1" 
+AR Path="/62F332D0/6323A9BC" Ref="R21"  Part="1" 
+F 0 "R21" H 3350 4300 50  0000 C CNN
+F 1 "200R/1%/R0402" H 3350 4500 50  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 3350 4330 30  0001 C CNN
+F 3 "" V 3350 4400 30  0000 C CNN
+	1    3350 4400
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3200 4400 2900 4400
+Wire Wire Line
+	3800 4400 3500 4400
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 6323A9C8
+P 3800 4400
+AR Path="/62F332D0/62F5EF89/6323A9C8" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/6323A9C8" Ref="#PWR0156"  Part="1" 
+F 0 "#PWR0156" H 3800 4150 50  0001 C CNN
+F 1 "GND" V 3800 4225 50  0000 C CNN
+F 2 "" H 3800 4400 60  0000 C CNN
+F 3 "" H 3800 4400 60  0000 C CNN
+	1    3800 4400
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 2900 3500
+Wire Wire Line
+	2900 3200 4000 3200
+Text Label 3100 3200 0    60   ~ 0
+USB2_VBUS_3V3
+Wire Wire Line
+	2900 3300 4000 3300
+Text Label 3100 3300 0    60   ~ 0
+USB2_D_N
+Wire Wire Line
+	2900 3400 4000 3400
+Text Label 3100 3400 0    60   ~ 0
+USB2_D_P
+Wire Wire Line
+	2900 3800 4000 3800
+Text Label 3100 3800 0    60   ~ 0
+USB2_TX_N
+Wire Wire Line
+	2900 3900 4000 3900
+Text Label 3100 3900 0    60   ~ 0
+USB2_TX_P
+Wire Wire Line
+	2900 4100 4000 4100
+Text Label 3100 4100 0    60   ~ 0
+USB2_RX_N
+Wire Wire Line
+	2900 4200 4000 4200
+Text Label 3100 4200 0    60   ~ 0
+USB2_RX_P
+$Comp
+L OLIMEX_IC:MIMX8MP_BGA548 U1
+U 3 1 632D9438
+P 1000 5100
+F 0 "U1" H 1957 5289 60  0000 C CNN
+F 1 "MIMX8ML8CVNKZAB(FCBGA548)" H 1957 5183 60  0000 C CNN
+F 2 "OLIMEX_IC-FP:FCBGA548_Pitch-0.5mm_Ball-0.25mm_Dimensions-15x15x1.5mm" H 1000 5100 60  0001 C CNN
+F 3 "https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-processors/i-mx-8m-plus-arm-cortex-a53-machine-learning-vision-multimedia-and-industrial-iot:IMX8MPLUS?fpsp=1&tab=Documentation_Tab" H 1000 5100 60  0001 C CNN
+	3    1000 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 5400 4000 5400
+Text Label 3100 5400 0    60   ~ 0
+PCIE_CLK_N
+Wire Wire Line
+	2900 5500 4000 5500
+Text Label 3100 5500 0    60   ~ 0
+PCIE_CLK_P
+Wire Wire Line
+	2900 5700 4000 5700
+Text Label 3100 5700 0    60   ~ 0
+PCIE_TX_N
+Wire Wire Line
+	2900 5800 4000 5800
+Text Label 3100 5800 0    60   ~ 0
+PCIE_TX_P
+Wire Wire Line
+	2900 6000 4000 6000
+Text Label 3100 6000 0    60   ~ 0
+PCIE_RX_N
+Wire Wire Line
+	2900 6100 4000 6100
+Text Label 3100 6100 0    60   ~ 0
+PCIE_RX_P
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 6335F515
+P 3350 6300
+AR Path="/6335F515" Ref="R?"  Part="1" 
+AR Path="/62F332D0/6335F515" Ref="R22"  Part="1" 
+F 0 "R22" H 3350 6200 50  0000 C CNN
+F 1 "8.25k/1%/0402" H 3350 6400 50  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 3350 6230 30  0001 C CNN
+F 3 "" V 3350 6300 30  0000 C CNN
+	1    3350 6300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3200 6300 2900 6300
+Wire Wire Line
+	3800 6300 3500 6300
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 6335F521
+P 3800 6300
+AR Path="/62F332D0/62F5EF89/6335F521" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/6335F521" Ref="#PWR0157"  Part="1" 
+F 0 "#PWR0157" H 3800 6050 50  0001 C CNN
+F 1 "GND" V 3800 6125 50  0000 C CNN
+F 2 "" H 3800 6300 60  0000 C CNN
+F 3 "" H 3800 6300 60  0000 C CNN
+	1    3800 6300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L OLIMEX_IC:MIMX8MP_BGA548 U1
+U 4 1 633BBF17
+P 1000 7100
+F 0 "U1" H 1957 7289 60  0000 C CNN
+F 1 "MIMX8ML8CVNKZAB(FCBGA548)" H 1957 7183 60  0000 C CNN
+F 2 "OLIMEX_IC-FP:FCBGA548_Pitch-0.5mm_Ball-0.25mm_Dimensions-15x15x1.5mm" H 1000 7100 60  0001 C CNN
+F 3 "https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-processors/i-mx-8m-plus-arm-cortex-a53-machine-learning-vision-multimedia-and-industrial-iot:IMX8MPLUS?fpsp=1&tab=Documentation_Tab" H 1000 7100 60  0001 C CNN
+	4    1000 7100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2900 9000
+Wire Wire Line
+	2900 7400 4000 7400
+Text Label 3100 7400 0    60   ~ 0
+DSI_CK_N
+Wire Wire Line
+	2900 7500 4000 7500
+Text Label 3100 7500 0    60   ~ 0
+DSI_CK_P
+Wire Wire Line
+	2900 7700 4000 7700
+Text Label 3100 7700 0    60   ~ 0
+DSI_D0_N
+Wire Wire Line
+	2900 7800 4000 7800
+Text Label 3100 7800 0    60   ~ 0
+DSI_D0_P
+Wire Wire Line
+	2900 8000 4000 8000
+Text Label 3100 8000 0    60   ~ 0
+DSI_D1_N
+Wire Wire Line
+	2900 8100 4000 8100
+Text Label 3100 8100 0    60   ~ 0
+DSI_D1_P
+Wire Wire Line
+	2900 8300 4000 8300
+Text Label 3100 8300 0    60   ~ 0
+DSI_D2_N
+Wire Wire Line
+	2900 8400 4000 8400
+Text Label 3100 8400 0    60   ~ 0
+DSI_D2_P
+Wire Wire Line
+	2900 8600 4000 8600
+Text Label 3100 8600 0    60   ~ 0
+DSI_D3_N
+Wire Wire Line
+	2900 8700 4000 8700
+Text Label 3100 8700 0    60   ~ 0
+DSI_D3_P
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 634BB762
+P 4200 8900
+AR Path="/607BDADE/634BB762" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/634BB762" Ref="#PWR0158"  Part="1" 
+F 0 "#PWR0158" H 4200 8650 50  0001 C CNN
+F 1 "GND" V 4200 8700 50  0000 C CNN
+F 2 "" H 4200 8900 60  0000 C CNN
+F 3 "" H 4200 8900 60  0000 C CNN
+	1    4200 8900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L OLIMEX_RCL:C C?
+U 1 1 634BB768
+P 3300 8900
+AR Path="/634BB768" Ref="C?"  Part="1" 
+AR Path="/607BDADE/634BB768" Ref="C?"  Part="1" 
+AR Path="/62F332D0/634BB768" Ref="C120"  Part="1" 
+F 0 "C120" V 3250 8675 50  0000 L CNN
+F 1 "2.2nF/50V/10%/X7R/C0402" V 3250 9000 30  0000 L CNN
+F 2 "OLIMEX_RLC-FP:C_0402_5MIL_DWS" H 3400 8850 60  0001 L CNN
+F 3 "" H 3300 8900 60  0000 C CNN
+	1    3300 8900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 8900 3400 8900
+Wire Wire Line
+	3200 8900 2900 8900
+$Comp
+L OLIMEX_IC:MIMX8MP_BGA548 U1
+U 5 1 6350923B
+P 1000 9600
+F 0 "U1" H 1957 9789 60  0000 C CNN
+F 1 "MIMX8ML8CVNKZAB(FCBGA548)" H 1957 9683 60  0000 C CNN
+F 2 "OLIMEX_IC-FP:FCBGA548_Pitch-0.5mm_Ball-0.25mm_Dimensions-15x15x1.5mm" H 1000 9600 60  0001 C CNN
+F 3 "https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-processors/i-mx-8m-plus-arm-cortex-a53-machine-learning-vision-multimedia-and-industrial-iot:IMX8MPLUS?fpsp=1&tab=Documentation_Tab" H 1000 9600 60  0001 C CNN
+	5    1000 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 9900 4000 9900
+Text Label 3100 9900 0    60   ~ 0
+CSI1_CK_N
+Wire Wire Line
+	2900 10000 4000 10000
+Text Label 3100 10000 0    60   ~ 0
+CSI1_CK_P
+Wire Wire Line
+	2900 10200 4000 10200
+Text Label 3100 10200 0    60   ~ 0
+CSI1_D0_N
+Wire Wire Line
+	2900 10300 4000 10300
+Text Label 3100 10300 0    60   ~ 0
+CSI1_D0_P
+Wire Wire Line
+	2900 10500 4000 10500
+Text Label 3100 10500 0    60   ~ 0
+CSI1_D1_N
+Wire Wire Line
+	2900 10600 4000 10600
+Text Label 3100 10600 0    60   ~ 0
+CSI1_D1_P
+Wire Wire Line
+	2900 10800 4000 10800
+Text Label 3100 10800 0    60   ~ 0
+CSI1_D2_N
+Wire Wire Line
+	2900 10900 4000 10900
+Text Label 3100 10900 0    60   ~ 0
+CSI1_D2_P
+Wire Wire Line
+	2900 11100 4000 11100
+Text Label 3100 11100 0    60   ~ 0
+CSI1_D3_N
+Wire Wire Line
+	2900 11200 4000 11200
+Text Label 3100 11200 0    60   ~ 0
+CSI1_D3_P
+Wire Wire Line
+	2900 11600 4000 11600
+Text Label 3100 11600 0    60   ~ 0
+CSI2_CK_N
+Wire Wire Line
+	2900 11700 4000 11700
+Text Label 3100 11700 0    60   ~ 0
+CSI2_CK_P
+Wire Wire Line
+	2900 11900 4000 11900
+Text Label 3100 11900 0    60   ~ 0
+CSI2_D0_N
+Wire Wire Line
+	2900 12000 4000 12000
+Text Label 3100 12000 0    60   ~ 0
+CSI2_D0_P
+Wire Wire Line
+	2900 12200 4000 12200
+Text Label 3100 12200 0    60   ~ 0
+CSI2_D1_N
+Wire Wire Line
+	2900 12300 4000 12300
+Text Label 3100 12300 0    60   ~ 0
+CSI2_D1_P
+Wire Wire Line
+	2900 12500 4000 12500
+Text Label 3100 12500 0    60   ~ 0
+CSI2_D2_N
+Wire Wire Line
+	2900 12600 4000 12600
+Text Label 3100 12600 0    60   ~ 0
+CSI2_D2_P
+Wire Wire Line
+	2900 12800 4000 12800
+Text Label 3100 12800 0    60   ~ 0
+CSI2_D3_N
+Wire Wire Line
+	2900 12900 4000 12900
+Text Label 3100 12900 0    60   ~ 0
+CSI2_D3_P
+$Comp
+L OLIMEX_IC:MIMX8MP_BGA548 U1
+U 6 1 636F3A0D
+P 5000 1000
+F 0 "U1" H 5957 1189 60  0000 C CNN
+F 1 "MIMX8ML8CVNKZAB(FCBGA548)" H 5957 1083 60  0000 C CNN
+F 2 "OLIMEX_IC-FP:FCBGA548_Pitch-0.5mm_Ball-0.25mm_Dimensions-15x15x1.5mm" H 5000 1000 60  0001 C CNN
+F 3 "https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-processors/i-mx-8m-plus-arm-cortex-a53-machine-learning-vision-multimedia-and-industrial-iot:IMX8MPLUS?fpsp=1&tab=Documentation_Tab" H 5000 1000 60  0001 C CNN
+	6    5000 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 1400 8000 1400
+Text Label 7100 1400 0    60   ~ 0
+HDMI_DDC_SCL
+Wire Wire Line
+	6900 1500 8000 1500
+Text Label 7100 1500 0    60   ~ 0
+HDMI_DDC_SDA
+Wire Wire Line
+	6900 1700 8000 1700
+Text Label 7100 1700 0    60   ~ 0
+HDMI_HPD
+Wire Wire Line
+	6900 1900 8000 1900
+Text Label 7100 1900 0    60   ~ 0
+HDMI_CEC
+Wire Wire Line
+	6900 2200 8000 2200
+Text Label 7100 2200 0    60   ~ 0
+HDMI_TXC_N
+Wire Wire Line
+	6900 2300 8000 2300
+Text Label 7100 2300 0    60   ~ 0
+HDMI_TXC_P
+Wire Wire Line
+	6900 2500 8000 2500
+Text Label 7100 2500 0    60   ~ 0
+HDMI_TX0_N
+Wire Wire Line
+	6900 2600 8000 2600
+Text Label 7100 2600 0    60   ~ 0
+HDMI_TX0_P
+Wire Wire Line
+	6900 2800 8000 2800
+Text Label 7100 2800 0    60   ~ 0
+HDMI_TX1_N
+Wire Wire Line
+	6900 2900 8000 2900
+Text Label 7100 2900 0    60   ~ 0
+HDMI_TX1_P
+Wire Wire Line
+	6900 3100 8000 3100
+Text Label 7100 3100 0    60   ~ 0
+HDMI_TX2_N
+Wire Wire Line
+	6900 3200 8000 3200
+Text Label 7100 3200 0    60   ~ 0
+HDMI_TX2_P
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 6386EDB6
+P 7350 3400
+AR Path="/6386EDB6" Ref="R?"  Part="1" 
+AR Path="/62F332D0/6386EDB6" Ref="R23"  Part="1" 
+F 0 "R23" H 7350 3300 50  0000 C CNN
+F 1 "8.25k/1%/0402" H 7350 3500 50  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 7350 3330 30  0001 C CNN
+F 3 "" V 7350 3400 30  0000 C CNN
+	1    7350 3400
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7200 3400 6900 3400
+Wire Wire Line
+	7800 3400 7500 3400
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 6386EDC2
+P 7800 3400
+AR Path="/62F332D0/62F5EF89/6386EDC2" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/6386EDC2" Ref="#PWR0163"  Part="1" 
+F 0 "#PWR0163" H 7800 3150 50  0001 C CNN
+F 1 "GND" V 7800 3225 50  0000 C CNN
+F 2 "" H 7800 3400 60  0000 C CNN
+F 3 "" H 7800 3400 60  0000 C CNN
+	1    7800 3400
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 6900 3700
+Wire Wire Line
+	6900 3800 8000 3800
+Text Label 7100 3800 0    60   ~ 0
+EARC_N_HPD
+Wire Wire Line
+	6900 3900 8000 3900
+Text Label 7100 3900 0    60   ~ 0
+EARC_P_UTIL
+$Comp
+L OLIMEX_IC:MIMX8MP_BGA548 U1
+U 7 1 63917BEF
+P 5000 4700
+F 0 "U1" H 5957 4889 60  0000 C CNN
+F 1 "MIMX8ML8CVNKZAB(FCBGA548)" H 5957 4783 60  0000 C CNN
+F 2 "OLIMEX_IC-FP:FCBGA548_Pitch-0.5mm_Ball-0.25mm_Dimensions-15x15x1.5mm" H 5000 4700 60  0001 C CNN
+F 3 "https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-processors/i-mx-8m-plus-arm-cortex-a53-machine-learning-vision-multimedia-and-industrial-iot:IMX8MPLUS?fpsp=1&tab=Documentation_Tab" H 5000 4700 60  0001 C CNN
+	7    5000 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 5100 8000 5100
+Text Label 7100 5100 0    60   ~ 0
+LVDS0_TX0_N
+Wire Wire Line
+	6900 5200 8000 5200
+Text Label 7100 5200 0    60   ~ 0
+LVDS0_TX0_P
+Wire Wire Line
+	6900 5400 8000 5400
+Text Label 7100 5400 0    60   ~ 0
+LVDS0_TX1_N
+Wire Wire Line
+	6900 5500 8000 5500
+Text Label 7100 5500 0    60   ~ 0
+LVDS0_TX1_P
+Wire Wire Line
+	6900 5700 8000 5700
+Text Label 7100 5700 0    60   ~ 0
+LVDS0_TX2_N
+Wire Wire Line
+	6900 5800 8000 5800
+Text Label 7100 5800 0    60   ~ 0
+LVDS0_TX2_P
+Wire Wire Line
+	6900 6000 8000 6000
+Text Label 7100 6000 0    60   ~ 0
+LVDS0_CLK_N
+Wire Wire Line
+	6900 6100 8000 6100
+Text Label 7100 6100 0    60   ~ 0
+LVDS0_CLK_P
+Wire Wire Line
+	6900 6300 8000 6300
+Text Label 7100 6300 0    60   ~ 0
+LVDS0_TX3_N
+Wire Wire Line
+	6900 6400 8000 6400
+Text Label 7100 6400 0    60   ~ 0
+LVDS0_TX3_P
+Wire Wire Line
+	6900 7000 8000 7000
+Text Label 7100 7000 0    60   ~ 0
+LVDS1_TX0_N
+Wire Wire Line
+	6900 7100 8000 7100
+Text Label 7100 7100 0    60   ~ 0
+LVDS1_TX0_P
+Wire Wire Line
+	6900 7300 8000 7300
+Text Label 7100 7300 0    60   ~ 0
+LVDS1_TX1_N
+Wire Wire Line
+	6900 7400 8000 7400
+Text Label 7100 7400 0    60   ~ 0
+LVDS1_TX1_P
+Wire Wire Line
+	6900 7600 8000 7600
+Text Label 7100 7600 0    60   ~ 0
+LVDS1_TX2_N
+Wire Wire Line
+	6900 7700 8000 7700
+Text Label 7100 7700 0    60   ~ 0
+LVDS1_TX2_P
+Wire Wire Line
+	6900 7900 8000 7900
+Text Label 7100 7900 0    60   ~ 0
+LVDS1_CLK_N
+Wire Wire Line
+	6900 8000 8000 8000
+Text Label 7100 8000 0    60   ~ 0
+LVDS1_CLK_P
+Wire Wire Line
+	6900 8200 8000 8200
+Text Label 7100 8200 0    60   ~ 0
+LVDS1_TX3_N
+Wire Wire Line
+	6900 8300 8000 8300
+Text Label 7100 8300 0    60   ~ 0
+LVDS1_TX3_P
+$Comp
+L OLIMEX_IC:MIMX8MP_BGA548 U1
+U 8 1 60A35118
+P 10800 1000
+F 0 "U1" H 11850 1189 60  0000 C CNN
+F 1 "MIMX8ML8CVNKZAB(FCBGA548)" H 11850 1083 60  0000 C CNN
+F 2 "OLIMEX_IC-FP:FCBGA548_Pitch-0.5mm_Ball-0.25mm_Dimensions-15x15x1.5mm" H 10800 1000 60  0001 C CNN
+F 3 "https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-processors/i-mx-8m-plus-arm-cortex-a53-machine-learning-vision-multimedia-and-industrial-iot:IMX8MPLUS?fpsp=1&tab=Documentation_Tab" H 10800 1000 60  0001 C CNN
+	8    10800 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 1300 10500 1300
+Text Label 9600 1300 0    60   ~ 0
+SAI2_MCLK
+Wire Wire Line
+	9400 1500 10500 1500
+Text Label 9600 1500 0    60   ~ 0
+SAI2_TXFS
+Wire Wire Line
+	9400 1600 10500 1600
+Text Label 9600 1600 0    60   ~ 0
+SAI2_TXC
+Wire Wire Line
+	9400 1700 10500 1700
+Text Label 9600 1700 0    60   ~ 0
+SAI2_TXD
+Wire Wire Line
+	9400 1900 10500 1900
+Text Label 9600 1900 0    60   ~ 0
+SAI2_RXFS
+Wire Wire Line
+	9400 2000 10500 2000
+Text Label 9600 2000 0    60   ~ 0
+SAI2_RXC
+Wire Wire Line
+	9400 2100 10500 2100
+Text Label 9600 2100 0    60   ~ 0
+SAI2_RXD
+Wire Wire Line
+	9400 2300 10500 2300
+Text Label 9600 2300 0    60   ~ 0
+SAI3_MCLK
+Wire Wire Line
+	9400 2500 10500 2500
+Text Label 9600 2500 0    60   ~ 0
+SAI3_TXFS
+Wire Wire Line
+	9400 2600 10500 2600
+Text Label 9600 2600 0    60   ~ 0
+SAI3_TXC
+Wire Wire Line
+	9400 2700 10500 2700
+Text Label 9600 2700 0    60   ~ 0
+SAI3_TXD
+Wire Wire Line
+	9400 2900 10500 2900
+Text Label 9600 2900 0    60   ~ 0
+SAI3_RXFS
+Wire Wire Line
+	9400 3000 10500 3000
+Text Label 9600 3000 0    60   ~ 0
+SAI3_RXC
+Wire Wire Line
+	9400 3100 10500 3100
+Text Label 9600 3100 0    60   ~ 0
+SAI3_RXD
+Wire Wire Line
+	9400 3300 10500 3300
+Text Label 9600 3300 0    60   ~ 0
+SPDIF_TX
+Wire Wire Line
+	9400 3400 10500 3400
+Text Label 9600 3400 0    60   ~ 0
+SPDIF_RX
+Wire Wire Line
+	9400 3500 10500 3500
+Text Label 9600 3500 0    60   ~ 0
+SPDIF_EXT_CLK
+Wire Wire Line
+	13200 1300 14300 1300
+Text Label 13400 1300 0    60   ~ 0
+SAI1_MCLK
+Wire Wire Line
+	13200 1500 14300 1500
+Text Label 13400 1500 0    60   ~ 0
+SAI1_TXFS
+Wire Wire Line
+	13200 1600 14300 1600
+Text Label 13400 1600 0    60   ~ 0
+SAI1_TXC
+Wire Wire Line
+	13200 1800 14300 1800
+Text Label 13400 1800 0    60   ~ 0
+SAI1_TXD0
+Wire Wire Line
+	13200 1900 14300 1900
+Text Label 13400 1900 0    60   ~ 0
+SAI1_TXD1
+Wire Wire Line
+	13200 2000 14300 2000
+Text Label 13400 2000 0    60   ~ 0
+SAI1_TXD2
+Wire Wire Line
+	13200 2100 14300 2100
+Text Label 13400 2100 0    60   ~ 0
+SAI1_TXD3
+Wire Wire Line
+	13200 2200 14300 2200
+Text Label 13400 2200 0    60   ~ 0
+SAI1_TXD4
+Wire Wire Line
+	13200 2300 14300 2300
+Text Label 13400 2300 0    60   ~ 0
+SAI1_TXD5
+Wire Wire Line
+	13200 2400 14300 2400
+Text Label 13400 2400 0    60   ~ 0
+SAI1_TXD6
+Wire Wire Line
+	13200 2500 14300 2500
+Text Label 13400 2500 0    60   ~ 0
+SAI1_TXD7
+Wire Wire Line
+	13200 2700 14300 2700
+Text Label 13400 2700 0    60   ~ 0
+SAI1_RXFS
+Wire Wire Line
+	13200 2800 14300 2800
+Text Label 13400 2800 0    60   ~ 0
+SAI1_RXC
+Wire Wire Line
+	13200 3000 14300 3000
+Text Label 13400 3000 0    60   ~ 0
+SAI1_RXD0
+Wire Wire Line
+	13200 3100 14300 3100
+Text Label 13400 3100 0    60   ~ 0
+SAI1_RXD1
+Wire Wire Line
+	13200 3200 14300 3200
+Text Label 13400 3200 0    60   ~ 0
+SAI1_RXD2
+Wire Wire Line
+	13200 3300 14300 3300
+Text Label 13400 3300 0    60   ~ 0
+SAI1_RXD3
+Wire Wire Line
+	13200 3400 14300 3400
+Text Label 13400 3400 0    60   ~ 0
+SAI1_RXD4
+Wire Wire Line
+	13200 3500 14300 3500
+Text Label 13400 3500 0    60   ~ 0
+SAI1_RXD5
+Wire Wire Line
+	13200 3600 14300 3600
+Text Label 13400 3600 0    60   ~ 0
+SAI1_RXD6
+Wire Wire Line
+	13200 3700 14300 3700
+Text Label 13400 3700 0    60   ~ 0
+SAI1_RXD7
+Wire Wire Line
+	13200 3900 14300 3900
+Text Label 13400 3900 0    60   ~ 0
+SAI5_MCLK
+Wire Wire Line
+	13200 4100 14300 4100
+Text Label 13400 4100 0    60   ~ 0
+SAI5_RXFS
+Wire Wire Line
+	13200 4200 14300 4200
+Text Label 13400 4200 0    60   ~ 0
+SAI5_RXC
+Wire Wire Line
+	13200 4400 14300 4400
+Text Label 13400 4400 0    60   ~ 0
+SAI5_RXD0
+Wire Wire Line
+	13200 4500 14300 4500
+Text Label 13400 4500 0    60   ~ 0
+SAI5_RXD1
+Wire Wire Line
+	13200 4600 14300 4600
+Text Label 13400 4600 0    60   ~ 0
+SAI5_RXD2
+Wire Wire Line
+	13200 4700 14300 4700
+Text Label 13400 4700 0    60   ~ 0
+SAI5_RXD3
+$Comp
+L OLIMEX_IC:MIMX8MP_BGA548 U1
+U 9 1 60DA5D92
+P 5000 9200
+F 0 "U1" H 5957 9389 60  0000 C CNN
+F 1 "MIMX8ML8CVNKZAB(FCBGA548)" H 5957 9283 60  0000 C CNN
+F 2 "OLIMEX_IC-FP:FCBGA548_Pitch-0.5mm_Ball-0.25mm_Dimensions-15x15x1.5mm" H 5000 9200 60  0001 C CNN
+F 3 "https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-processors/i-mx-8m-plus-arm-cortex-a53-machine-learning-vision-multimedia-and-industrial-iot:IMX8MPLUS?fpsp=1&tab=Documentation_Tab" H 5000 9200 60  0001 C CNN
+	9    5000 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 9500 8000 9500
+Text Label 7100 9500 0    60   ~ 0
+QSPIA_nSS0
+Wire Wire Line
+	6900 9600 8000 9600
+Text Label 7100 9600 0    60   ~ 0
+SD3_STROBE
+Wire Wire Line
+	6900 9700 8000 9700
+Text Label 7100 9700 0    60   ~ 0
+SD3_DATA5
+Wire Wire Line
+	6900 9800 8000 9800
+Text Label 7100 9800 0    60   ~ 0
+SD3_DATA6
+Wire Wire Line
+	6900 10000 8000 10000
+Text Label 7100 10000 0    60   ~ 0
+QSPIA_SCLK
+Wire Wire Line
+	6900 10100 8000 10100
+Text Label 7100 10100 0    60   ~ 0
+SD3_DATA7
+Wire Wire Line
+	6900 10200 8000 10200
+Text Label 7100 10200 0    60   ~ 0
+SD3_DATA4
+Wire Wire Line
+	6900 10300 8000 10300
+Text Label 7100 10300 0    60   ~ 0
+SD3_CLK
+Wire Wire Line
+	6900 10400 8000 10400
+Text Label 7100 10400 0    60   ~ 0
+SD3_CMD
+Wire Wire Line
+	6900 10500 8000 10500
+Text Label 7100 10500 0    60   ~ 0
+SYS_STATUS
+Wire Wire Line
+	6900 10700 8000 10700
+Text Label 7100 10700 0    60   ~ 0
+QSPIA_DATA0
+Wire Wire Line
+	6900 10800 8000 10800
+Text Label 7100 10800 0    60   ~ 0
+QSPIA_DATA1
+Wire Wire Line
+	6900 10900 8000 10900
+Text Label 7100 10900 0    60   ~ 0
+QSPIA_DATA2
+Wire Wire Line
+	6900 11000 8000 11000
+Text Label 7100 11000 0    60   ~ 0
+QSPIA_DATA3
+Wire Wire Line
+	6900 11100 8000 11100
+Text Label 7100 11100 0    60   ~ 0
+SD3_DATA0
+Wire Wire Line
+	6900 11200 8000 11200
+Text Label 7100 11200 0    60   ~ 0
+SD3_DATA1
+Wire Wire Line
+	6900 11300 8000 11300
+Text Label 7100 11300 0    60   ~ 0
+SD3_DATA2
+Wire Wire Line
+	6900 11400 8000 11400
+Text Label 7100 11400 0    60   ~ 0
+SD3_DATA3
+Wire Wire Line
+	6900 11600 7000 11600
+Text Label 7100 11600 0    60   ~ 0
+QSPIA_DQS
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 61050EC2
+P 8100 11800
+AR Path="/607BDADE/61050EC2" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/61050EC2" Ref="#PWR0164"  Part="1" 
+F 0 "#PWR0164" H 8100 11550 50  0001 C CNN
+F 1 "GND" V 8100 11600 50  0000 C CNN
+F 2 "" H 8100 11800 60  0000 C CNN
+F 3 "" H 8100 11800 60  0000 C CNN
+	1    8100 11800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L OLIMEX_RCL:C C?
+U 1 1 61050ECC
+P 7300 11800
+AR Path="/61050ECC" Ref="C?"  Part="1" 
+AR Path="/607BDADE/61050ECC" Ref="C?"  Part="1" 
+AR Path="/62F332D0/61050ECC" Ref="C121"  Part="1" 
+F 0 "C121" V 7250 11575 50  0000 L CNN
+F 1 "NA(18pF/50V/5%/COG/C0402)" V 7250 11900 30  0000 L CNN
+F 2 "OLIMEX_RLC-FP:C_0402_5MIL_DWS" H 7400 11750 60  0001 L CNN
+F 3 "" H 7300 11800 60  0000 C CNN
+	1    7300 11800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 11800 7400 11800
+Wire Wire Line
+	7200 11800 7000 11800
+Wire Wire Line
+	7000 11800 7000 11600
+Connection ~ 7000 11600
+Wire Wire Line
+	7000 11600 8000 11600
+$Comp
+L OLIMEX_IC:MIMX8MP_BGA548 U1
+U 10 1 6129F6DC
+P 11000 5300
+F 0 "U1" H 11850 5489 60  0000 C CNN
+F 1 "MIMX8ML8CVNKZAB(FCBGA548)" H 11850 5383 60  0000 C CNN
+F 2 "OLIMEX_IC-FP:FCBGA548_Pitch-0.5mm_Ball-0.25mm_Dimensions-15x15x1.5mm" H 11000 5300 60  0001 C CNN
+F 3 "https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-processors/i-mx-8m-plus-arm-cortex-a53-machine-learning-vision-multimedia-and-industrial-iot:IMX8MPLUS?fpsp=1&tab=Documentation_Tab" H 11000 5300 60  0001 C CNN
+	10   11000 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 5600 10700 5600
+Wire Wire Line
+	9600 5700 10700 5700
+Text Label 9800 5700 0    60   ~ 0
+SD1_CMD
+Text Label 9800 5600 0    60   ~ 0
+SD1_CLK
+Wire Wire Line
+	9600 5900 10700 5900
+Text Label 9800 5900 0    60   ~ 0
+SD1_DATA0
+Wire Wire Line
+	9600 6000 10700 6000
+Text Label 9800 6000 0    60   ~ 0
+SD1_DATA1
+Wire Wire Line
+	9600 6100 10700 6100
+Text Label 9800 6100 0    60   ~ 0
+SD1_DATA2
+Wire Wire Line
+	9600 6200 10700 6200
+Text Label 9800 6200 0    60   ~ 0
+SD1_DATA3
+Wire Wire Line
+	9600 6300 10700 6300
+Text Label 9800 6300 0    60   ~ 0
+SD1_DATA4
+Wire Wire Line
+	9600 6400 10700 6400
+Text Label 9800 6400 0    60   ~ 0
+SD1_DATA5
+Wire Wire Line
+	9600 6500 10700 6500
+Text Label 9800 6500 0    60   ~ 0
+SD1_DATA6
+Wire Wire Line
+	9600 6600 10700 6600
+Text Label 9800 6600 0    60   ~ 0
+SD1_DATA7
+Wire Wire Line
+	9600 6800 10700 6800
+Text Label 9800 6800 0    60   ~ 0
+SD1_RESET_B
+Wire Wire Line
+	9600 6900 10700 6900
+Text Label 9800 6900 0    60   ~ 0
+SD1_STROBE
+Wire Wire Line
+	13000 5600 14100 5600
+Wire Wire Line
+	13000 5700 13100 5700
+Text Label 13200 5700 0    60   ~ 0
+SD2_CMD
+Text Label 13200 5600 0    60   ~ 0
+SD2_CLK
+Wire Wire Line
+	13000 5900 13100 5900
+Text Label 13200 5900 0    60   ~ 0
+SD2_DATA0
+Wire Wire Line
+	13000 6000 14100 6000
+Text Label 13200 6000 0    60   ~ 0
+SD2_DATA1
+Wire Wire Line
+	13000 6100 14100 6100
+Text Label 13200 6100 0    60   ~ 0
+SD2_DATA2
+Wire Wire Line
+	13000 6200 14100 6200
+Text Label 13200 6200 0    60   ~ 0
+SD2_DATA3
+Wire Wire Line
+	13000 6400 14100 6400
+Text Label 13200 6400 0    60   ~ 0
+SD2_WP
+Wire Wire Line
+	13000 6500 13100 6500
+Text Label 13200 6500 0    60   ~ 0
+SD2_nCD
+Wire Wire Line
+	13000 6600 13200 6600
+Text Label 13200 6600 0    60   ~ 0
+SD2_RESET_B
+$Comp
+L OLIMEX_IC:MIMX8MP_BGA548 U1
+U 11 1 61686E0E
+P 5000 12300
+F 0 "U1" H 5957 12489 60  0000 C CNN
+F 1 "MIMX8ML8CVNKZAB(FCBGA548)" H 5957 12383 60  0000 C CNN
+F 2 "OLIMEX_IC-FP:FCBGA548_Pitch-0.5mm_Ball-0.25mm_Dimensions-15x15x1.5mm" H 5000 12300 60  0001 C CNN
+F 3 "https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-processors/i-mx-8m-plus-arm-cortex-a53-machine-learning-vision-multimedia-and-industrial-iot:IMX8MPLUS?fpsp=1&tab=Documentation_Tab" H 5000 12300 60  0001 C CNN
+	11   5000 12300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 12700 8000 12700
+Text Label 7100 12700 0    60   ~ 0
+ENET_MDC
+Wire Wire Line
+	6900 12800 8000 12800
+Text Label 7100 12800 0    60   ~ 0
+ENET_MDIO
+Wire Wire Line
+	6900 13000 8000 13000
+Text Label 7100 13000 0    60   ~ 0
+ENET_TX_CTL
+Wire Wire Line
+	6900 13100 8000 13100
+Text Label 7100 13100 0    60   ~ 0
+ENET_TXC
+Wire Wire Line
+	6900 13200 8000 13200
+Text Label 7100 13200 0    60   ~ 0
+ENET_TD0
+Wire Wire Line
+	6900 13300 8000 13300
+Text Label 7100 13300 0    60   ~ 0
+ENET_TD1
+Wire Wire Line
+	6900 13400 8000 13400
+Text Label 7100 13400 0    60   ~ 0
+ENET_TD2
+Wire Wire Line
+	6900 13500 8000 13500
+Text Label 7100 13500 0    60   ~ 0
+ENET_TD3
+Wire Wire Line
+	6900 13700 8000 13700
+Text Label 7100 13700 0    60   ~ 0
+ENET_RX_CTL
+Wire Wire Line
+	6900 13800 8000 13800
+Text Label 7100 13800 0    60   ~ 0
+ENET_RXC
+Wire Wire Line
+	6900 13900 8000 13900
+Text Label 7100 13900 0    60   ~ 0
+ENET_RD0
+Wire Wire Line
+	6900 14000 8000 14000
+Text Label 7100 14000 0    60   ~ 0
+ENET_RD1
+Wire Wire Line
+	6900 14100 8000 14100
+Text Label 7100 14100 0    60   ~ 0
+ENET_RD2
+Wire Wire Line
+	6900 14200 8000 14200
+Text Label 7100 14200 0    60   ~ 0
+ENET_RD3
+$Comp
+L OLIMEX_IC:MIMX8MP_BGA548 U1
+U 12 1 619DFF58
+P 11000 7500
+F 0 "U1" H 11850 7689 60  0000 C CNN
+F 1 "MIMX8ML8CVNKZAB(FCBGA548)" H 11850 7583 60  0000 C CNN
+F 2 "OLIMEX_IC-FP:FCBGA548_Pitch-0.5mm_Ball-0.25mm_Dimensions-15x15x1.5mm" H 11000 7500 60  0001 C CNN
+F 3 "https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-processors/i-mx-8m-plus-arm-cortex-a53-machine-learning-vision-multimedia-and-industrial-iot:IMX8MPLUS?fpsp=1&tab=Documentation_Tab" H 11000 7500 60  0001 C CNN
+	12   11000 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 7800 10700 7800
+Text Label 9800 7800 0    60   ~ 0
+UART1_RXD
+Wire Wire Line
+	9600 7900 10700 7900
+Text Label 9800 7900 0    60   ~ 0
+UART1_TXD
+Wire Wire Line
+	9600 8100 10700 8100
+Text Label 9800 8100 0    60   ~ 0
+UART2_RXD
+Wire Wire Line
+	9600 8200 10700 8200
+Text Label 9800 8200 0    60   ~ 0
+UART2_TXD
+Wire Wire Line
+	9600 8400 10700 8400
+Text Label 9800 8400 0    60   ~ 0
+UART1_CTS
+Wire Wire Line
+	9600 8500 10700 8500
+Text Label 9800 8500 0    60   ~ 0
+UART1_RTS
+Wire Wire Line
+	9600 8700 10700 8700
+Text Label 9800 8700 0    60   ~ 0
+UART4_RXD
+Wire Wire Line
+	9600 8800 10700 8800
+Text Label 9800 8800 0    60   ~ 0
+UART4_TXD
+Wire Wire Line
+	9600 9100 10700 9100
+Text Label 9800 9100 0    60   ~ 0
+I2C1_SCL
+Wire Wire Line
+	9600 9200 10700 9200
+Text Label 9800 9200 0    60   ~ 0
+I2C1_SDA
+Wire Wire Line
+	9600 9400 10700 9400
+Text Label 9800 9400 0    60   ~ 0
+I2C2_SCL
+Wire Wire Line
+	9600 9500 10700 9500
+Text Label 9800 9500 0    60   ~ 0
+I2C2_SDA
+Wire Wire Line
+	9600 9700 10700 9700
+Text Label 9800 9700 0    60   ~ 0
+I2C3_SCL
+Wire Wire Line
+	9600 9800 10700 9800
+Text Label 9800 9800 0    60   ~ 0
+I2C3_SDA
+Wire Wire Line
+	9600 10000 10700 10000
+Text Label 9800 10000 0    60   ~ 0
+I2C4_SCL
+Wire Wire Line
+	9600 10100 10700 10100
+Text Label 9800 10100 0    60   ~ 0
+I2C4_SDA
+Wire Wire Line
+	13000 7800 14100 7800
+Text Label 13200 7800 0    60   ~ 0
+UART3_RTS
+Wire Wire Line
+	13000 7900 14100 7900
+Text Label 13200 7900 0    60   ~ 0
+UART3_TXD
+Wire Wire Line
+	13000 8000 14100 8000
+Text Label 13200 8000 0    60   ~ 0
+UART3_CTS
+Wire Wire Line
+	13000 8100 14100 8100
+Text Label 13200 8100 0    60   ~ 0
+UART3_RXD
+Wire Wire Line
+	13000 8300 14100 8300
+Text Label 13200 8300 0    60   ~ 0
+ECSPI2_SS0
+Wire Wire Line
+	13000 8400 14100 8400
+Text Label 13200 8400 0    60   ~ 0
+ECSPI2_MOSI
+Wire Wire Line
+	13000 8500 14100 8500
+Text Label 13200 8500 0    60   ~ 0
+ECSPI2_MISO
+Wire Wire Line
+	13000 8600 14100 8600
+Text Label 13200 8600 0    60   ~ 0
+ECSPI2_SCLK
+Wire Wire Line
+	13000 8800 14100 8800
+Text Label 13200 8800 0    60   ~ 0
+GPIO1_IO00
+Wire Wire Line
+	13000 8900 14100 8900
+Text Label 13200 8900 0    60   ~ 0
+GPIO1_IO01
+Wire Wire Line
+	13000 9000 14100 9000
+Text Label 13200 9000 0    60   ~ 0
+WDOG_B
+Wire Wire Line
+	13000 9100 14100 9100
+Text Label 13200 9100 0    60   ~ 0
+PMIC_nINT
+Wire Wire Line
+	13000 9200 14100 9200
+Text Label 13200 9200 0    60   ~ 0
+SD2_VSEL
+Wire Wire Line
+	13000 9300 14100 9300
+Wire Wire Line
+	13000 9400 14100 9400
+Text Label 13200 9400 0    50   ~ 0
+GPIO1_IO06\CAM2_EN
+Wire Wire Line
+	13000 9500 14100 9500
+Text Label 13200 9500 0    60   ~ 0
+GPIO1_IO07
+Wire Wire Line
+	13000 9600 14100 9600
+Text Label 13200 9600 0    60   ~ 0
+GPIO1_IO08
+Wire Wire Line
+	13000 9700 14100 9700
+Text Label 13200 9700 0    60   ~ 0
+GPIO1_IO09
+Wire Wire Line
+	13000 9800 14100 9800
+Text Label 13200 9800 0    50   ~ 0
+GPIO1_IO10\LVDS_PWREN
+Wire Wire Line
+	13000 9900 14100 9900
+Wire Wire Line
+	13000 10000 14100 10000
+Text Label 13200 10000 0    60   ~ 0
+GPIO1_IO12
+Wire Wire Line
+	13000 10100 14100 10100
+Text Label 13200 10100 0    50   ~ 0
+GPIO1_IO13\LVDS_VLED_EN
+Wire Wire Line
+	13000 10200 14100 10200
+Text Label 13200 10200 0    60   ~ 0
+GPIO1_IO14
+Wire Wire Line
+	13000 10300 14100 10300
+Text Label 13200 10300 0    60   ~ 0
+GPIO1_IO15
+Text GLabel 14100 9000 2    60   Output ~ 0
+WDOG_B
+Text GLabel 14100 9100 2    60   Input ~ 0
+PMIC_nINT
+Text GLabel 14100 9200 2    60   Output ~ 0
+SD2_VSEL
+Text GLabel 9600 9200 0    60   BiDi ~ 0
+I2C1_SDA
+Text GLabel 9600 9100 0    60   Output ~ 0
+I2C1_SCL
+$Comp
+L OLIMEX_IC:MIMX8MP_BGA548 U1
+U 13 1 622FAAB4
+P 11000 10900
+F 0 "U1" H 12200 11089 60  0000 C CNN
+F 1 "MIMX8ML8CVNKZAB(FCBGA548)" H 12200 10983 60  0000 C CNN
+F 2 "OLIMEX_IC-FP:FCBGA548_Pitch-0.5mm_Ball-0.25mm_Dimensions-15x15x1.5mm" H 11000 10900 60  0001 C CNN
+F 3 "https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-8-processors/i-mx-8m-plus-arm-cortex-a53-machine-learning-vision-multimedia-and-industrial-iot:IMX8MPLUS?fpsp=1&tab=Documentation_Tab" H 11000 10900 60  0001 C CNN
+	13   11000 10900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13700 11200 14800 11200
+Text Label 13900 11200 0    60   ~ 0
+BOOT_MODE0
+Wire Wire Line
+	13700 11300 14800 11300
+Text Label 13900 11300 0    60   ~ 0
+BOOT_MODE1
+Wire Wire Line
+	13700 11400 14800 11400
+Text Label 13900 11400 0    60   ~ 0
+BOOT_MODE2
+Wire Wire Line
+	13700 11500 14800 11500
+Text Label 13900 11500 0    60   ~ 0
+BOOT_MODE3
+Wire Wire Line
+	13700 11800 14800 11800
+Text Label 13900 11800 0    60   ~ 0
+JTAG_TCK
+Wire Wire Line
+	13700 11900 14800 11900
+Text Label 13900 11900 0    60   ~ 0
+JTAG_TMS
+Wire Wire Line
+	13700 12000 14800 12000
+Text Label 13900 12000 0    60   ~ 0
+JTAG_TDI
+Wire Wire Line
+	13700 12100 14800 12100
+Text Label 13900 12100 0    60   ~ 0
+JTAG_TDO
+Wire Wire Line
+	13700 12200 14800 12200
+Text Label 13900 12200 0    60   ~ 0
+JTAG_MOD
+Wire Wire Line
+	13700 12800 14800 12800
+Text Label 13900 12800 0    60   ~ 0
+CLKIN1
+Wire Wire Line
+	13700 12900 14800 12900
+Text Label 13900 12900 0    60   ~ 0
+CLKIN2
+Wire Wire Line
+	13700 13100 14800 13100
+Text Label 13900 13100 0    60   ~ 0
+CLKOUT1
+Wire Wire Line
+	13700 13200 14800 13200
+Text Label 13900 13200 0    60   ~ 0
+CLKOUT2
+Text Notes 13700 11800 0    60   ~ 0
+PU
+Text Notes 13700 11900 0    60   ~ 0
+PU
+Text Notes 13700 12000 0    60   ~ 0
+PU
+Text Notes 13700 12100 0    60   ~ 0
+PU
+Text Notes 13700 12200 0    60   ~ 0
+PD
+Wire Wire Line
+	9600 11300 10500 11300
+Text Label 9800 11300 0    60   ~ 0
+ONOFF
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 6271B113
+P 10250 11200
+AR Path="/6271B113" Ref="R?"  Part="1" 
+AR Path="/62F332D0/6271B113" Ref="R24"  Part="1" 
+F 0 "R24" H 10000 11150 50  0000 C CNN
+F 1 "100k/R0402" H 10625 11150 50  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 10250 11130 30  0001 C CNN
+F 3 "" V 10250 11200 30  0000 C CNN
+	1    10250 11200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	10500 11200 10400 11200
+Wire Wire Line
+	10500 11200 10500 11300
+Connection ~ 10500 11300
+Wire Wire Line
+	10500 11300 10700 11300
+Wire Wire Line
+	10100 11200 9800 11200
+$Comp
+L OLIMEX_Power:NVCC_SNVS_1V8 #PWR?
+U 1 1 62883815
+P 9800 11200
+AR Path="/607BDADE/62883815" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/62883815" Ref="#PWR0166"  Part="1" 
+F 0 "#PWR0166" H 9800 11050 50  0001 C CNN
+F 1 "NVCC_SNVS_1V8" V 9800 11300 50  0000 L CNN
+F 2 "" H 9800 11200 60  0000 C CNN
+F 3 "" H 9800 11200 60  0000 C CNN
+	1    9800 11200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9600 11500 10500 11500
+Text Label 9800 11500 0    60   ~ 0
+POR_B
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 628D4004
+P 10250 11400
+AR Path="/628D4004" Ref="R?"  Part="1" 
+AR Path="/62F332D0/628D4004" Ref="R25"  Part="1" 
+F 0 "R25" H 10000 11350 50  0000 C CNN
+F 1 "100k/R0402" H 10625 11350 50  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 10250 11330 30  0001 C CNN
+F 3 "" V 10250 11400 30  0000 C CNN
+	1    10250 11400
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	10500 11400 10400 11400
+Wire Wire Line
+	10500 11400 10500 11500
+Connection ~ 10500 11500
+Wire Wire Line
+	10500 11500 10700 11500
+Wire Wire Line
+	10100 11400 9800 11400
+$Comp
+L OLIMEX_Power:NVCC_SNVS_1V8 #PWR?
+U 1 1 628D4013
+P 9800 11400
+AR Path="/607BDADE/628D4013" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/628D4013" Ref="#PWR0167"  Part="1" 
+F 0 "#PWR0167" H 9800 11250 50  0001 C CNN
+F 1 "NVCC_SNVS_1V8" V 9800 11500 50  0000 L CNN
+F 2 "" H 9800 11400 60  0000 C CNN
+F 3 "" H 9800 11400 60  0000 C CNN
+	1    9800 11400
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9600 11500 0    60   Input ~ 0
+POR_B
+Wire Wire Line
+	9600 11700 10700 11700
+Text Label 9800 11700 0    60   ~ 0
+PMIC_ON_REQ
+Text GLabel 9600 11700 0    60   Output ~ 0
+PMIC_ON_REQ
+Text Notes 10600 11700 0    60   ~ 0
+PU
+Text Notes 10600 11900 0    60   ~ 0
+PD
+Wire Wire Line
+	9600 11900 10700 11900
+Text Label 9800 11900 0    60   ~ 0
+PMIC_STBY_REQ
+Text GLabel 9600 11900 0    60   Output ~ 0
+PMIC_STBY_REQ
+$Comp
+L OLIMEX_Devices:Crystal Q?
+U 1 1 62B6C94F
+P 9800 12400
+AR Path="/607BDADE/62B6C94F" Ref="Q?"  Part="1" 
+AR Path="/62F332D0/62B6C94F" Ref="Q2"  Part="1" 
+F 0 "Q2" V 9800 12525 50  0000 C CNN
+F 1 "Q32.768kHz/12.5pF/2P/SMD1206" V 9950 12400 30  0000 C CNN
+F 2 "OLIMEX_Crystal-FP:CM7V-T1A(Crystal_Package-1206_3.20x1.50x0.65mm)" H 9800 12400 60  0001 C CNN
+F 3 "" H 9800 12400 60  0000 C CNN
+	1    9800 12400
+	0    1    1    0   
+$EndComp
+$Comp
+L OLIMEX_RCL:C C?
+U 1 1 62B6C955
+P 9200 12300
+AR Path="/607BDADE/62B6C955" Ref="C?"  Part="1" 
+AR Path="/62F332D0/62B6C955" Ref="C122"  Part="1" 
+F 0 "C122" V 9250 12075 50  0000 L CNN
+F 1 "18pF/50V/5%/COG/C0402" V 9250 12325 25  0000 L CNN
+F 2 "OLIMEX_RLC-FP:C_0402_5MIL_DWS" H 9238 12150 30  0001 C CNN
+F 3 "" H 9200 12300 60  0000 C CNN
+	1    9200 12300
+	0    1    -1   0   
+$EndComp
+$Comp
+L OLIMEX_RCL:C C?
+U 1 1 62B6C95B
+P 9200 12500
+AR Path="/607BDADE/62B6C95B" Ref="C?"  Part="1" 
+AR Path="/62F332D0/62B6C95B" Ref="C123"  Part="1" 
+F 0 "C123" V 9250 12275 50  0000 L CNN
+F 1 "18pF/50V/5%/COG/C0402" V 9250 12525 25  0000 L CNN
+F 2 "OLIMEX_RLC-FP:C_0402_5MIL_DWS" H 9238 12350 30  0001 C CNN
+F 3 "" H 9200 12500 60  0000 C CNN
+	1    9200 12500
+	0    1    -1   0   
+$EndComp
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 62B6C961
+P 10250 12400
+AR Path="/607BDADE/62B6C961" Ref="R?"  Part="1" 
+AR Path="/62F332D0/62B6C961" Ref="R26"  Part="1" 
+F 0 "R26" H 10025 12350 50  0000 C CNN
+F 1 "4.7M/R0402" H 9975 12450 30  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" V 10180 12400 30  0001 C CNN
+F 3 "" H 10250 12400 30  0000 C CNN
+	1    10250 12400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10400 12400 10500 12400
+Connection ~ 10000 12500
+Wire Wire Line
+	10000 12500 10000 12400
+Wire Wire Line
+	10000 12400 10100 12400
+Wire Wire Line
+	10500 12300 10500 12400
+Connection ~ 9800 12500
+Wire Wire Line
+	9300 12500 9800 12500
+Connection ~ 9800 12300
+Wire Wire Line
+	9300 12300 9800 12300
+Wire Wire Line
+	9800 12500 10000 12500
+Wire Wire Line
+	9800 12300 10500 12300
+Wire Wire Line
+	10500 12300 10700 12300
+Connection ~ 10500 12300
+Wire Wire Line
+	9100 12500 8900 12500
+Wire Wire Line
+	9100 12300 8900 12300
+Wire Wire Line
+	8900 12300 8900 12500
+Connection ~ 8900 12500
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 62B6C979
+P 8900 13400
+AR Path="/607BDADE/62B6C979" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/62B6C979" Ref="#PWR0165"  Part="1" 
+F 0 "#PWR0165" H 8900 13150 50  0001 C CNN
+F 1 "GND" H 8900 13250 50  0000 C CNN
+F 2 "" H 8900 13400 60  0000 C CNN
+F 3 "" H 8900 13400 60  0000 C CNN
+	1    8900 13400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 12500 8900 13000
+Wire Wire Line
+	10000 12500 10700 12500
+$Comp
+L OLIMEX_RCL:C C?
+U 1 1 62EE4094
+P 9200 13000
+AR Path="/62F332D0/62E6AD0E/62EE4094" Ref="C?"  Part="1" 
+AR Path="/62F332D0/62EE4094" Ref="C124"  Part="1" 
+F 0 "C124" V 9250 12775 50  0000 L CNN
+F 1 "33pF/50V/5%/COG/C0402" V 9225 13050 25  0000 L CNN
+F 2 "OLIMEX_RLC-FP:C_0402_5MIL_DWS" H 9238 12850 30  0001 C CNN
+F 3 "" H 9200 13000 60  0000 C CNN
+	1    9200 13000
+	0    1    -1   0   
+$EndComp
+$Comp
+L OLIMEX_RCL:C C?
+U 1 1 62EE409A
+P 9200 13200
+AR Path="/62F332D0/62E6AD0E/62EE409A" Ref="C?"  Part="1" 
+AR Path="/62F332D0/62EE409A" Ref="C125"  Part="1" 
+F 0 "C125" V 9250 12975 50  0000 L CNN
+F 1 "33pF/50V/5%/COG/C0402" V 9225 13250 25  0000 L CNN
+F 2 "OLIMEX_RLC-FP:C_0402_5MIL_DWS" H 9238 13050 30  0001 C CNN
+F 3 "" H 9200 13200 60  0000 C CNN
+	1    9200 13200
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8900 13000 9100 13000
+Wire Wire Line
+	8900 13200 9100 13200
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 62EE40A4
+P 10250 13100
+AR Path="/62F332D0/62E6AD0E/62EE40A4" Ref="R?"  Part="1" 
+AR Path="/62F332D0/62EE40A4" Ref="R27"  Part="1" 
+F 0 "R27" H 10475 13150 50  0000 C CNN
+F 1 "1M/R0402" H 10550 13050 30  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" V 10180 13100 30  0001 C CNN
+F 3 "" H 10250 13100 30  0000 C CNN
+	1    10250 13100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 13100 10500 13100
+Wire Wire Line
+	10100 13100 10000 13100
+$Comp
+L OLIMEX_Devices:Crystal_GND Q?
+U 1 1 62EE40BA
+P 9800 13100
+AR Path="/62F332D0/62E6AD0E/62EE40BA" Ref="Q?"  Part="1" 
+AR Path="/62F332D0/62EE40BA" Ref="Q3"  Part="1" 
+F 0 "Q3" V 9800 13175 50  0000 L CNN
+F 1 "Q24MHZ/20pF/20ppm/4P/3.2x2.5mm" V 9575 12400 50  0000 L CNN
+F 2 "OLIMEX_Crystal-FP:TSX-3.2x2.5mm_GND(3)" V 9891 13183 60  0001 L CNN
+F 3 "" H 9800 13100 60  0000 C CNN
+	1    9800 13100
+	0    1    -1   0   
+$EndComp
+Connection ~ 9800 13200
+Wire Wire Line
+	9800 13200 9300 13200
+Connection ~ 9800 13000
+Wire Wire Line
+	9800 13000 9300 13000
+Wire Wire Line
+	9700 13100 8900 13100
+Connection ~ 8900 13000
+Wire Wire Line
+	8900 13000 8900 13100
+Connection ~ 8900 13100
+Wire Wire Line
+	8900 13100 8900 13200
+Connection ~ 8900 13200
+Wire Wire Line
+	8900 13200 8900 13400
+Wire Wire Line
+	10000 13100 10000 13200
+Connection ~ 10000 13200
+Wire Wire Line
+	10000 13200 9800 13200
+Wire Wire Line
+	10500 13100 10500 13000
+Connection ~ 10500 13000
+Wire Wire Line
+	10500 13000 10700 13000
+Wire Wire Line
+	9800 13000 10500 13000
+Wire Wire Line
+	10000 13200 10700 13200
+Wire Wire Line
+	15600 7400 16700 7400
+Text Label 15800 7400 0    60   ~ 0
+USB1_VBUS_3V3
+Wire Wire Line
+	15600 7500 16700 7500
+Text Label 15800 7500 0    60   ~ 0
+USB1_D_N
+Wire Wire Line
+	15600 7600 16700 7600
+Text Label 15800 7600 0    60   ~ 0
+USB1_D_P
+Wire Wire Line
+	15600 7700 16700 7700
+Text Label 15800 7700 0    60   ~ 0
+USB1_TX_N
+Wire Wire Line
+	15600 7800 16700 7800
+Text Label 15800 7800 0    60   ~ 0
+USB1_TX_P
+Wire Wire Line
+	15600 7900 16700 7900
+Text Label 15800 7900 0    60   ~ 0
+USB1_RX_N
+Wire Wire Line
+	15600 8000 16700 8000
+Text Label 15800 8000 0    60   ~ 0
+USB1_RX_P
+$Comp
+L OLIMEX_Power:VDD_3V3 #PWR?
+U 1 1 60F46D90
+P 16400 3500
+AR Path="/607BDADE/60F46D90" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/60F46D90" Ref="#PWR0160"  Part="1" 
+F 0 "#PWR0160" H 16400 3350 50  0001 C CNN
+F 1 "VDD_3V3" H 16225 3650 50  0000 L CNN
+F 2 "" H 16400 3500 60  0000 C CNN
+F 3 "" H 16400 3500 60  0000 C CNN
+	1    16400 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15600 6700 16700 6700
+Text Label 15800 6700 0    60   ~ 0
+USB2_VBUS_3V3
+Wire Wire Line
+	15600 6800 16700 6800
+Text Label 15800 6800 0    60   ~ 0
+USB2_D_N
+Wire Wire Line
+	15600 6900 16700 6900
+Text Label 15800 6900 0    60   ~ 0
+USB2_D_P
+Wire Wire Line
+	15600 7000 16700 7000
+Text Label 15800 7000 0    60   ~ 0
+USB2_TX_N
+Wire Wire Line
+	15600 7100 16700 7100
+Text Label 15800 7100 0    60   ~ 0
+USB2_TX_P
+Wire Wire Line
+	15600 7200 16700 7200
+Text Label 15800 7200 0    60   ~ 0
+USB2_RX_N
+Wire Wire Line
+	15600 7300 16700 7300
+Text Label 15800 7300 0    60   ~ 0
+USB2_RX_P
+Wire Wire Line
+	17200 6600 18300 6600
+Text Label 17400 6600 0    60   ~ 0
+PCIE_CLK_N
+Wire Wire Line
+	17200 6700 18300 6700
+Text Label 17400 6700 0    60   ~ 0
+PCIE_CLK_P
+Wire Wire Line
+	17200 6800 18300 6800
+Text Label 17400 6800 0    60   ~ 0
+PCIE_TX_N
+Wire Wire Line
+	17200 6900 18300 6900
+Text Label 17400 6900 0    60   ~ 0
+PCIE_TX_P
+Wire Wire Line
+	17200 7000 18300 7000
+Text Label 17400 7000 0    60   ~ 0
+PCIE_RX_N
+Wire Wire Line
+	17200 7100 18300 7100
+Text Label 17400 7100 0    60   ~ 0
+PCIE_RX_P
+Text Label 21500 10100 0    60   ~ 0
+DSI_CK_N
+Text Label 21500 10200 0    60   ~ 0
+DSI_CK_P
+Text Label 21500 9500 0    60   ~ 0
+DSI_D0_N
+Text Label 21500 9600 0    60   ~ 0
+DSI_D0_P
+Text Label 21500 9800 0    60   ~ 0
+DSI_D1_N
+Text Label 21500 9900 0    60   ~ 0
+DSI_D1_P
+Text Label 21500 10400 0    60   ~ 0
+DSI_D2_N
+Text Label 21500 10500 0    60   ~ 0
+DSI_D2_P
+Text Label 21500 10700 0    60   ~ 0
+DSI_D3_N
+Text Label 21500 10800 0    60   ~ 0
+DSI_D3_P
+Wire Wire Line
+	16700 1400 16400 1400
+Wire Wire Line
+	16400 1400 16400 1300
+Connection ~ 16400 1300
+Wire Wire Line
+	16400 6300 16400 6500
+Wire Wire Line
+	16400 6500 16700 6500
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 618F7CD5
+P 17500 6300
+AR Path="/62F332D0/62F5EF89/618F7CD5" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/618F7CD5" Ref="#PWR0169"  Part="1" 
+F 0 "#PWR0169" H 17500 6050 50  0001 C CNN
+F 1 "GND" H 17500 6150 50  0000 C CNN
+F 2 "" H 17500 6300 60  0000 C CNN
+F 3 "" H 17500 6300 60  0000 C CNN
+	1    17500 6300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	17200 6500 17500 6500
+Wire Wire Line
+	17500 6300 17500 6500
+$Comp
+L OLIMEX_Connectors:BH40S GPIO?
+U 1 1 618F7CE4
+P 17000 7500
+AR Path="/62F332D0/62F5EF89/618F7CE4" Ref="GPIO?"  Part="1" 
+AR Path="/62F332D0/618F7CE4" Ref="GPIO3"  Part="1" 
+F 0 "GPIO3" H 16950 8600 50  0000 C CNN
+F 1 "YA-V36P-2X20-LF" H 16950 6500 50  0000 C CNN
+F 2 "OLIMEX_Connectors-FP:GPCB127SMT-02X20(YA-V36P-2X20-LF)" H 16970 7450 20  0001 C CNN
+F 3 "" H 17000 7600 60  0000 C CNN
+	1    17000 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Connectors:BH40S GPIO?
+U 1 1 60E1CF7A
+P 21100 2000
+AR Path="/62F332D0/62F5EF89/60E1CF7A" Ref="GPIO?"  Part="1" 
+AR Path="/62F332D0/60E1CF7A" Ref="GPIO6"  Part="1" 
+F 0 "GPIO6" H 21050 3100 50  0000 C CNN
+F 1 "YA-V36P-2X20-LF" H 21050 1000 50  0000 C CNN
+F 2 "OLIMEX_Connectors-FP:GPCB127SMT-02X20(YA-V36P-2X20-LF)" H 21070 1950 20  0001 C CNN
+F 3 "" H 21100 2100 60  0000 C CNN
+	1    21100 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20500 1000 20800 1000
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 60E1CF88
+P 21600 800
+AR Path="/62F332D0/62F5EF89/60E1CF88" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/60E1CF88" Ref="#PWR0173"  Part="1" 
+F 0 "#PWR0173" H 21600 550 50  0001 C CNN
+F 1 "GND" H 21600 650 50  0000 C CNN
+F 2 "" H 21600 800 60  0000 C CNN
+F 3 "" H 21600 800 60  0000 C CNN
+	1    21600 800 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	21300 1000 21600 1000
+Wire Wire Line
+	21600 800  21600 1000
+Wire Wire Line
+	20500 3500 20500 3700
+Wire Wire Line
+	20500 3700 20800 3700
+Connection ~ 20500 3700
+Wire Wire Line
+	20500 3700 20500 3800
+Wire Wire Line
+	20500 3800 20800 3800
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 60E1CFA2
+P 21600 3500
+AR Path="/62F332D0/62F5EF89/60E1CFA2" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/60E1CFA2" Ref="#PWR0174"  Part="1" 
+F 0 "#PWR0174" H 21600 3250 50  0001 C CNN
+F 1 "GND" H 21600 3350 50  0000 C CNN
+F 2 "" H 21600 3500 60  0000 C CNN
+F 3 "" H 21600 3500 60  0000 C CNN
+	1    21600 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	21300 3700 21600 3700
+Wire Wire Line
+	21600 3500 21600 3700
+$Comp
+L OLIMEX_Power:+5V #PWR?
+U 1 1 60E1CFB7
+P 20500 800
+AR Path="/56344A84/60E1CFB7" Ref="#PWR?"  Part="1" 
+AR Path="/563556AE/60E1CFB7" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/62F5EF89/60E1CFB7" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/60E1CFB7" Ref="#PWR0170"  Part="1" 
+F 0 "#PWR0170" H 20500 650 50  0001 C CNN
+F 1 "+5V" H 20500 950 50  0000 C CNN
+F 2 "" H 20500 800 60  0000 C CNN
+F 3 "" H 20500 800 60  0000 C CNN
+	1    20500 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20500 800  20500 1000
+$Comp
+L OLIMEX_Connectors:BH40S GPIO?
+U 1 1 60E1CFC2
+P 21100 4700
+AR Path="/62F332D0/62F5EF89/60E1CFC2" Ref="GPIO?"  Part="1" 
+AR Path="/62F332D0/60E1CFC2" Ref="GPIO5"  Part="1" 
+F 0 "GPIO5" H 21050 5800 50  0000 C CNN
+F 1 "YA-V36P-2X20-LF" H 21050 3700 50  0000 C CNN
+F 2 "OLIMEX_Connectors-FP:GPCB127SMT-02X20(YA-V36P-2X20-LF)" H 21070 4650 20  0001 C CNN
+F 3 "" H 21100 4800 60  0000 C CNN
+	1    21100 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:VDD_3V3 #PWR?
+U 1 1 60E1CFE4
+P 20500 3500
+AR Path="/607BDADE/60E1CFE4" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/60E1CFE4" Ref="#PWR0171"  Part="1" 
+F 0 "#PWR0171" H 20500 3350 50  0001 C CNN
+F 1 "VDD_3V3" H 20350 3675 50  0000 L CNN
+F 2 "" H 20500 3500 60  0000 C CNN
+F 3 "" H 20500 3500 60  0000 C CNN
+	1    20500 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:VDD_1V8 #PWR?
+U 1 1 609A3329
+P 16400 6300
+AR Path="/607BDADE/609A3329" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/609A3329" Ref="#PWR0139"  Part="1" 
+F 0 "#PWR0139" H 16400 6150 50  0001 C CNN
+F 1 "VDD_1V8" H 16250 6450 50  0000 L CNN
+F 2 "" H 16400 6300 60  0000 C CNN
+F 3 "" H 16400 6300 60  0000 C CNN
+	1    16400 6300
+	1    0    0    -1  
+$EndComp
+Text Label 19400 13000 0    60   ~ 0
+CSI2_CK_N
+Text Label 19400 13100 0    60   ~ 0
+CSI2_CK_P
+Text Label 19400 12400 0    60   ~ 0
+CSI2_D0_N
+Text Label 19400 12500 0    60   ~ 0
+CSI2_D0_P
+Text Label 19400 12700 0    60   ~ 0
+CSI2_D1_N
+Text Label 19400 12800 0    60   ~ 0
+CSI2_D1_P
+Text Label 19400 13300 0    60   ~ 0
+CSI2_D2_N
+Text Label 19400 13400 0    60   ~ 0
+CSI2_D2_P
+Text Label 19400 13600 0    60   ~ 0
+CSI2_D3_N
+Text Label 19400 13700 0    60   ~ 0
+CSI2_D3_P
+Wire Wire Line
+	17200 1400 17500 1400
+Wire Wire Line
+	17500 1400 17500 1300
+Connection ~ 17500 1300
+Text Label 19900 2300 0    60   ~ 0
+HDMI_HPD
+Wire Wire Line
+	19700 2200 20800 2200
+Text Label 19900 2200 0    60   ~ 0
+HDMI_CEC
+Wire Wire Line
+	19700 1900 20800 1900
+Text Label 19900 1900 0    60   ~ 0
+HDMI_TXC_N
+Text Label 19900 1800 0    60   ~ 0
+HDMI_TXC_P
+Wire Wire Line
+	19700 1800 20800 1800
+Text Label 19900 2000 0    60   ~ 0
+EARC_P_UTIL
+Wire Wire Line
+	19700 2000 20800 2000
+Text Label 19900 2100 0    60   ~ 0
+EARC_N_HPD
+Wire Wire Line
+	19700 2100 20800 2100
+Text Label 19900 1200 0    60   ~ 0
+HDMI_TX2_P
+Wire Wire Line
+	19700 1200 20800 1200
+Text Label 19900 1300 0    60   ~ 0
+HDMI_TX2_N
+Wire Wire Line
+	19700 1300 20800 1300
+Text Label 19900 1400 0    60   ~ 0
+HDMI_TX1_P
+Wire Wire Line
+	19700 1400 20800 1400
+Text Label 19900 1500 0    60   ~ 0
+HDMI_TX1_N
+Wire Wire Line
+	19700 1500 20800 1500
+Text Label 19900 1600 0    60   ~ 0
+HDMI_TX0_P
+Wire Wire Line
+	19700 1600 20800 1600
+Text Label 19900 1700 0    60   ~ 0
+HDMI_TX0_N
+Wire Wire Line
+	19700 1700 20800 1700
+Wire Wire Line
+	19700 2300 20800 2300
+Text Label 19900 2400 0    60   ~ 0
+HDMI_DDC_SDA
+Wire Wire Line
+	19700 2400 20800 2400
+Text Label 19900 2500 0    60   ~ 0
+HDMI_DDC_SCL
+Wire Wire Line
+	19700 2500 20800 2500
+Wire Wire Line
+	17200 10600 18300 10600
+Text Label 17400 10600 0    60   ~ 0
+LVDS0_TX0_N
+Wire Wire Line
+	15600 10600 16700 10600
+Text Label 15800 10600 0    60   ~ 0
+LVDS0_TX0_P
+Wire Wire Line
+	17200 10700 18300 10700
+Text Label 17400 10700 0    60   ~ 0
+LVDS0_TX1_N
+Wire Wire Line
+	15600 10700 16700 10700
+Text Label 15800 10700 0    60   ~ 0
+LVDS0_TX1_P
+Wire Wire Line
+	17200 10800 18300 10800
+Text Label 17400 10800 0    60   ~ 0
+LVDS0_TX2_N
+Wire Wire Line
+	15600 10800 16700 10800
+Text Label 15800 10800 0    60   ~ 0
+LVDS0_TX2_P
+Wire Wire Line
+	15600 10900 16700 10900
+Text Label 15800 10900 0    60   ~ 0
+LVDS0_CLK_P
+Wire Wire Line
+	17200 10200 18300 10200
+Text Label 17400 10200 0    60   ~ 0
+LVDS0_TX3_N
+Wire Wire Line
+	15600 10200 16700 10200
+Text Label 15800 10200 0    60   ~ 0
+LVDS0_TX3_P
+Wire Wire Line
+	17200 10300 18300 10300
+Text Label 17400 10300 0    60   ~ 0
+LVDS1_TX0_N
+Wire Wire Line
+	15600 10300 16700 10300
+Text Label 15800 10300 0    60   ~ 0
+LVDS1_TX0_P
+Wire Wire Line
+	17200 10400 18300 10400
+Text Label 17400 10400 0    60   ~ 0
+LVDS1_TX1_N
+Wire Wire Line
+	15600 10400 16700 10400
+Text Label 15800 10400 0    60   ~ 0
+LVDS1_TX1_P
+Wire Wire Line
+	17200 10500 18300 10500
+Text Label 17400 10500 0    60   ~ 0
+LVDS1_TX2_N
+Wire Wire Line
+	15600 10500 16700 10500
+Text Label 15800 10500 0    60   ~ 0
+LVDS1_TX2_P
+Wire Wire Line
+	17200 9800 18300 9800
+Text Label 17400 9800 0    60   ~ 0
+LVDS1_CLK_N
+Wire Wire Line
+	15600 9800 16700 9800
+Text Label 15800 9800 0    60   ~ 0
+LVDS1_CLK_P
+Wire Wire Line
+	17200 9900 18300 9900
+Text Label 17400 9900 0    60   ~ 0
+LVDS1_TX3_N
+Wire Wire Line
+	15600 9900 16700 9900
+Text Label 15800 9900 0    60   ~ 0
+LVDS1_TX3_P
+Wire Wire Line
+	17200 3900 18300 3900
+Text Label 17400 5100 0    60   ~ 0
+QSPIA_nSS0
+Wire Wire Line
+	17200 4000 18300 4000
+Text Label 17400 4100 0    60   ~ 0
+SD3_STROBE
+Wire Wire Line
+	17200 4100 18300 4100
+Text Label 17400 4700 0    60   ~ 0
+SD3_DATA5
+Wire Wire Line
+	17200 4200 18300 4200
+Text Label 17400 4800 0    60   ~ 0
+SD3_DATA6
+Wire Wire Line
+	17200 4300 18300 4300
+Text Label 17400 5000 0    60   ~ 0
+QSPIA_SCLK
+Wire Wire Line
+	17200 4400 18300 4400
+Text Label 17400 4900 0    60   ~ 0
+SD3_DATA7
+Wire Wire Line
+	17200 4500 18300 4500
+Text Label 17400 4600 0    60   ~ 0
+SD3_DATA4
+Wire Wire Line
+	17200 4600 18300 4600
+Text Label 17400 3900 0    60   ~ 0
+SD3_CLK
+Wire Wire Line
+	17200 4700 18300 4700
+Text Label 17400 4000 0    60   ~ 0
+SD3_CMD
+Wire Wire Line
+	17200 4800 18300 4800
+Text Label 3000 15300 2    60   ~ 0
+SYS_STATUS
+Wire Wire Line
+	17200 4900 18300 4900
+Text Label 17400 5200 0    60   ~ 0
+QSPIA_DATA0
+Wire Wire Line
+	17200 5000 18300 5000
+Text Label 17400 5300 0    60   ~ 0
+QSPIA_DATA1
+Wire Wire Line
+	17200 5100 18300 5100
+Text Label 17400 5400 0    60   ~ 0
+QSPIA_DATA2
+Wire Wire Line
+	17200 5200 18300 5200
+Text Label 17400 5500 0    60   ~ 0
+QSPIA_DATA3
+Wire Wire Line
+	17200 5300 18300 5300
+Text Label 17400 4200 0    60   ~ 0
+SD3_DATA0
+Wire Wire Line
+	17200 5400 18300 5400
+Text Label 17400 4300 0    60   ~ 0
+SD3_DATA1
+Wire Wire Line
+	17200 5500 18300 5500
+Text Label 17400 4400 0    60   ~ 0
+SD3_DATA2
+Wire Wire Line
+	17200 5600 18300 5600
+Text Label 17400 4500 0    60   ~ 0
+SD3_DATA3
+Text Label 17400 5600 0    60   ~ 0
+QSPIA_DQS
+Wire Wire Line
+	3100 15300 2300 15300
+Connection ~ 21600 3700
+Wire Wire Line
+	21600 3700 21600 3800
+Wire Wire Line
+	21600 3800 21300 3800
+Wire Wire Line
+	15600 4100 16700 4100
+Text Label 15800 4100 0    60   ~ 0
+ENET_MDC
+Wire Wire Line
+	15600 4200 16700 4200
+Text Label 15800 4200 0    60   ~ 0
+ENET_MDIO
+Wire Wire Line
+	15600 4300 16700 4300
+Text Label 15800 4300 0    60   ~ 0
+ENET_TX_CTL
+Wire Wire Line
+	15600 4400 16700 4400
+Text Label 15800 4400 0    60   ~ 0
+ENET_TXC
+Wire Wire Line
+	15600 4500 16700 4500
+Text Label 15800 4500 0    60   ~ 0
+ENET_TD0
+Wire Wire Line
+	15600 4600 16700 4600
+Text Label 15800 4600 0    60   ~ 0
+ENET_TD1
+Wire Wire Line
+	15600 4700 16700 4700
+Text Label 15800 4700 0    60   ~ 0
+ENET_TD2
+Wire Wire Line
+	15600 4800 16700 4800
+Text Label 15800 4800 0    60   ~ 0
+ENET_TD3
+Wire Wire Line
+	15600 4900 16700 4900
+Text Label 15800 4900 0    60   ~ 0
+ENET_RX_CTL
+Wire Wire Line
+	15600 5000 16700 5000
+Text Label 15800 5000 0    60   ~ 0
+ENET_RXC
+Wire Wire Line
+	15600 5100 16700 5100
+Text Label 15800 5100 0    60   ~ 0
+ENET_RD0
+Wire Wire Line
+	15600 5200 16700 5200
+Text Label 15800 5200 0    60   ~ 0
+ENET_RD1
+Wire Wire Line
+	15600 5300 16700 5300
+Text Label 15800 5300 0    60   ~ 0
+ENET_RD2
+Wire Wire Line
+	15600 5400 16700 5400
+Text Label 15800 5400 0    60   ~ 0
+ENET_RD3
+$Comp
+L OLIMEX_Transistors:N-MOS+DIOD FET?
+U 1 1 649F0681
+P 17000 14600
+AR Path="/62F332D0/6497880F/649F0681" Ref="FET?"  Part="1" 
+AR Path="/62F332D0/649F0681" Ref="FET3"  Part="1" 
+F 0 "FET3" H 17100 14350 60  0000 R CNN
+F 1 "BSS138(SOT23-3)" H 17250 14850 40  0000 R CNN
+F 2 "OLIMEX_Transistors-FP:SOT23" H 17000 14848 60  0001 C CNN
+F 3 "" V 16950 14600 60  0000 C CNN
+	1    17000 14600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	16900 14800 16900 14900
+Wire Wire Line
+	17100 14800 17100 14900
+Wire Wire Line
+	16900 14300 16900 14400
+Wire Wire Line
+	17400 14700 17400 14900
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 649F0697
+P 17400 14550
+AR Path="/5D8F9D26/649F0697" Ref="R?"  Part="1" 
+AR Path="/649F0697" Ref="R?"  Part="1" 
+AR Path="/62F332D0/6497880F/649F0697" Ref="R?"  Part="1" 
+AR Path="/62F332D0/649F0697" Ref="R34"  Part="1" 
+F 0 "R34" V 17450 14400 50  0000 C CNN
+F 1 "4.7k/R0402" V 17350 14300 40  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 17400 14480 30  0001 C CNN
+F 3 "" V 17400 14550 30  0000 C CNN
+F 4 "Value 1" H 17400 14550 60  0001 C CNN "Fieldname 1"
+F 5 "Value2" H 17400 14550 60  0001 C CNN "Fieldname2"
+F 6 "Value3" H 17400 14550 60  0001 C CNN "Fieldname3"
+	1    17400 14550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	17400 14300 17400 14400
+Connection ~ 17400 14900
+Wire Wire Line
+	17400 14900 17100 14900
+$Comp
+L OLIMEX_Power:VDD_3V3 #PWR?
+U 1 1 64B29C8E
+P 17400 14300
+AR Path="/607BDADE/64B29C8E" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/64B29C8E" Ref="#PWR0185"  Part="1" 
+F 0 "#PWR0185" H 17400 14150 50  0001 C CNN
+F 1 "VDD_3V3" H 17250 14450 50  0000 L CNN
+F 2 "" H 17400 14300 60  0000 C CNN
+F 3 "" H 17400 14300 60  0000 C CNN
+	1    17400 14300
+	1    0    0    -1  
+$EndComp
+Text Label 17500 14900 0    60   ~ 0
+I2C2_SCL_3V3
+Wire Wire Line
+	17400 14900 18200 14900
+$Comp
+L OLIMEX_Power:VDD_1V8 #PWR?
+U 1 1 64D8BB29
+P 16900 14300
+AR Path="/607BDADE/64D8BB29" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/64D8BB29" Ref="#PWR0183"  Part="1" 
+F 0 "#PWR0183" H 16900 14150 50  0001 C CNN
+F 1 "VDD_1V8" H 16750 14450 50  0000 L CNN
+F 2 "" H 16900 14300 60  0000 C CNN
+F 3 "" H 16900 14300 60  0000 C CNN
+	1    16900 14300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16500 14700 16500 14900
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 64DFAA0C
+P 16500 14550
+AR Path="/5D8F9D26/64DFAA0C" Ref="R?"  Part="1" 
+AR Path="/64DFAA0C" Ref="R?"  Part="1" 
+AR Path="/62F332D0/6497880F/64DFAA0C" Ref="R?"  Part="1" 
+AR Path="/62F332D0/64DFAA0C" Ref="R32"  Part="1" 
+F 0 "R32" V 16550 14400 50  0000 C CNN
+F 1 "4.7k/R0402" V 16450 14300 40  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 16500 14480 30  0001 C CNN
+F 3 "" V 16500 14550 30  0000 C CNN
+F 4 "Value 1" H 16500 14550 60  0001 C CNN "Fieldname 1"
+F 5 "Value2" H 16500 14550 60  0001 C CNN "Fieldname2"
+F 6 "Value3" H 16500 14550 60  0001 C CNN "Fieldname3"
+	1    16500 14550
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	16500 14300 16500 14400
+Connection ~ 16500 14900
+$Comp
+L OLIMEX_Power:VDD_1V8 #PWR?
+U 1 1 64E74543
+P 16500 14300
+AR Path="/607BDADE/64E74543" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/64E74543" Ref="#PWR0181"  Part="1" 
+F 0 "#PWR0181" H 16500 14150 50  0001 C CNN
+F 1 "VDD_1V8" H 16350 14450 50  0000 L CNN
+F 2 "" H 16500 14300 60  0000 C CNN
+F 3 "" H 16500 14300 60  0000 C CNN
+	1    16500 14300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16500 14900 16900 14900
+Text Label 15900 15800 0    60   ~ 0
+I2C2_SDA
+Text Label 15900 14900 0    60   ~ 0
+I2C2_SCL
+Wire Wire Line
+	15800 14900 16500 14900
+$Comp
+L OLIMEX_Transistors:N-MOS+DIOD FET?
+U 1 1 64FD3C72
+P 17000 15500
+AR Path="/62F332D0/6497880F/64FD3C72" Ref="FET?"  Part="1" 
+AR Path="/62F332D0/64FD3C72" Ref="FET4"  Part="1" 
+F 0 "FET4" H 17100 15250 60  0000 R CNN
+F 1 "BSS138(SOT23-3)" H 17250 15750 40  0000 R CNN
+F 2 "OLIMEX_Transistors-FP:SOT23" H 17000 15748 60  0001 C CNN
+F 3 "" V 16950 15500 60  0000 C CNN
+	1    17000 15500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	16900 15700 16900 15800
+Wire Wire Line
+	17100 15700 17100 15800
+Wire Wire Line
+	16900 15200 16900 15300
+Wire Wire Line
+	17400 15600 17400 15800
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 64FD3C83
+P 17400 15450
+AR Path="/5D8F9D26/64FD3C83" Ref="R?"  Part="1" 
+AR Path="/64FD3C83" Ref="R?"  Part="1" 
+AR Path="/62F332D0/6497880F/64FD3C83" Ref="R?"  Part="1" 
+AR Path="/62F332D0/64FD3C83" Ref="R35"  Part="1" 
+F 0 "R35" V 17450 15300 50  0000 C CNN
+F 1 "4.7k/R0402" V 17350 15200 40  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 17400 15380 30  0001 C CNN
+F 3 "" V 17400 15450 30  0000 C CNN
+F 4 "Value 1" H 17400 15450 60  0001 C CNN "Fieldname 1"
+F 5 "Value2" H 17400 15450 60  0001 C CNN "Fieldname2"
+F 6 "Value3" H 17400 15450 60  0001 C CNN "Fieldname3"
+	1    17400 15450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	17400 15200 17400 15300
+Connection ~ 17400 15800
+$Comp
+L OLIMEX_Power:VDD_3V3 #PWR?
+U 1 1 64FD3C90
+P 17400 15200
+AR Path="/607BDADE/64FD3C90" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/64FD3C90" Ref="#PWR0186"  Part="1" 
+F 0 "#PWR0186" H 17400 15050 50  0001 C CNN
+F 1 "VDD_3V3" H 17250 15350 50  0000 L CNN
+F 2 "" H 17400 15200 60  0000 C CNN
+F 3 "" H 17400 15200 60  0000 C CNN
+	1    17400 15200
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:VDD_1V8 #PWR?
+U 1 1 64FD3C9C
+P 16900 15200
+AR Path="/607BDADE/64FD3C9C" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/64FD3C9C" Ref="#PWR0184"  Part="1" 
+F 0 "#PWR0184" H 16900 15050 50  0001 C CNN
+F 1 "VDD_1V8" H 16750 15350 50  0000 L CNN
+F 2 "" H 16900 15200 60  0000 C CNN
+F 3 "" H 16900 15200 60  0000 C CNN
+	1    16900 15200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16500 15600 16500 15800
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 64FD3CAA
+P 16500 15450
+AR Path="/5D8F9D26/64FD3CAA" Ref="R?"  Part="1" 
+AR Path="/64FD3CAA" Ref="R?"  Part="1" 
+AR Path="/62F332D0/6497880F/64FD3CAA" Ref="R?"  Part="1" 
+AR Path="/62F332D0/64FD3CAA" Ref="R33"  Part="1" 
+F 0 "R33" V 16550 15300 50  0000 C CNN
+F 1 "4.7k/R0402" V 16450 15200 40  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 16500 15380 30  0001 C CNN
+F 3 "" V 16500 15450 30  0000 C CNN
+F 4 "Value 1" H 16500 15450 60  0001 C CNN "Fieldname 1"
+F 5 "Value2" H 16500 15450 60  0001 C CNN "Fieldname2"
+F 6 "Value3" H 16500 15450 60  0001 C CNN "Fieldname3"
+	1    16500 15450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	16500 15200 16500 15300
+Connection ~ 16500 15800
+$Comp
+L OLIMEX_Power:VDD_1V8 #PWR?
+U 1 1 64FD3CB6
+P 16500 15200
+AR Path="/607BDADE/64FD3CB6" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/64FD3CB6" Ref="#PWR0182"  Part="1" 
+F 0 "#PWR0182" H 16500 15050 50  0001 C CNN
+F 1 "VDD_1V8" H 16350 15350 50  0000 L CNN
+F 2 "" H 16500 15200 60  0000 C CNN
+F 3 "" H 16500 15200 60  0000 C CNN
+	1    16500 15200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16500 15800 16900 15800
+Wire Wire Line
+	15800 15800 16500 15800
+Text Label 17500 15800 0    60   ~ 0
+I2C2_SDA_3V3
+$Comp
+L OLIMEX_Connectors:CON22 RPi_CAMERA?
+U 1 1 65279417
+P 20400 13350
+AR Path="/62F332D0/63CC5ACD/65279417" Ref="RPi_CAMERA?"  Part="1" 
+AR Path="/62F332D0/65279417" Ref="MiPi_CSI2"  Part="1" 
+F 0 "MiPi_CSI2" H 20800 14550 60  0000 R CNN
+F 1 "FPV-WZB21-22-LF" H 21100 12200 60  0000 R CNN
+F 2 "OLIMEX_Connectors-FP:FPV-WZB21-22-LF" H 20425 12100 60  0001 C CNN
+F 3 "" H 20325 14350 60  0000 C CNN
+	1    20400 13350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	20300 12300 19200 12300
+Wire Wire Line
+	20300 12900 19200 12900
+Wire Wire Line
+	20300 12700 18800 12700
+Wire Wire Line
+	20300 13000 18800 13000
+Wire Wire Line
+	20300 12400 18800 12400
+Wire Wire Line
+	20300 12500 18800 12500
+Wire Wire Line
+	20300 13100 18800 13100
+Wire Wire Line
+	20300 12800 18800 12800
+Wire Wire Line
+	20300 13200 19200 13200
+Wire Wire Line
+	20300 12600 19200 12600
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 6527942B
+P 19200 13200
+AR Path="/606D6B68/6527942B" Ref="#PWR?"  Part="1" 
+AR Path="/6527942B" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/6527942B" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/6527942B" Ref="#PWR0190"  Part="1" 
+F 0 "#PWR0190" H 19200 12950 50  0001 C CNN
+F 1 "GND" V 19200 13025 50  0000 C CNN
+F 2 "" H 19200 13200 60  0000 C CNN
+F 3 "" H 19200 13200 60  0000 C CNN
+	1    19200 13200
+	0    1    1    0   
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 65279435
+P 19200 12900
+AR Path="/606D6B68/65279435" Ref="#PWR?"  Part="1" 
+AR Path="/65279435" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/65279435" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/65279435" Ref="#PWR0189"  Part="1" 
+F 0 "#PWR0189" H 19200 12650 50  0001 C CNN
+F 1 "GND" V 19200 12725 50  0000 C CNN
+F 2 "" H 19200 12900 60  0000 C CNN
+F 3 "" H 19200 12900 60  0000 C CNN
+	1    19200 12900
+	0    1    1    0   
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 6527943F
+P 19200 12300
+AR Path="/606D6B68/6527943F" Ref="#PWR?"  Part="1" 
+AR Path="/6527943F" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/6527943F" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/6527943F" Ref="#PWR0187"  Part="1" 
+F 0 "#PWR0187" H 19200 12050 50  0001 C CNN
+F 1 "GND" V 19200 12125 50  0000 C CNN
+F 2 "" H 19200 12300 60  0000 C CNN
+F 3 "" H 19200 12300 60  0000 C CNN
+	1    19200 12300
+	0    1    1    0   
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 65279449
+P 19200 12600
+AR Path="/606D6B68/65279449" Ref="#PWR?"  Part="1" 
+AR Path="/65279449" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/65279449" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/65279449" Ref="#PWR0188"  Part="1" 
+F 0 "#PWR0188" H 19200 12350 50  0001 C CNN
+F 1 "GND" V 19200 12425 50  0000 C CNN
+F 2 "" H 19200 12600 60  0000 C CNN
+F 3 "" H 19200 12600 60  0000 C CNN
+	1    19200 12600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18800 13400 20300 13400
+Wire Wire Line
+	18800 13300 20300 13300
+Wire Wire Line
+	20300 13500 19200 13500
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 65279456
+P 19200 13500
+AR Path="/606D6B68/65279456" Ref="#PWR?"  Part="1" 
+AR Path="/65279456" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/65279456" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/65279456" Ref="#PWR0191"  Part="1" 
+F 0 "#PWR0191" H 19200 13250 50  0001 C CNN
+F 1 "GND" V 19200 13325 50  0000 C CNN
+F 2 "" H 19200 13500 60  0000 C CNN
+F 3 "" H 19200 13500 60  0000 C CNN
+	1    19200 13500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18800 13700 20300 13700
+Wire Wire Line
+	18800 13600 20300 13600
+Wire Wire Line
+	20300 13800 19200 13800
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 65279463
+P 19200 13800
+AR Path="/606D6B68/65279463" Ref="#PWR?"  Part="1" 
+AR Path="/65279463" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/65279463" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/65279463" Ref="#PWR0192"  Part="1" 
+F 0 "#PWR0192" H 19200 13550 50  0001 C CNN
+F 1 "GND" V 19200 13625 50  0000 C CNN
+F 2 "" H 19200 13800 60  0000 C CNN
+F 3 "" H 19200 13800 60  0000 C CNN
+	1    19200 13800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	20300 14000 19200 14000
+Wire Wire Line
+	20300 13900 19200 13900
+Wire Wire Line
+	20300 14100 19200 14100
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 65279472
+P 19200 14100
+AR Path="/606D6B68/65279472" Ref="#PWR?"  Part="1" 
+AR Path="/65279472" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/65279472" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/65279472" Ref="#PWR0193"  Part="1" 
+F 0 "#PWR0193" H 19200 13850 50  0001 C CNN
+F 1 "GND" V 19200 13925 50  0000 C CNN
+F 2 "" H 19200 14100 60  0000 C CNN
+F 3 "" H 19200 14100 60  0000 C CNN
+	1    19200 14100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	20300 14400 19200 14400
+Wire Wire Line
+	20300 14300 19200 14300
+Wire Wire Line
+	20300 14200 19200 14200
+Text Label 19400 14200 0    60   ~ 0
+I2C3_SCL_3V3
+Text Label 19400 14300 0    60   ~ 0
+I2C3_SDA_3V3
+$Comp
+L OLIMEX_Power:VDD_3V3 #PWR?
+U 1 1 65279482
+P 19200 14400
+AR Path="/607BDADE/65279482" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/65279482" Ref="#PWR0194"  Part="1" 
+F 0 "#PWR0194" H 19200 14250 50  0001 C CNN
+F 1 "VDD_3V3" V 19200 14500 50  0000 L CNN
+F 2 "" H 19200 14400 60  0000 C CNN
+F 3 "" H 19200 14400 60  0000 C CNN
+	1    19200 14400
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 19200 14000
+Wire Wire Line
+	17400 15800 18200 15800
+Wire Wire Line
+	17100 15800 17400 15800
+NoConn ~ 21300 14000
+$Comp
+L OLIMEX_Power:VDD_3V3 #PWR?
+U 1 1 643E8654
+P 21300 14400
+AR Path="/607BDADE/643E8654" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/643E8654" Ref="#PWR0202"  Part="1" 
+F 0 "#PWR0202" H 21300 14250 50  0001 C CNN
+F 1 "VDD_3V3" V 21300 14500 50  0000 L CNN
+F 2 "" H 21300 14400 60  0000 C CNN
+F 3 "" H 21300 14400 60  0000 C CNN
+	1    21300 14400
+	0    -1   -1   0   
+$EndComp
+Text Label 21500 14300 0    60   ~ 0
+I2C2_SDA_3V3
+Text Label 21500 14200 0    60   ~ 0
+I2C2_SCL_3V3
+Wire Wire Line
+	22400 14200 21300 14200
+Wire Wire Line
+	22400 14300 21300 14300
+Wire Wire Line
+	22400 14400 21300 14400
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 63DE656B
+P 21300 14100
+AR Path="/606D6B68/63DE656B" Ref="#PWR?"  Part="1" 
+AR Path="/63DE656B" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/63DE656B" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63DE656B" Ref="#PWR0201"  Part="1" 
+F 0 "#PWR0201" H 21300 13850 50  0001 C CNN
+F 1 "GND" V 21300 13925 50  0000 C CNN
+F 2 "" H 21300 14100 60  0000 C CNN
+F 3 "" H 21300 14100 60  0000 C CNN
+	1    21300 14100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	22400 14100 21300 14100
+Wire Wire Line
+	22400 13900 21300 13900
+Wire Wire Line
+	22400 14000 21300 14000
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 63DE655F
+P 21300 13800
+AR Path="/606D6B68/63DE655F" Ref="#PWR?"  Part="1" 
+AR Path="/63DE655F" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/63DE655F" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63DE655F" Ref="#PWR0200"  Part="1" 
+F 0 "#PWR0200" H 21300 13550 50  0001 C CNN
+F 1 "GND" V 21300 13625 50  0000 C CNN
+F 2 "" H 21300 13800 60  0000 C CNN
+F 3 "" H 21300 13800 60  0000 C CNN
+	1    21300 13800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	22400 13800 21300 13800
+Wire Wire Line
+	20900 13600 22400 13600
+Wire Wire Line
+	20900 13700 22400 13700
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 63DE6552
+P 21300 13500
+AR Path="/606D6B68/63DE6552" Ref="#PWR?"  Part="1" 
+AR Path="/63DE6552" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/63DE6552" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63DE6552" Ref="#PWR0199"  Part="1" 
+F 0 "#PWR0199" H 21300 13250 50  0001 C CNN
+F 1 "GND" V 21300 13325 50  0000 C CNN
+F 2 "" H 21300 13500 60  0000 C CNN
+F 3 "" H 21300 13500 60  0000 C CNN
+	1    21300 13500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	22400 13500 21300 13500
+Wire Wire Line
+	20900 13300 22400 13300
+Wire Wire Line
+	20900 13400 22400 13400
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 63DE653F
+P 21300 12600
+AR Path="/606D6B68/63DE653F" Ref="#PWR?"  Part="1" 
+AR Path="/63DE653F" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/63DE653F" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63DE653F" Ref="#PWR0196"  Part="1" 
+F 0 "#PWR0196" H 21300 12350 50  0001 C CNN
+F 1 "GND" V 21300 12425 50  0000 C CNN
+F 2 "" H 21300 12600 60  0000 C CNN
+F 3 "" H 21300 12600 60  0000 C CNN
+	1    21300 12600
+	0    1    1    0   
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 63DE6539
+P 21300 12300
+AR Path="/606D6B68/63DE6539" Ref="#PWR?"  Part="1" 
+AR Path="/63DE6539" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/63DE6539" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63DE6539" Ref="#PWR0195"  Part="1" 
+F 0 "#PWR0195" H 21300 12050 50  0001 C CNN
+F 1 "GND" V 21300 12125 50  0000 C CNN
+F 2 "" H 21300 12300 60  0000 C CNN
+F 3 "" H 21300 12300 60  0000 C CNN
+	1    21300 12300
+	0    1    1    0   
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 63DE6533
+P 21300 12900
+AR Path="/606D6B68/63DE6533" Ref="#PWR?"  Part="1" 
+AR Path="/63DE6533" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/63DE6533" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63DE6533" Ref="#PWR0197"  Part="1" 
+F 0 "#PWR0197" H 21300 12650 50  0001 C CNN
+F 1 "GND" V 21300 12725 50  0000 C CNN
+F 2 "" H 21300 12900 60  0000 C CNN
+F 3 "" H 21300 12900 60  0000 C CNN
+	1    21300 12900
+	0    1    1    0   
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 63DE652D
+P 21300 13200
+AR Path="/606D6B68/63DE652D" Ref="#PWR?"  Part="1" 
+AR Path="/63DE652D" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/63DE652D" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63DE652D" Ref="#PWR0198"  Part="1" 
+F 0 "#PWR0198" H 21300 12950 50  0001 C CNN
+F 1 "GND" V 21300 13025 50  0000 C CNN
+F 2 "" H 21300 13200 60  0000 C CNN
+F 3 "" H 21300 13200 60  0000 C CNN
+	1    21300 13200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	22400 12600 21300 12600
+Wire Wire Line
+	22400 13200 21300 13200
+Wire Wire Line
+	22400 12800 20900 12800
+Wire Wire Line
+	22400 13100 20900 13100
+Wire Wire Line
+	22400 12500 20900 12500
+Wire Wire Line
+	22400 12400 20900 12400
+Wire Wire Line
+	22400 13000 20900 13000
+Wire Wire Line
+	22400 12700 20900 12700
+Wire Wire Line
+	22400 12900 21300 12900
+Wire Wire Line
+	22400 12300 21300 12300
+$Comp
+L OLIMEX_Connectors:CON22 RPi_CAMERA?
+U 1 1 63DE6517
+P 22500 13350
+AR Path="/62F332D0/63CC5ACD/63DE6517" Ref="RPi_CAMERA?"  Part="1" 
+AR Path="/62F332D0/63DE6517" Ref="MiPi_CSI1"  Part="1" 
+F 0 "MiPi_CSI1" H 22900 14550 60  0000 R CNN
+F 1 "FPV-WZB21-22-LF" H 23200 12200 60  0000 R CNN
+F 2 "OLIMEX_Connectors-FP:FPV-WZB21-22-LF" H 22525 12100 60  0001 C CNN
+F 3 "" H 22425 14350 60  0000 C CNN
+	1    22500 13350
+	-1   0    0    -1  
+$EndComp
+Text Label 21500 13700 0    60   ~ 0
+CSI1_D3_P
+Text Label 21500 13600 0    60   ~ 0
+CSI1_D3_N
+Text Label 21500 13400 0    60   ~ 0
+CSI1_D2_P
+Text Label 21500 13300 0    60   ~ 0
+CSI1_D2_N
+Text Label 21500 12800 0    60   ~ 0
+CSI1_D1_P
+Text Label 21500 12700 0    60   ~ 0
+CSI1_D1_N
+Text Label 21500 12500 0    60   ~ 0
+CSI1_D0_P
+Text Label 21500 12400 0    60   ~ 0
+CSI1_D0_N
+Text Label 21500 13100 0    60   ~ 0
+CSI1_CK_P
+Text Label 21500 13000 0    60   ~ 0
+CSI1_CK_N
+$Comp
+L OLIMEX_Transistors:N-MOS+DIOD FET?
+U 1 1 65B99B4C
+P 14200 14600
+AR Path="/62F332D0/6497880F/65B99B4C" Ref="FET?"  Part="1" 
+AR Path="/62F332D0/65B99B4C" Ref="FET1"  Part="1" 
+F 0 "FET1" H 14300 14350 60  0000 R CNN
+F 1 "BSS138(SOT23-3)" H 14450 14850 40  0000 R CNN
+F 2 "OLIMEX_Transistors-FP:SOT23" H 14200 14848 60  0001 C CNN
+F 3 "" V 14150 14600 60  0000 C CNN
+	1    14200 14600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14100 14800 14100 14900
+Wire Wire Line
+	14300 14800 14300 14900
+Wire Wire Line
+	14100 14300 14100 14400
+Wire Wire Line
+	14600 14700 14600 14900
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 65B99B5D
+P 14600 14550
+AR Path="/5D8F9D26/65B99B5D" Ref="R?"  Part="1" 
+AR Path="/65B99B5D" Ref="R?"  Part="1" 
+AR Path="/62F332D0/6497880F/65B99B5D" Ref="R?"  Part="1" 
+AR Path="/62F332D0/65B99B5D" Ref="R30"  Part="1" 
+F 0 "R30" V 14650 14400 50  0000 C CNN
+F 1 "4.7k/R0402" V 14550 14300 40  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 14600 14480 30  0001 C CNN
+F 3 "" V 14600 14550 30  0000 C CNN
+F 4 "Value 1" H 14600 14550 60  0001 C CNN "Fieldname 1"
+F 5 "Value2" H 14600 14550 60  0001 C CNN "Fieldname2"
+F 6 "Value3" H 14600 14550 60  0001 C CNN "Fieldname3"
+	1    14600 14550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14600 14300 14600 14400
+Connection ~ 14600 14900
+Wire Wire Line
+	14600 14900 14300 14900
+$Comp
+L OLIMEX_Power:VDD_3V3 #PWR?
+U 1 1 65B99B6A
+P 14600 14300
+AR Path="/607BDADE/65B99B6A" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/65B99B6A" Ref="#PWR0179"  Part="1" 
+F 0 "#PWR0179" H 14600 14150 50  0001 C CNN
+F 1 "VDD_3V3" H 14450 14450 50  0000 L CNN
+F 2 "" H 14600 14300 60  0000 C CNN
+F 3 "" H 14600 14300 60  0000 C CNN
+	1    14600 14300
+	1    0    0    -1  
+$EndComp
+Text Label 14700 14900 0    60   ~ 0
+I2C3_SCL_3V3
+Wire Wire Line
+	14600 14900 15400 14900
+$Comp
+L OLIMEX_Power:VDD_1V8 #PWR?
+U 1 1 65B99B76
+P 14100 14300
+AR Path="/607BDADE/65B99B76" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/65B99B76" Ref="#PWR0177"  Part="1" 
+F 0 "#PWR0177" H 14100 14150 50  0001 C CNN
+F 1 "VDD_1V8" H 13950 14450 50  0000 L CNN
+F 2 "" H 14100 14300 60  0000 C CNN
+F 3 "" H 14100 14300 60  0000 C CNN
+	1    14100 14300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13700 14700 13700 14900
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 65B99B84
+P 13700 14550
+AR Path="/5D8F9D26/65B99B84" Ref="R?"  Part="1" 
+AR Path="/65B99B84" Ref="R?"  Part="1" 
+AR Path="/62F332D0/6497880F/65B99B84" Ref="R?"  Part="1" 
+AR Path="/62F332D0/65B99B84" Ref="R28"  Part="1" 
+F 0 "R28" V 13750 14400 50  0000 C CNN
+F 1 "4.7k/R0402" V 13650 14300 40  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 13700 14480 30  0001 C CNN
+F 3 "" V 13700 14550 30  0000 C CNN
+F 4 "Value 1" H 13700 14550 60  0001 C CNN "Fieldname 1"
+F 5 "Value2" H 13700 14550 60  0001 C CNN "Fieldname2"
+F 6 "Value3" H 13700 14550 60  0001 C CNN "Fieldname3"
+	1    13700 14550
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	13700 14300 13700 14400
+Connection ~ 13700 14900
+$Comp
+L OLIMEX_Power:VDD_1V8 #PWR?
+U 1 1 65B99B90
+P 13700 14300
+AR Path="/607BDADE/65B99B90" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/65B99B90" Ref="#PWR0168"  Part="1" 
+F 0 "#PWR0168" H 13700 14150 50  0001 C CNN
+F 1 "VDD_1V8" H 13550 14450 50  0000 L CNN
+F 2 "" H 13700 14300 60  0000 C CNN
+F 3 "" H 13700 14300 60  0000 C CNN
+	1    13700 14300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13700 14900 14100 14900
+Text Label 13100 15800 0    60   ~ 0
+I2C3_SDA
+Text Label 13100 14900 0    60   ~ 0
+I2C3_SCL
+Wire Wire Line
+	13000 14900 13700 14900
+$Comp
+L OLIMEX_Transistors:N-MOS+DIOD FET?
+U 1 1 65B99B9E
+P 14200 15500
+AR Path="/62F332D0/6497880F/65B99B9E" Ref="FET?"  Part="1" 
+AR Path="/62F332D0/65B99B9E" Ref="FET2"  Part="1" 
+F 0 "FET2" H 14300 15250 60  0000 R CNN
+F 1 "BSS138(SOT23-3)" H 14450 15750 40  0000 R CNN
+F 2 "OLIMEX_Transistors-FP:SOT23" H 14200 15748 60  0001 C CNN
+F 3 "" V 14150 15500 60  0000 C CNN
+	1    14200 15500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14100 15700 14100 15800
+Wire Wire Line
+	14300 15700 14300 15800
+Wire Wire Line
+	14100 15200 14100 15300
+Wire Wire Line
+	14600 15600 14600 15800
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 65B99BAF
+P 14600 15450
+AR Path="/5D8F9D26/65B99BAF" Ref="R?"  Part="1" 
+AR Path="/65B99BAF" Ref="R?"  Part="1" 
+AR Path="/62F332D0/6497880F/65B99BAF" Ref="R?"  Part="1" 
+AR Path="/62F332D0/65B99BAF" Ref="R31"  Part="1" 
+F 0 "R31" V 14650 15300 50  0000 C CNN
+F 1 "4.7k/R0402" V 14550 15200 40  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 14600 15380 30  0001 C CNN
+F 3 "" V 14600 15450 30  0000 C CNN
+F 4 "Value 1" H 14600 15450 60  0001 C CNN "Fieldname 1"
+F 5 "Value2" H 14600 15450 60  0001 C CNN "Fieldname2"
+F 6 "Value3" H 14600 15450 60  0001 C CNN "Fieldname3"
+	1    14600 15450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14600 15200 14600 15300
+Connection ~ 14600 15800
+$Comp
+L OLIMEX_Power:VDD_3V3 #PWR?
+U 1 1 65B99BBB
+P 14600 15200
+AR Path="/607BDADE/65B99BBB" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/65B99BBB" Ref="#PWR0180"  Part="1" 
+F 0 "#PWR0180" H 14600 15050 50  0001 C CNN
+F 1 "VDD_3V3" H 14450 15350 50  0000 L CNN
+F 2 "" H 14600 15200 60  0000 C CNN
+F 3 "" H 14600 15200 60  0000 C CNN
+	1    14600 15200
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:VDD_1V8 #PWR?
+U 1 1 65B99BC5
+P 14100 15200
+AR Path="/607BDADE/65B99BC5" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/65B99BC5" Ref="#PWR0178"  Part="1" 
+F 0 "#PWR0178" H 14100 15050 50  0001 C CNN
+F 1 "VDD_1V8" H 13950 15350 50  0000 L CNN
+F 2 "" H 14100 15200 60  0000 C CNN
+F 3 "" H 14100 15200 60  0000 C CNN
+	1    14100 15200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13700 15600 13700 15800
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 65B99BD3
+P 13700 15450
+AR Path="/5D8F9D26/65B99BD3" Ref="R?"  Part="1" 
+AR Path="/65B99BD3" Ref="R?"  Part="1" 
+AR Path="/62F332D0/6497880F/65B99BD3" Ref="R?"  Part="1" 
+AR Path="/62F332D0/65B99BD3" Ref="R29"  Part="1" 
+F 0 "R29" V 13750 15300 50  0000 C CNN
+F 1 "4.7k/R0402" V 13650 15200 40  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 13700 15380 30  0001 C CNN
+F 3 "" V 13700 15450 30  0000 C CNN
+F 4 "Value 1" H 13700 15450 60  0001 C CNN "Fieldname 1"
+F 5 "Value2" H 13700 15450 60  0001 C CNN "Fieldname2"
+F 6 "Value3" H 13700 15450 60  0001 C CNN "Fieldname3"
+	1    13700 15450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	13700 15200 13700 15300
+Connection ~ 13700 15800
+$Comp
+L OLIMEX_Power:VDD_1V8 #PWR?
+U 1 1 65B99BDF
+P 13700 15200
+AR Path="/607BDADE/65B99BDF" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/65B99BDF" Ref="#PWR0176"  Part="1" 
+F 0 "#PWR0176" H 13700 15050 50  0001 C CNN
+F 1 "VDD_1V8" H 13550 15350 50  0000 L CNN
+F 2 "" H 13700 15200 60  0000 C CNN
+F 3 "" H 13700 15200 60  0000 C CNN
+	1    13700 15200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13700 15800 14100 15800
+Wire Wire Line
+	13000 15800 13700 15800
+Text Label 14700 15800 0    60   ~ 0
+I2C3_SDA_3V3
+Wire Wire Line
+	14600 15800 15400 15800
+Wire Wire Line
+	14300 15800 14600 15800
+$Comp
+L OLIMEX_Connectors:BH40S GPIO?
+U 1 1 60A10EA1
+P 17000 10600
+AR Path="/62F332D0/62F5EF89/60A10EA1" Ref="GPIO?"  Part="1" 
+AR Path="/62F332D0/60A10EA1" Ref="LCD-LVDS1"  Part="1" 
+F 0 "LCD-LVDS1" H 16950 11700 50  0000 C CNN
+F 1 "FPV-WZA21-40-LF" H 16950 9600 50  0000 C CNN
+F 2 "OLIMEX_Connectors-FP:FPV-WZA21-40-LF" H 16970 10550 20  0001 C CNN
+F 3 "" H 17000 10700 60  0000 C CNN
+	1    17000 10600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16700 9700 16100 9700
+$Comp
+L OLIMEX_Power:+5V #PWR?
+U 1 1 60C4C014
+P 16500 9400
+AR Path="/56344A84/60C4C014" Ref="#PWR?"  Part="1" 
+AR Path="/563556AE/60C4C014" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/62F5EF89/60C4C014" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/60C4C014" Ref="#PWR0175"  Part="1" 
+F 0 "#PWR0175" H 16500 9250 50  0001 C CNN
+F 1 "+5V" H 16500 9550 50  0000 C CNN
+F 2 "" H 16500 9400 60  0000 C CNN
+F 3 "" H 16500 9400 60  0000 C CNN
+	1    16500 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16500 9600 16700 9600
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 60D147F6
+P 17600 9400
+AR Path="/62F332D0/62F5EF89/60D147F6" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/60D147F6" Ref="#PWR0203"  Part="1" 
+F 0 "#PWR0203" H 17600 9150 50  0001 C CNN
+F 1 "GND" H 17600 9250 50  0000 C CNN
+F 2 "" H 17600 9400 60  0000 C CNN
+F 3 "" H 17600 9400 60  0000 C CNN
+	1    17600 9400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	17200 9600 17600 9600
+Wire Wire Line
+	17600 9400 17600 9600
+Wire Wire Line
+	17600 9600 17600 9700
+Wire Wire Line
+	17600 9700 17200 9700
+Connection ~ 17600 9600
+Text Label 17400 10900 0    60   ~ 0
+LVDS0_CLK_N
+Wire Wire Line
+	17200 10900 18300 10900
+NoConn ~ 16700 10000
+NoConn ~ 17200 10000
+NoConn ~ 16700 11000
+NoConn ~ 17200 11000
+NoConn ~ 16700 11100
+NoConn ~ 17200 11100
+NoConn ~ 16700 11200
+NoConn ~ 17200 11200
+Wire Wire Line
+	16500 9400 16500 9600
+$Comp
+L OLIMEX_Power:VDD_3V3 #PWR?
+U 1 1 60B29B5B
+P 16100 9400
+AR Path="/607BDADE/60B29B5B" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/60B29B5B" Ref="#PWR0172"  Part="1" 
+F 0 "#PWR0172" H 16100 9250 50  0001 C CNN
+F 1 "VDD_3V3" H 15950 9550 50  0000 L CNN
+F 2 "" H 16100 9400 60  0000 C CNN
+F 3 "" H 16100 9400 60  0000 C CNN
+	1    16100 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16100 9400 16100 9700
+NoConn ~ 21300 11100
+$Comp
+L OLIMEX_Power:VDD_3V3 #PWR?
+U 1 1 6278DBCE
+P 21300 11500
+AR Path="/607BDADE/6278DBCE" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/6278DBCE" Ref="#PWR0204"  Part="1" 
+F 0 "#PWR0204" H 21300 11350 50  0001 C CNN
+F 1 "VDD_3V3" V 21300 11600 50  0000 L CNN
+F 2 "" H 21300 11500 60  0000 C CNN
+F 3 "" H 21300 11500 60  0000 C CNN
+	1    21300 11500
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 21300 11000
+Text Label 21500 11400 0    60   ~ 0
+I2C2_SDA_3V3
+Text Label 21500 11300 0    60   ~ 0
+I2C2_SCL_3V3
+Wire Wire Line
+	22400 11300 21300 11300
+Wire Wire Line
+	22400 11400 21300 11400
+Wire Wire Line
+	22400 11500 21300 11500
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 6278DBDE
+P 21300 11200
+AR Path="/606D6B68/6278DBDE" Ref="#PWR?"  Part="1" 
+AR Path="/6278DBDE" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/6278DBDE" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/6278DBDE" Ref="#PWR0205"  Part="1" 
+F 0 "#PWR0205" H 21300 10950 50  0001 C CNN
+F 1 "GND" V 21300 11025 50  0000 C CNN
+F 2 "" H 21300 11200 60  0000 C CNN
+F 3 "" H 21300 11200 60  0000 C CNN
+	1    21300 11200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	22400 11200 21300 11200
+Wire Wire Line
+	22400 11000 21300 11000
+Wire Wire Line
+	22400 11100 21300 11100
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 6278DBED
+P 21300 10900
+AR Path="/606D6B68/6278DBED" Ref="#PWR?"  Part="1" 
+AR Path="/6278DBED" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/6278DBED" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/6278DBED" Ref="#PWR0206"  Part="1" 
+F 0 "#PWR0206" H 21300 10650 50  0001 C CNN
+F 1 "GND" V 21300 10725 50  0000 C CNN
+F 2 "" H 21300 10900 60  0000 C CNN
+F 3 "" H 21300 10900 60  0000 C CNN
+	1    21300 10900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	22400 10900 21300 10900
+Wire Wire Line
+	20900 10700 22400 10700
+Wire Wire Line
+	20900 10800 22400 10800
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 6278DBFA
+P 21300 10600
+AR Path="/606D6B68/6278DBFA" Ref="#PWR?"  Part="1" 
+AR Path="/6278DBFA" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/6278DBFA" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/6278DBFA" Ref="#PWR0207"  Part="1" 
+F 0 "#PWR0207" H 21300 10350 50  0001 C CNN
+F 1 "GND" V 21300 10425 50  0000 C CNN
+F 2 "" H 21300 10600 60  0000 C CNN
+F 3 "" H 21300 10600 60  0000 C CNN
+	1    21300 10600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	22400 10600 21300 10600
+Wire Wire Line
+	20900 10400 22400 10400
+Wire Wire Line
+	20900 10500 22400 10500
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 6278DC07
+P 21300 9700
+AR Path="/606D6B68/6278DC07" Ref="#PWR?"  Part="1" 
+AR Path="/6278DC07" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/6278DC07" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/6278DC07" Ref="#PWR0208"  Part="1" 
+F 0 "#PWR0208" H 21300 9450 50  0001 C CNN
+F 1 "GND" V 21300 9525 50  0000 C CNN
+F 2 "" H 21300 9700 60  0000 C CNN
+F 3 "" H 21300 9700 60  0000 C CNN
+	1    21300 9700
+	0    1    1    0   
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 6278DC11
+P 21300 9400
+AR Path="/606D6B68/6278DC11" Ref="#PWR?"  Part="1" 
+AR Path="/6278DC11" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/6278DC11" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/6278DC11" Ref="#PWR0209"  Part="1" 
+F 0 "#PWR0209" H 21300 9150 50  0001 C CNN
+F 1 "GND" V 21300 9225 50  0000 C CNN
+F 2 "" H 21300 9400 60  0000 C CNN
+F 3 "" H 21300 9400 60  0000 C CNN
+	1    21300 9400
+	0    1    1    0   
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 6278DC1B
+P 21300 10000
+AR Path="/606D6B68/6278DC1B" Ref="#PWR?"  Part="1" 
+AR Path="/6278DC1B" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/6278DC1B" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/6278DC1B" Ref="#PWR0210"  Part="1" 
+F 0 "#PWR0210" H 21300 9750 50  0001 C CNN
+F 1 "GND" V 21300 9825 50  0000 C CNN
+F 2 "" H 21300 10000 60  0000 C CNN
+F 3 "" H 21300 10000 60  0000 C CNN
+	1    21300 10000
+	0    1    1    0   
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 6278DC25
+P 21300 10300
+AR Path="/606D6B68/6278DC25" Ref="#PWR?"  Part="1" 
+AR Path="/6278DC25" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63CC5ACD/6278DC25" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/6278DC25" Ref="#PWR0211"  Part="1" 
+F 0 "#PWR0211" H 21300 10050 50  0001 C CNN
+F 1 "GND" V 21300 10125 50  0000 C CNN
+F 2 "" H 21300 10300 60  0000 C CNN
+F 3 "" H 21300 10300 60  0000 C CNN
+	1    21300 10300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	22400 9700 21300 9700
+Wire Wire Line
+	22400 10300 21300 10300
+Wire Wire Line
+	22400 9900 20900 9900
+Wire Wire Line
+	22400 10200 20900 10200
+Wire Wire Line
+	22400 9600 20900 9600
+Wire Wire Line
+	22400 9500 20900 9500
+Wire Wire Line
+	22400 10100 20900 10100
+Wire Wire Line
+	22400 9800 20900 9800
+Wire Wire Line
+	22400 10000 21300 10000
+Wire Wire Line
+	22400 9400 21300 9400
+$Comp
+L OLIMEX_Connectors:CON22 RPi_CAMERA?
+U 1 1 6278DC39
+P 22500 10450
+AR Path="/62F332D0/63CC5ACD/6278DC39" Ref="RPi_CAMERA?"  Part="1" 
+AR Path="/62F332D0/6278DC39" Ref="MiPi_DSI1"  Part="1" 
+F 0 "MiPi_DSI1" H 22900 11650 60  0000 R CNN
+F 1 "FPV-WZB21-22-LF" H 23200 9300 60  0000 R CNN
+F 2 "OLIMEX_Connectors-FP:FPV-WZB21-22-LF" H 22525 9200 60  0001 C CNN
+F 3 "" H 22425 11450 60  0000 C CNN
+	1    22500 10450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	15600 1500 16700 1500
+Wire Wire Line
+	15600 1600 16700 1600
+Text Label 15800 1600 0    60   ~ 0
+SD1_CMD
+Text Label 15800 1500 0    60   ~ 0
+SD1_CLK
+Wire Wire Line
+	15600 1700 16700 1700
+Text Label 15800 1700 0    60   ~ 0
+SD1_DATA0
+Wire Wire Line
+	15600 1800 16700 1800
+Text Label 15800 1800 0    60   ~ 0
+SD1_DATA1
+Wire Wire Line
+	15600 1900 16700 1900
+Text Label 15800 1900 0    60   ~ 0
+SD1_DATA2
+Wire Wire Line
+	15600 2000 16700 2000
+Text Label 15800 2000 0    60   ~ 0
+SD1_DATA3
+Wire Wire Line
+	15600 2100 16700 2100
+Text Label 15800 2100 0    60   ~ 0
+SD1_DATA4
+Wire Wire Line
+	15600 2200 16700 2200
+Text Label 15800 2200 0    60   ~ 0
+SD1_DATA5
+Wire Wire Line
+	15600 2300 16700 2300
+Text Label 15800 2300 0    60   ~ 0
+SD1_DATA6
+Wire Wire Line
+	15600 2400 16700 2400
+Text Label 15800 2400 0    60   ~ 0
+SD1_DATA7
+Wire Wire Line
+	15600 2500 16700 2500
+Text Label 15800 2500 0    60   ~ 0
+SD1_RESET_B
+Wire Wire Line
+	15600 2600 16700 2600
+Text Label 15800 2600 0    60   ~ 0
+SD1_STROBE
+Wire Wire Line
+	17200 1600 18300 1600
+Wire Wire Line
+	17200 1700 18300 1700
+Text Label 17400 1700 0    60   ~ 0
+SD2_CMD
+Text Label 17400 1600 0    60   ~ 0
+SD2_CLK
+Wire Wire Line
+	17200 1800 18300 1800
+Text Label 17400 1800 0    60   ~ 0
+SD2_DATA0
+Wire Wire Line
+	17200 1900 18300 1900
+Text Label 17400 1900 0    60   ~ 0
+SD2_DATA1
+Wire Wire Line
+	17200 2000 18300 2000
+Text Label 17400 2000 0    60   ~ 0
+SD2_DATA2
+Wire Wire Line
+	17200 2100 18300 2100
+Text Label 17400 2100 0    60   ~ 0
+SD2_DATA3
+Wire Wire Line
+	17200 2200 18300 2200
+Text Label 17400 2300 0    60   ~ 0
+SD2_WP
+Wire Wire Line
+	17200 2300 18300 2300
+Text Label 17400 2200 0    60   ~ 0
+SD2_nCD
+Wire Wire Line
+	21300 3900 22400 3900
+Text Label 21500 3900 0    60   ~ 0
+SAI1_MCLK
+Wire Wire Line
+	21300 4000 22400 4000
+Text Label 21500 4000 0    60   ~ 0
+SAI1_TXFS
+Wire Wire Line
+	21300 4100 22400 4100
+Text Label 21500 4100 0    60   ~ 0
+SAI1_TXC
+Wire Wire Line
+	21300 4200 22400 4200
+Text Label 21500 4200 0    60   ~ 0
+SAI1_TXD0
+Wire Wire Line
+	21300 4300 22400 4300
+Text Label 21500 4300 0    60   ~ 0
+SAI1_TXD1
+Wire Wire Line
+	21300 4400 22400 4400
+Text Label 21500 4400 0    60   ~ 0
+SAI1_TXD2
+Wire Wire Line
+	21300 4500 22400 4500
+Text Label 21500 4500 0    60   ~ 0
+SAI1_TXD3
+Wire Wire Line
+	21300 4600 22400 4600
+Text Label 21500 4600 0    60   ~ 0
+SAI1_TXD4
+Wire Wire Line
+	21300 4700 22400 4700
+Text Label 21500 4700 0    60   ~ 0
+SAI1_TXD5
+Wire Wire Line
+	21300 4800 22400 4800
+Text Label 21500 4800 0    60   ~ 0
+SAI1_TXD6
+Wire Wire Line
+	21300 4900 22400 4900
+Text Label 21500 4900 0    60   ~ 0
+SAI1_TXD7
+Wire Wire Line
+	21300 5000 22400 5000
+Text Label 21500 5000 0    60   ~ 0
+SAI1_RXFS
+Wire Wire Line
+	21300 5100 22400 5100
+Text Label 21500 5100 0    60   ~ 0
+SAI1_RXC
+Wire Wire Line
+	21300 5200 22400 5200
+Text Label 21500 5200 0    60   ~ 0
+SAI1_RXD0
+Wire Wire Line
+	21300 5300 22400 5300
+Text Label 21500 5300 0    60   ~ 0
+SAI1_RXD1
+Wire Wire Line
+	21300 5400 22400 5400
+Text Label 21500 5400 0    60   ~ 0
+SAI1_RXD2
+Wire Wire Line
+	21300 5500 22400 5500
+Text Label 21500 5500 0    60   ~ 0
+SAI1_RXD3
+Wire Wire Line
+	21300 5600 22400 5600
+Text Label 21500 5600 0    60   ~ 0
+SAI1_RXD4
+Wire Wire Line
+	21300 1200 22400 1200
+Text Label 21500 1200 0    60   ~ 0
+SAI2_MCLK
+Wire Wire Line
+	21300 1300 22400 1300
+Text Label 21500 1300 0    60   ~ 0
+SAI2_TXFS
+Wire Wire Line
+	21300 1400 22400 1400
+Text Label 21500 1400 0    60   ~ 0
+SAI2_TXC
+Wire Wire Line
+	21300 1500 22400 1500
+Text Label 21500 1500 0    60   ~ 0
+SAI2_TXD
+Wire Wire Line
+	21300 1600 22400 1600
+Text Label 21500 1600 0    60   ~ 0
+SAI2_RXFS
+Wire Wire Line
+	21300 1700 22400 1700
+Text Label 21500 1700 0    60   ~ 0
+SAI2_RXC
+Wire Wire Line
+	21300 1800 22400 1800
+Text Label 21500 1800 0    60   ~ 0
+SAI2_RXD
+Wire Wire Line
+	21300 1900 22400 1900
+Text Label 21500 1900 0    60   ~ 0
+SAI3_MCLK
+Wire Wire Line
+	21300 2000 22400 2000
+Text Label 21500 2000 0    60   ~ 0
+SAI3_TXFS
+Wire Wire Line
+	21300 2100 22400 2100
+Text Label 21500 2100 0    60   ~ 0
+SAI3_TXC
+Wire Wire Line
+	21300 2200 22400 2200
+Text Label 21500 2200 0    60   ~ 0
+SAI3_TXD
+Wire Wire Line
+	21300 2300 22400 2300
+Text Label 21500 2300 0    60   ~ 0
+SAI3_RXFS
+Wire Wire Line
+	21300 2400 22400 2400
+Text Label 21500 2400 0    60   ~ 0
+SAI3_RXC
+Wire Wire Line
+	21300 2500 22400 2500
+Text Label 21500 2500 0    60   ~ 0
+SAI3_RXD
+Wire Wire Line
+	15600 2700 16700 2700
+Text Label 15800 2700 0    60   ~ 0
+SPDIF_TX
+Wire Wire Line
+	15600 2800 16700 2800
+Text Label 15800 2800 0    60   ~ 0
+SPDIF_RX
+Wire Wire Line
+	15600 2900 16700 2900
+Text Label 15800 2900 0    60   ~ 0
+SPDIF_EXT_CLK
+Wire Wire Line
+	19700 3900 20800 3900
+Text Label 19900 3900 0    60   ~ 0
+SAI5_MCLK
+Wire Wire Line
+	19700 4000 20800 4000
+Text Label 19900 4000 0    60   ~ 0
+SAI5_RXFS
+Wire Wire Line
+	19700 4100 20800 4100
+Text Label 19900 4100 0    60   ~ 0
+SAI5_RXC
+Wire Wire Line
+	19700 4200 20800 4200
+Text Label 19900 4200 0    60   ~ 0
+SAI5_RXD0
+Wire Wire Line
+	19700 4300 20800 4300
+Text Label 19900 4300 0    60   ~ 0
+SAI5_RXD1
+Wire Wire Line
+	19700 4400 20800 4400
+Text Label 19900 4400 0    60   ~ 0
+SAI5_RXD2
+Wire Wire Line
+	19700 4500 20800 4500
+Text Label 19900 4500 0    60   ~ 0
+SAI5_RXD3
+Wire Wire Line
+	19700 5600 20800 5600
+Text Label 19900 5600 0    60   ~ 0
+SAI1_RXD5
+Wire Wire Line
+	19700 5500 20800 5500
+Text Label 19900 5500 0    60   ~ 0
+SAI1_RXD6
+Wire Wire Line
+	19700 5400 20800 5400
+Text Label 19900 5400 0    60   ~ 0
+SAI1_RXD7
+Wire Wire Line
+	21300 2600 22400 2600
+Text Label 21500 2600 0    60   ~ 0
+UART3_RTS
+Wire Wire Line
+	21300 2700 22400 2700
+Text Label 21500 2700 0    60   ~ 0
+UART3_TXD
+Wire Wire Line
+	21300 2800 22400 2800
+Text Label 21500 2800 0    60   ~ 0
+UART3_CTS
+Wire Wire Line
+	21300 2900 22400 2900
+Text Label 21500 2900 0    60   ~ 0
+UART3_RXD
+Wire Wire Line
+	19700 2600 20800 2600
+Text Label 19900 2600 0    60   ~ 0
+ECSPI2_SS0
+Wire Wire Line
+	19700 2700 20800 2700
+Text Label 19900 2700 0    60   ~ 0
+ECSPI2_MOSI
+Wire Wire Line
+	19700 2800 20800 2800
+Text Label 19900 2800 0    60   ~ 0
+ECSPI2_MISO
+Wire Wire Line
+	19700 2900 20800 2900
+Text Label 19900 2900 0    60   ~ 0
+ECSPI2_SCLK
+Wire Wire Line
+	17200 2400 18300 2400
+Text Label 17400 2400 0    60   ~ 0
+UART1_RXD
+Wire Wire Line
+	17200 2500 18300 2500
+Text Label 17400 2500 0    60   ~ 0
+UART1_TXD
+Wire Wire Line
+	17200 2800 18300 2800
+Text Label 17400 2800 0    60   ~ 0
+UART2_RXD
+Wire Wire Line
+	17200 2900 18300 2900
+Text Label 17400 2900 0    60   ~ 0
+UART2_TXD
+Wire Wire Line
+	17200 2600 18300 2600
+Text Label 17400 2600 0    60   ~ 0
+UART1_CTS
+Wire Wire Line
+	17200 2700 18300 2700
+Text Label 17400 2700 0    60   ~ 0
+UART1_RTS
+Wire Wire Line
+	15600 5500 16700 5500
+Text Label 15800 5500 0    60   ~ 0
+UART4_RXD
+Wire Wire Line
+	15600 5600 16700 5600
+Text Label 15800 5600 0    60   ~ 0
+UART4_TXD
+Wire Wire Line
+	19700 4600 20800 4600
+Wire Wire Line
+	19700 4700 20800 4700
+Wire Wire Line
+	19700 4800 20800 4800
+Text Label 19900 4800 0    60   ~ 0
+I2C2_SCL_3V3
+Wire Wire Line
+	19700 4900 20800 4900
+Wire Wire Line
+	19700 5000 20800 5000
+Text Label 19900 5000 0    60   ~ 0
+I2C3_SCL
+Wire Wire Line
+	19700 5100 20800 5100
+Text Label 19900 5100 0    60   ~ 0
+I2C3_SDA
+Wire Wire Line
+	19700 5200 20800 5200
+Text Label 19900 5200 0    60   ~ 0
+I2C4_SCL
+Wire Wire Line
+	19700 5300 20800 5300
+Text Label 19900 5300 0    60   ~ 0
+I2C4_SDA
+Wire Wire Line
+	17200 7200 18300 7200
+Text Label 17400 7200 0    60   ~ 0
+GPIO1_IO00
+Wire Wire Line
+	17200 7300 18300 7300
+Text Label 17400 7300 0    60   ~ 0
+GPIO1_IO01
+Wire Wire Line
+	17200 7400 18300 7400
+Wire Wire Line
+	17200 7500 18300 7500
+Text Label 17400 7500 0    50   ~ 0
+GPIO1_IO06\CAM2_EN
+Wire Wire Line
+	17200 7600 18300 7600
+Text Label 17400 7600 0    60   ~ 0
+GPIO1_IO07
+Wire Wire Line
+	17200 7700 18300 7700
+Text Label 17400 7700 0    60   ~ 0
+GPIO1_IO08
+Wire Wire Line
+	17200 7800 18300 7800
+Text Label 17400 7800 0    60   ~ 0
+GPIO1_IO09
+Wire Wire Line
+	17200 7900 18300 7900
+Text Label 17400 7900 0    40   ~ 0
+GPIO1_IO10\LVDS_PWREN
+Wire Wire Line
+	17200 8000 18300 8000
+Text Label 17400 8000 0    40   ~ 0
+GPIO1_IO11\LVDS_BKL_PWM
+Wire Wire Line
+	17200 8100 18300 8100
+Text Label 17400 8100 0    60   ~ 0
+GPIO1_IO12
+Wire Wire Line
+	17200 8200 18300 8200
+Text Label 17400 8200 0    40   ~ 0
+GPIO1_IO13\LVDS_VLED_EN
+Wire Wire Line
+	17200 8300 18300 8300
+Text Label 17400 8300 0    60   ~ 0
+GPIO1_IO14
+Wire Wire Line
+	17200 8400 18300 8400
+Text Label 17400 8400 0    60   ~ 0
+GPIO1_IO15
+Text GLabel 14100 6600 2    60   Output ~ 0
+SD2_RESET_B
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 60A79C85
+P 13600 6700
+AR Path="/607BDADE/60A79C85" Ref="R?"  Part="1" 
+AR Path="/62F332D0/60A79C85" Ref="R36"  Part="1" 
+F 0 "R36" H 13800 6750 50  0000 C CNN
+F 1 "4.7k/R0402" H 13300 6750 40  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" V 13530 6700 30  0001 C CNN
+F 3 "" H 13600 6700 30  0000 C CNN
+	1    13600 6700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	13750 6700 13900 6700
+Wire Wire Line
+	13450 6700 13200 6700
+Wire Wire Line
+	13200 6700 13200 6600
+Connection ~ 13200 6600
+Wire Wire Line
+	13200 6600 14100 6600
+$Comp
+L OLIMEX_Power:NVCC_SD2 #PWR?
+U 1 1 60BE1723
+P 14000 6700
+AR Path="/607BDADE/60BE1723" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/60BE1723" Ref="#PWR073"  Part="1" 
+F 0 "#PWR073" H 14000 6550 50  0001 C CNN
+F 1 "NVCC_SD2" V 14000 6800 50  0000 L CNN
+F 2 "" H 14000 6700 60  0000 C CNN
+F 3 "" H 14000 6700 60  0000 C CNN
+	1    14000 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 60CE557C
+P 13450 5800
+AR Path="/607BDADE/60CE557C" Ref="R?"  Part="1" 
+AR Path="/62F332D0/60CE557C" Ref="R38"  Part="1" 
+F 0 "R38" H 13650 5850 50  0000 C CNN
+F 1 "NA(10k/R0402)" H 13100 5850 40  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" V 13380 5800 30  0001 C CNN
+F 3 "" H 13450 5800 30  0000 C CNN
+	1    13450 5800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	13600 5800 14000 5800
+$Comp
+L OLIMEX_Power:NVCC_SD2 #PWR?
+U 1 1 60CE5587
+P 14000 5800
+AR Path="/607BDADE/60CE5587" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/60CE5587" Ref="#PWR086"  Part="1" 
+F 0 "#PWR086" H 14000 5650 50  0001 C CNN
+F 1 "NVCC_SD2" V 14000 5900 50  0000 L CNN
+F 2 "" H 14000 5800 60  0000 C CNN
+F 3 "" H 14000 5800 60  0000 C CNN
+	1    14000 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13300 5800 13100 5800
+Wire Wire Line
+	13100 5800 13100 5900
+Connection ~ 13100 5900
+Wire Wire Line
+	13100 5900 14100 5900
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 60F4A5EB
+P 13450 5400
+AR Path="/607BDADE/60F4A5EB" Ref="R?"  Part="1" 
+AR Path="/62F332D0/60F4A5EB" Ref="R37"  Part="1" 
+F 0 "R37" H 13650 5450 50  0000 C CNN
+F 1 "NA(10k/R0402)" H 13100 5450 40  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" V 13380 5400 30  0001 C CNN
+F 3 "" H 13450 5400 30  0000 C CNN
+	1    13450 5400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	13600 5400 14000 5400
+$Comp
+L OLIMEX_Power:NVCC_SD2 #PWR?
+U 1 1 60F4A5F6
+P 14000 5400
+AR Path="/607BDADE/60F4A5F6" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/60F4A5F6" Ref="#PWR084"  Part="1" 
+F 0 "#PWR084" H 14000 5250 50  0001 C CNN
+F 1 "NVCC_SD2" V 14000 5500 50  0000 L CNN
+F 2 "" H 14000 5400 60  0000 C CNN
+F 3 "" H 14000 5400 60  0000 C CNN
+	1    14000 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13300 5400 13100 5400
+Wire Wire Line
+	13100 5400 13100 5700
+Connection ~ 13100 5700
+Wire Wire Line
+	13100 5700 14100 5700
+Wire Wire Line
+	17200 1500 17900 1500
+$Comp
+L OLIMEX_Power:VSD_3V3 #PWR?
+U 1 1 613137D9
+P 17900 1500
+AR Path="/607BDADE/613137D9" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/613137D9" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 17900 1350 50  0001 C CNN
+F 1 "VSD_3V3" V 17900 1600 50  0000 L CNN
+F 2 "" H 17900 1500 60  0000 C CNN
+F 3 "" H 17900 1500 60  0000 C CNN
+	1    17900 1500
+	0    1    1    0   
+$EndComp
+Text Notes 17800 2275 0    30   ~ 0
+SD2_WP -> USB1_TYPEC_EN_B
+Wire Notes Line
+	18400 1500 18400 2200
+Text Notes 18500 2000 1    60   ~ 0
+MicroSD
+Wire Notes Line
+	18400 2800 18400 2900
+Text Notes 18425 2875 0    40   ~ 0
+A53 Debug
+Wire Notes Line
+	18400 2400 18400 2700
+Text Notes 18425 2575 0    40   ~ 0
+NGFF
+Wire Notes Line
+	15500 1500 15500 2600
+Text Notes 15325 2075 0    40   ~ 0
+NGFF
+Wire Notes Line
+	15500 2700 15500 2900
+Text Notes 15325 2825 0    40   ~ 0
+CAN1
+Text Notes 22075 1675 0    40   ~ 0
+SAI2_RXC -> ENET_nRST
+Text Notes 22075 1575 0    40   ~ 0
+SAI2_RXFS -> ENET_nINT
+Wire Notes Line
+	15500 4100 15500 5400
+Text Notes 15475 4975 1    40   ~ 0
+Ethernet TSN
+Wire Notes Line
+	15500 5500 15500 5600
+Text Notes 15175 5575 0    40   ~ 0
+M7 Debug
+Wire Notes Line
+	18400 3900 18400 4900
+Text Notes 18475 4475 1    40   ~ 0
+eMMC
+Text Notes 17950 5575 0    30   ~ 0
+QSPIA_DQS -> VEXT_3V3_EN
+Wire Notes Line
+	18400 5000 18400 5500
+Text Notes 18475 5425 1    40   ~ 0
+QSPI Flash
+$Comp
+L OLIMEX_Transistors:LMUN2235LT1G(SOT-23) T1
+U 1 1 61DC67EE
+P 2100 15300
+F 0 "T1" H 2304 15346 50  0000 L CNN
+F 1 "LMUN2235LT1G(SOT-23)" H 2304 15255 50  0000 L CNN
+F 2 "OLIMEX_Transistors-FP:SOT23" H 2550 15150 20  0001 C CNN
+F 3 "" H 2100 15300 60  0000 C CNN
+	1    2100 15300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 61DEEFCA
+P 2000 15600
+AR Path="/62F332D0/62F5EF89/61DEEFCA" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/61DEEFCA" Ref="#PWR0212"  Part="1" 
+F 0 "#PWR0212" H 2000 15350 50  0001 C CNN
+F 1 "GND" H 2000 15450 50  0000 C CNN
+F 2 "" H 2000 15600 60  0000 C CNN
+F 3 "" H 2000 15600 60  0000 C CNN
+	1    2000 15600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 15600 2000 15500
+$Comp
+L OLIMEX_Diodes:LED CHRG?
+U 1 1 625766EE
+P 2900 14700
+AR Path="/5D8F9D26/625766EE" Ref="CHRG?"  Part="1" 
+AR Path="/625766EE" Ref="CHRG?"  Part="1" 
+AR Path="/62F332D0/6250C88F/625766EE" Ref="CHRG?"  Part="1" 
+AR Path="/62F332D0/625766EE" Ref="STAT_LED1"  Part="1" 
+F 0 "STAT_LED1" H 3100 14550 50  0000 R CNN
+F 1 "LED/RED/0603" H 3200 14850 50  0000 R CNN
+F 2 "OLIMEX_LEDs-FP:LED_0603_KA" H 2900 14700 60  0001 C CNN
+F 3 "" H 2900 14700 60  0000 C CNN
+F 4 "Value 1" H 2900 14700 60  0001 C CNN "Fieldname 1"
+F 5 "Value2" H 2900 14700 60  0001 C CNN "Fieldname2"
+F 6 "Value3" H 2900 14700 60  0001 C CNN "Fieldname3"
+	1    2900 14700
+	1    0    0    1   
+$EndComp
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 625766F7
+P 2350 14700
+AR Path="/5D8F9D26/625766F7" Ref="R?"  Part="1" 
+AR Path="/625766F7" Ref="R?"  Part="1" 
+AR Path="/62F332D0/6250C88F/625766F7" Ref="R?"  Part="1" 
+AR Path="/62F332D0/625766F7" Ref="R39"  Part="1" 
+F 0 "R39" H 2300 14800 50  0000 L CNN
+F 1 "2.2k/R0402" H 2150 14600 50  0000 L CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 2350 14630 30  0001 C CNN
+F 3 "" V 2350 14700 30  0000 C CNN
+F 4 "Value 1" H 2350 14700 60  0001 C CNN "Fieldname 1"
+F 5 "Value2" H 2350 14700 60  0001 C CNN "Fieldname2"
+F 6 "Value3" H 2350 14700 60  0001 C CNN "Fieldname3"
+	1    2350 14700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 14700 2700 14700
+Wire Wire Line
+	3300 14700 3100 14700
+Wire Wire Line
+	2200 14700 2000 14700
+Wire Wire Line
+	2000 14700 2000 15100
+$Comp
+L OLIMEX_Power:VDD_3V3 #PWR?
+U 1 1 62A4B210
+P 3300 14700
+AR Path="/607BDADE/62A4B210" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/62A4B210" Ref="#PWR0213"  Part="1" 
+F 0 "#PWR0213" H 3300 14550 50  0001 C CNN
+F 1 "VDD_3V3" V 3300 14800 50  0000 L CNN
+F 2 "" H 3300 14700 60  0000 C CNN
+F 3 "" H 3300 14700 60  0000 C CNN
+	1    3300 14700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	15900 3500 15900 3900
+Wire Wire Line
+	15900 3900 16700 3900
+Connection ~ 15900 3900
+Wire Wire Line
+	15900 3900 15900 4000
+Wire Wire Line
+	15900 4000 16700 4000
+$Comp
+L OLIMEX_Power:VDD_1V8 #PWR?
+U 1 1 62D4B790
+P 15900 3500
+AR Path="/607BDADE/62D4B790" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/62D4B790" Ref="#PWR0214"  Part="1" 
+F 0 "#PWR0214" H 15900 3350 50  0001 C CNN
+F 1 "VDD_1V8" H 15750 3650 50  0000 L CNN
+F 2 "" H 15900 3500 60  0000 C CNN
+F 3 "" H 15900 3500 60  0000 C CNN
+	1    15900 3500
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	15500 6700 15500 7300
+Text Notes 15475 7175 1    40   ~ 0
+USB3.0 HOST
+Wire Notes Line
+	15500 7400 15500 8000
+Text Notes 15475 7875 1    40   ~ 0
+USB3.0 Type‐C
+Wire Notes Line
+	18400 6600 18400 7100
+Text Notes 18425 6875 0    40   ~ 0
+NGFF
+Wire Notes Line
+	19600 1200 19600 2500
+Text Notes 19425 1875 0    40   ~ 0
+HDMI
+Wire Notes Line
+	19600 2600 19600 2900
+Text Notes 19575 2775 2    40   ~ 0
+EXT
+Wire Notes Line
+	22500 2600 22500 2900
+Text Notes 22525 2775 0    40   ~ 0
+EXT
+Text Notes 22575 2375 1    40   ~ 0
+Audio Codec
+Text Notes 22425 1775 0    40   ~ 0
+NGFF
+Text Notes 22425 1475 0    40   ~ 0
+NGFF
+Text Notes 22425 1375 0    40   ~ 0
+NGFF
+Text Notes 22425 1275 0    40   ~ 0
+NGFF
+Text Notes 22125 1175 0    40   ~ 0
+GPIO -> CAN2_STBY
+Wire Notes Line
+	22500 1900 22500 2500
+Text Notes 19775 3875 2    40   ~ 0
+GPIO -> CAN2_RX
+Text Notes 19675 3975 2    40   ~ 0
+GPIO -> PWM4
+Text Notes 19775 4075 2    40   ~ 0
+GPIO -> PDM_CLK
+Text Notes 19775 4175 2    40   ~ 0
+GPIO -> PDM_STREAM_0
+Text Notes 19775 4275 2    40   ~ 0
+GPIO -> PDM_STREAM_1
+Text Notes 19775 4375 2    40   ~ 0
+GPIO -> PDM_STREAM_2
+Text Notes 19775 4475 2    40   ~ 0
+GPIO -> PDM_STREAM_3
+Text Notes 22875 3875 2    40   ~ 0
+GPIO -> USB1_SS_SEL
+Text Notes 22775 3975 2    40   ~ 0
+ENET1_RX_CTL
+Text Notes 22675 4075 2    40   ~ 0
+ENET1_RXC
+Text Notes 22675 4175 2    40   ~ 0
+ENET1_TD0
+Text Notes 22675 4275 2    40   ~ 0
+ENET1_TD1
+Text Notes 22675 4375 2    40   ~ 0
+ENET1_TD2
+Text Notes 22675 4475 2    40   ~ 0
+ENET1_TD3
+Text Notes 22775 4575 2    40   ~ 0
+ENET1_TX_CTL
+Text Notes 22675 4675 2    40   ~ 0
+ENET1_TXC
+Text Notes 22775 4775 2    40   ~ 0
+GPIO -> TCPC_nINT
+Text Notes 22875 4875 2    40   ~ 0
+GPIO -> TCPC_nINT1
+Text Notes 22875 4975 2    40   ~ 0
+GPIO -> ENET1_EVENT_IN
+Text Notes 22875 5075 2    40   ~ 0
+GPIO -> ENET1_EVENT_OUT
+Text Notes 22875 5175 2    40   ~ 0
+GPIO -> ENET1_nRST
+Text Notes 22875 5275 2    40   ~ 0
+GPIO -> ENET1_nINT
+Text Notes 22675 5375 2    40   ~ 0
+ENET1_MDC
+Text Notes 22675 5475 2    40   ~ 0
+ENET1_MDIO
+Text Notes 22675 5575 2    40   ~ 0
+ENET1_RD0
+Text Notes 19675 5575 2    40   ~ 0
+ENET1_RD1
+Text Notes 19675 5475 2    40   ~ 0
+ENET1_RD2
+Text Notes 19675 5375 2    40   ~ 0
+ENET1_RD3
+Text Notes 19775 5275 2    40   ~ 0
+GPIO -> PCIe_nWAKE
+Text Notes 19775 5175 2    40   ~ 0
+GPIO -> PCIE_nCLKREQ
+Text Notes 18225 7275 0    40   ~ 0
+GPIO -> DSI_BL_PWM
+Text Notes 18225 7375 0    40   ~ 0
+GPIO -> CSI1_SYNC
+Text Notes 18225 7475 0    40   ~ 0
+GPIO -> CSI_nRST
+Text Notes 18225 7575 0    40   ~ 0
+GPIO -> CSI2_SYNC
+Text Notes 18225 7675 0    40   ~ 0
+GPIO -> DSI_EN
+Text Notes 18225 7775 0    40   ~ 0
+GPIO -> DSI_TS_nINT
+Text Notes 18225 7875 0    40   ~ 0
+GPIO -> LVDS_EN
+Text Notes 18225 7975 0    40   ~ 0
+GPIO -> LVDS_BL_PWM
+Text Notes 18225 8075 0    40   ~ 0
+GPIO -> IOEXP_nINT
+Text Notes 18225 8175 0    40   ~ 0
+GPIO -> LVDS_TS_nINT
+Text Notes 18225 8275 0    40   ~ 0
+GPIO -> USB2_PWR_EN
+Text Notes 18225 8375 0    40   ~ 0
+GPIO -> CSI_MCLK
+$Comp
+L OLIMEX_Connectors:BH20S GPIO4
+U 1 1 60D4FC04
+P 21100 7400
+F 0 "GPIO4" H 21050 7900 50  0000 C CNN
+F 1 "YA-V36P-2X10-LF" H 21050 6800 50  0000 C CNN
+F 2 "OLIMEX_Connectors-FP:GPCB127SMT-02X10(YA-V36P-2X10-LF)" H 21070 6750 20  0001 C CNN
+F 3 "" H 21100 6900 60  0000 C CNN
+	1    21100 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19700 7200 20800 7200
+Text Label 19900 7200 0    60   ~ 0
+BOOT_MODE0
+Wire Wire Line
+	19700 7300 20800 7300
+Text Label 19900 7300 0    60   ~ 0
+BOOT_MODE1
+Wire Wire Line
+	19700 7400 20800 7400
+Text Label 19900 7400 0    60   ~ 0
+BOOT_MODE2
+Wire Wire Line
+	19700 7500 20800 7500
+Text Label 19900 7500 0    60   ~ 0
+BOOT_MODE3
+Wire Wire Line
+	19700 7600 20800 7600
+Text Label 19900 7600 0    60   ~ 0
+JTAG_TCK
+Wire Wire Line
+	19700 7700 20800 7700
+Text Label 19900 7700 0    60   ~ 0
+JTAG_TMS
+Wire Wire Line
+	19700 7800 20800 7800
+Text Label 19900 7800 0    60   ~ 0
+JTAG_TDI
+Wire Wire Line
+	19700 7900 20800 7900
+Text Label 19900 7900 0    60   ~ 0
+JTAG_TDO
+Wire Wire Line
+	21300 7900 22400 7900
+Text Label 21500 7900 0    60   ~ 0
+JTAG_MOD
+Wire Wire Line
+	15600 8100 16700 8100
+Text Label 15800 8100 0    60   ~ 0
+CLKIN1
+Wire Wire Line
+	15600 8200 16700 8200
+Text Label 15800 8200 0    60   ~ 0
+CLKIN2
+Wire Wire Line
+	15600 8300 16700 8300
+Text Label 15800 8300 0    60   ~ 0
+CLKOUT1
+Wire Wire Line
+	15600 8400 16700 8400
+Text Label 15800 8400 0    60   ~ 0
+CLKOUT2
+Wire Wire Line
+	21300 7800 22400 7800
+Text Label 21500 7800 0    60   ~ 0
+PMIC_ON_REQ
+Text Notes 22200 7800 0    60   ~ 0
+???
+Wire Wire Line
+	21300 7200 22400 7200
+Text Label 21500 7200 0    60   ~ 0
+POR_B
+Wire Wire Line
+	21300 7300 22400 7300
+Text Label 21500 7300 0    60   ~ 0
+ONOFF
+Wire Wire Line
+	21300 7700 22400 7700
+Text Label 21500 7700 0    60   ~ 0
+SD2_RESET_B
+Text Notes 22200 7700 0    60   ~ 0
+???
+Text GLabel 22100 7400 2    60   Input ~ 0
+SYS_nRST
+Wire Wire Line
+	21300 7400 22100 7400
+Text Label 21500 7600 0    60   ~ 0
+WDOG_B
+Text Notes 22200 7600 0    60   ~ 0
+???
+Text GLabel 21900 7500 2    60   Input ~ 0
+PMIC_32K_OUT
+Wire Wire Line
+	21300 7500 21900 7500
+Wire Wire Line
+	21300 7600 22400 7600
+Wire Wire Line
+	16700 6600 16400 6600
+Wire Wire Line
+	16400 6600 16400 6500
+Connection ~ 16400 6500
+Wire Wire Line
+	20800 1100 20500 1100
+Wire Wire Line
+	20500 1100 20500 1000
+Connection ~ 20500 1000
+Wire Wire Line
+	21300 1100 21600 1100
+Wire Wire Line
+	21600 1100 21600 1000
+Connection ~ 21600 1000
+Text Notes 16350 8100 0    60   ~ 0
+???
+Text Notes 16350 8200 0    60   ~ 0
+???
+Text Notes 16350 8300 0    60   ~ 0
+???
+Text Notes 16350 8400 0    60   ~ 0
+???
+Text GLabel 19700 4700 0    60   BiDi ~ 0
+I2C1_SDA_3V3
+Text GLabel 19700 4600 0    60   Input ~ 0
+I2C1_SCL_3V3
+Text Label 19900 4600 0    60   ~ 0
+I2C1_SCL_3V3
+Text Label 19900 4700 0    60   ~ 0
+I2C1_SDA_3V3
+$Comp
+L OLIMEX_Power:GND #PWR?
+U 1 1 62052A0C
+P 21600 6800
+AR Path="/62F332D0/62F5EF89/62052A0C" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/62052A0C" Ref="#PWR0217"  Part="1" 
+F 0 "#PWR0217" H 21600 6550 50  0001 C CNN
+F 1 "GND" H 21600 6650 50  0000 C CNN
+F 2 "" H 21600 6800 60  0000 C CNN
+F 3 "" H 21600 6800 60  0000 C CNN
+	1    21600 6800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	21300 7000 21600 7000
+Wire Wire Line
+	21600 6800 21600 7000
+Connection ~ 21600 7000
+Wire Wire Line
+	21600 7000 21600 7100
+Wire Wire Line
+	21600 7100 21300 7100
+Wire Wire Line
+	20500 6800 20500 7000
+Wire Wire Line
+	20500 7000 20800 7000
+$Comp
+L OLIMEX_Power:VDD_1V8 #PWR?
+U 1 1 6214E401
+P 20500 6800
+AR Path="/607BDADE/6214E401" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/6214E401" Ref="#PWR0218"  Part="1" 
+F 0 "#PWR0218" H 20500 6650 50  0001 C CNN
+F 1 "VDD_1V8" H 20350 6950 50  0000 L CNN
+F 2 "" H 20500 6800 60  0000 C CNN
+F 3 "" H 20500 6800 60  0000 C CNN
+	1    20500 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20800 7100 20500 7100
+Wire Wire Line
+	20500 7100 20500 7000
+Connection ~ 20500 7000
+Wire Notes Line
+	15000 8800 22800 8800
+$Comp
+L OLIMEX_Transistors:N-MOS+DIOD FET?
+U 1 1 627C5DFB
+P 11300 14600
+AR Path="/62F332D0/6497880F/627C5DFB" Ref="FET?"  Part="1" 
+AR Path="/62F332D0/627C5DFB" Ref="FET5"  Part="1" 
+F 0 "FET5" H 11400 14350 60  0000 R CNN
+F 1 "BSS138(SOT23-3)" H 11550 14850 40  0000 R CNN
+F 2 "OLIMEX_Transistors-FP:SOT23" H 11300 14848 60  0001 C CNN
+F 3 "" V 11250 14600 60  0000 C CNN
+	1    11300 14600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11200 14800 11200 14900
+Wire Wire Line
+	11400 14800 11400 14900
+Wire Wire Line
+	11200 14300 11200 14400
+Wire Wire Line
+	11700 14700 11700 14900
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 627C5E0C
+P 11700 14550
+AR Path="/5D8F9D26/627C5E0C" Ref="R?"  Part="1" 
+AR Path="/627C5E0C" Ref="R?"  Part="1" 
+AR Path="/62F332D0/6497880F/627C5E0C" Ref="R?"  Part="1" 
+AR Path="/62F332D0/627C5E0C" Ref="R44"  Part="1" 
+F 0 "R44" V 11750 14400 50  0000 C CNN
+F 1 "4.7k/R0402" V 11650 14300 40  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 11700 14480 30  0001 C CNN
+F 3 "" V 11700 14550 30  0000 C CNN
+F 4 "Value 1" H 11700 14550 60  0001 C CNN "Fieldname 1"
+F 5 "Value2" H 11700 14550 60  0001 C CNN "Fieldname2"
+F 6 "Value3" H 11700 14550 60  0001 C CNN "Fieldname3"
+	1    11700 14550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11700 14300 11700 14400
+Connection ~ 11700 14900
+Wire Wire Line
+	11700 14900 11400 14900
+$Comp
+L OLIMEX_Power:VDD_3V3 #PWR?
+U 1 1 627C5E19
+P 11700 14300
+AR Path="/607BDADE/627C5E19" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/627C5E19" Ref="#PWR0219"  Part="1" 
+F 0 "#PWR0219" H 11700 14150 50  0001 C CNN
+F 1 "VDD_3V3" H 11550 14450 50  0000 L CNN
+F 2 "" H 11700 14300 60  0000 C CNN
+F 3 "" H 11700 14300 60  0000 C CNN
+	1    11700 14300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 14900 12600 14900
+$Comp
+L OLIMEX_Power:VDD_1V8 #PWR?
+U 1 1 627C5E25
+P 11200 14300
+AR Path="/607BDADE/627C5E25" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/627C5E25" Ref="#PWR0220"  Part="1" 
+F 0 "#PWR0220" H 11200 14150 50  0001 C CNN
+F 1 "VDD_1V8" H 11050 14450 50  0000 L CNN
+F 2 "" H 11200 14300 60  0000 C CNN
+F 3 "" H 11200 14300 60  0000 C CNN
+	1    11200 14300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 14700 10800 14900
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 627C5E33
+P 10800 14550
+AR Path="/5D8F9D26/627C5E33" Ref="R?"  Part="1" 
+AR Path="/627C5E33" Ref="R?"  Part="1" 
+AR Path="/62F332D0/6497880F/627C5E33" Ref="R?"  Part="1" 
+AR Path="/62F332D0/627C5E33" Ref="R42"  Part="1" 
+F 0 "R42" V 10850 14400 50  0000 C CNN
+F 1 "4.7k/R0402" V 10750 14300 40  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 10800 14480 30  0001 C CNN
+F 3 "" V 10800 14550 30  0000 C CNN
+F 4 "Value 1" H 10800 14550 60  0001 C CNN "Fieldname 1"
+F 5 "Value2" H 10800 14550 60  0001 C CNN "Fieldname2"
+F 6 "Value3" H 10800 14550 60  0001 C CNN "Fieldname3"
+	1    10800 14550
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	10800 14300 10800 14400
+Connection ~ 10800 14900
+$Comp
+L OLIMEX_Power:VDD_1V8 #PWR?
+U 1 1 627C5E3F
+P 10800 14300
+AR Path="/607BDADE/627C5E3F" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/627C5E3F" Ref="#PWR0221"  Part="1" 
+F 0 "#PWR0221" H 10800 14150 50  0001 C CNN
+F 1 "VDD_1V8" H 10650 14450 50  0000 L CNN
+F 2 "" H 10800 14300 60  0000 C CNN
+F 3 "" H 10800 14300 60  0000 C CNN
+	1    10800 14300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 14900 11200 14900
+Wire Wire Line
+	10000 14900 10800 14900
+$Comp
+L OLIMEX_Transistors:N-MOS+DIOD FET?
+U 1 1 627C5E4D
+P 11300 15500
+AR Path="/62F332D0/6497880F/627C5E4D" Ref="FET?"  Part="1" 
+AR Path="/62F332D0/627C5E4D" Ref="FET6"  Part="1" 
+F 0 "FET6" H 11400 15250 60  0000 R CNN
+F 1 "BSS138(SOT23-3)" H 11550 15750 40  0000 R CNN
+F 2 "OLIMEX_Transistors-FP:SOT23" H 11300 15748 60  0001 C CNN
+F 3 "" V 11250 15500 60  0000 C CNN
+	1    11300 15500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11200 15700 11200 15800
+Wire Wire Line
+	11400 15700 11400 15800
+Wire Wire Line
+	11200 15200 11200 15300
+Wire Wire Line
+	11700 15600 11700 15800
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 627C5E5E
+P 11700 15450
+AR Path="/5D8F9D26/627C5E5E" Ref="R?"  Part="1" 
+AR Path="/627C5E5E" Ref="R?"  Part="1" 
+AR Path="/62F332D0/6497880F/627C5E5E" Ref="R?"  Part="1" 
+AR Path="/62F332D0/627C5E5E" Ref="R45"  Part="1" 
+F 0 "R45" V 11750 15300 50  0000 C CNN
+F 1 "4.7k/R0402" V 11650 15200 40  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 11700 15380 30  0001 C CNN
+F 3 "" V 11700 15450 30  0000 C CNN
+F 4 "Value 1" H 11700 15450 60  0001 C CNN "Fieldname 1"
+F 5 "Value2" H 11700 15450 60  0001 C CNN "Fieldname2"
+F 6 "Value3" H 11700 15450 60  0001 C CNN "Fieldname3"
+	1    11700 15450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11700 15200 11700 15300
+Connection ~ 11700 15800
+$Comp
+L OLIMEX_Power:VDD_3V3 #PWR?
+U 1 1 627C5E6A
+P 11700 15200
+AR Path="/607BDADE/627C5E6A" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/627C5E6A" Ref="#PWR0222"  Part="1" 
+F 0 "#PWR0222" H 11700 15050 50  0001 C CNN
+F 1 "VDD_3V3" H 11550 15350 50  0000 L CNN
+F 2 "" H 11700 15200 60  0000 C CNN
+F 3 "" H 11700 15200 60  0000 C CNN
+	1    11700 15200
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLIMEX_Power:VDD_1V8 #PWR?
+U 1 1 627C5E74
+P 11200 15200
+AR Path="/607BDADE/627C5E74" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/627C5E74" Ref="#PWR0223"  Part="1" 
+F 0 "#PWR0223" H 11200 15050 50  0001 C CNN
+F 1 "VDD_1V8" H 11050 15350 50  0000 L CNN
+F 2 "" H 11200 15200 60  0000 C CNN
+F 3 "" H 11200 15200 60  0000 C CNN
+	1    11200 15200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 15600 10800 15800
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 627C5E82
+P 10800 15450
+AR Path="/5D8F9D26/627C5E82" Ref="R?"  Part="1" 
+AR Path="/627C5E82" Ref="R?"  Part="1" 
+AR Path="/62F332D0/6497880F/627C5E82" Ref="R?"  Part="1" 
+AR Path="/62F332D0/627C5E82" Ref="R43"  Part="1" 
+F 0 "R43" V 10850 15300 50  0000 C CNN
+F 1 "4.7k/R0402" V 10750 15200 40  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 10800 15380 30  0001 C CNN
+F 3 "" V 10800 15450 30  0000 C CNN
+F 4 "Value 1" H 10800 15450 60  0001 C CNN "Fieldname 1"
+F 5 "Value2" H 10800 15450 60  0001 C CNN "Fieldname2"
+F 6 "Value3" H 10800 15450 60  0001 C CNN "Fieldname3"
+	1    10800 15450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	10800 15200 10800 15300
+Connection ~ 10800 15800
+$Comp
+L OLIMEX_Power:VDD_1V8 #PWR?
+U 1 1 627C5E8E
+P 10800 15200
+AR Path="/607BDADE/627C5E8E" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/627C5E8E" Ref="#PWR0224"  Part="1" 
+F 0 "#PWR0224" H 10800 15050 50  0001 C CNN
+F 1 "VDD_1V8" H 10650 15350 50  0000 L CNN
+F 2 "" H 10800 15200 60  0000 C CNN
+F 3 "" H 10800 15200 60  0000 C CNN
+	1    10800 15200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 15800 11200 15800
+Wire Wire Line
+	10000 15800 10800 15800
+Wire Wire Line
+	11700 15800 12600 15800
+Wire Wire Line
+	11400 15800 11700 15800
+Text Label 10100 15800 0    40   ~ 0
+GPIO1_IO06\CAM2_EN
+Text Label 11800 15800 0    40   ~ 0
+GPIO1_IO06_3V3\CAM2_EN
+Text Label 19400 13900 0    40   ~ 0
+GPIO1_IO06_3V3\CAM2_EN
+Text Notes 20200 13875 0    20   ~ 0
+Enable
+Text Notes 22300 13875 0    20   ~ 0
+Enable
+Wire Notes Line
+	15000 8800 15000 600 
+Wire Wire Line
+	16700 11300 15600 11300
+Text Notes 16600 11300 0    20   ~ 0
+LCD_PWRE
+Text Label 15800 11300 0    40   ~ 0
+GPIO1_IO10\LVDS_PWREN
+Wire Wire Line
+	19200 10800 19200 11000
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 63F60B24
+P 19200 10650
+AR Path="/5D8F9D26/63F60B24" Ref="R?"  Part="1" 
+AR Path="/63F60B24" Ref="R?"  Part="1" 
+AR Path="/62F332D0/6497880F/63F60B24" Ref="R?"  Part="1" 
+AR Path="/62F332D0/63F60B24" Ref="R47"  Part="1" 
+F 0 "R47" V 19250 10500 50  0000 C CNN
+F 1 "2.2k/R0402" V 19150 10400 40  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 19200 10580 30  0001 C CNN
+F 3 "" V 19200 10650 30  0000 C CNN
+F 4 "Value 1" H 19200 10650 60  0001 C CNN "Fieldname 1"
+F 5 "Value2" H 19200 10650 60  0001 C CNN "Fieldname2"
+F 6 "Value3" H 19200 10650 60  0001 C CNN "Fieldname3"
+	1    19200 10650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	19200 10300 19200 10500
+$Comp
+L OLIMEX_Power:VDD_3V3 #PWR?
+U 1 1 63F60B2F
+P 19200 10300
+AR Path="/607BDADE/63F60B2F" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/63F60B2F" Ref="#PWR0225"  Part="1" 
+F 0 "#PWR0225" H 19200 10150 50  0001 C CNN
+F 1 "VDD_3V3" H 19050 10450 50  0000 L CNN
+F 2 "" H 19200 10300 60  0000 C CNN
+F 3 "" H 19200 10300 60  0000 C CNN
+	1    19200 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17200 11300 18700 11300
+Wire Wire Line
+	18700 11300 18700 11000
+Connection ~ 19200 11000
+Text Notes 17200 11300 0    20   ~ 0
+LCD_BKL
+NoConn ~ 16700 11400
+NoConn ~ 16700 11500
+NoConn ~ 17200 11400
+NoConn ~ 17200 11500
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 645BE582
+P 18700 10650
+AR Path="/5D8F9D26/645BE582" Ref="R?"  Part="1" 
+AR Path="/645BE582" Ref="R?"  Part="1" 
+AR Path="/62F332D0/6497880F/645BE582" Ref="R?"  Part="1" 
+AR Path="/62F332D0/645BE582" Ref="R46"  Part="1" 
+F 0 "R46" V 18750 10500 50  0000 C CNN
+F 1 "NA/R0402" V 18650 10400 40  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" H 18700 10580 30  0001 C CNN
+F 3 "" V 18700 10650 30  0000 C CNN
+F 4 "Value 1" H 18700 10650 60  0001 C CNN "Fieldname 1"
+F 5 "Value2" H 18700 10650 60  0001 C CNN "Fieldname2"
+F 6 "Value3" H 18700 10650 60  0001 C CNN "Fieldname3"
+	1    18700 10650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	18700 10800 18700 11000
+Wire Wire Line
+	18700 10500 18700 10100
+Wire Wire Line
+	18700 10100 17200 10100
+Connection ~ 18700 11000
+Wire Wire Line
+	18700 11000 19200 11000
+Text Notes 17200 10100 0    20   ~ 0
+VPWM_EN
+Text Notes 16600 10100 0    20   ~ 0
+VLED_EN
+$Comp
+L OLIMEX_Transistors:LMUN2235LT1G(SOT-23) T2
+U 1 1 64E9F973
+P 19300 9500
+F 0 "T2" H 19503 9546 50  0000 L CNN
+F 1 "LMUN2235LT1G(SOT-23)" H 19503 9455 50  0000 L CNN
+F 2 "OLIMEX_Transistors-FP:SOT23" H 19750 9350 20  0001 C CNN
+F 3 "" H 19300 9500 60  0000 C CNN
+	1    19300 9500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	19200 9800 20500 9800
+Wire Wire Line
+	19200 9100 19200 9300
+Wire Wire Line
+	19200 9700 19200 9800
+Wire Wire Line
+	19200 9100 15400 9100
+Wire Wire Line
+	15400 9100 15400 10100
+Wire Wire Line
+	15400 10100 16700 10100
+Text Label 19600 9800 0    40   ~ 0
+GPIO1_IO13\LVDS_VLED_EN
+Text Label 21500 13900 0    40   ~ 0
+GPIO1_IO05_3V3\CAM1_EN
+Text Label 10100 14900 0    40   ~ 0
+GPIO1_IO05\CAM1_EN
+Text Label 11800 14900 0    40   ~ 0
+GPIO1_IO05_3V3\CAM1_EN
+Text Label 17400 7400 0    50   ~ 0
+GPIO1_IO05\CAM1_EN
+Text Label 13200 9300 0    50   ~ 0
+GPIO1_IO05\CAM1_EN
+Text Label 19600 11700 0    40   ~ 0
+GPIO1_IO11\LVDS_BKL_PWM
+$Comp
+L OLIMEX_Transistors:LMUN2235LT1G(SOT-23) T3
+U 1 1 63DB23CE
+P 19300 11400
+F 0 "T3" H 19503 11446 50  0000 L CNN
+F 1 "LMUN2235LT1G(SOT-23)" H 19503 11355 50  0000 L CNN
+F 2 "OLIMEX_Transistors-FP:SOT23" H 19750 11250 20  0001 C CNN
+F 3 "" H 19300 11400 60  0000 C CNN
+	1    19300 11400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	19200 11700 20500 11700
+Wire Wire Line
+	19200 11000 19200 11200
+Wire Wire Line
+	19200 11600 19200 11700
+Text Label 13200 9900 0    50   ~ 0
+GPIO1_IO11\LVDS_BKL_PWM
+Wire Wire Line
+	19900 10300 19900 11400
+$Comp
+L OLIMEX_Power:VDD_1V8 #PWR?
+U 1 1 61A41A84
+P 19900 10300
+AR Path="/607BDADE/61A41A84" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/61A41A84" Ref="#PWR0226"  Part="1" 
+F 0 "#PWR0226" H 19900 10150 50  0001 C CNN
+F 1 "VDD_1V8" H 19750 10450 50  0000 L CNN
+F 2 "" H 19900 10300 60  0000 C CNN
+F 3 "" H 19900 10300 60  0000 C CNN
+	1    19900 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19500 11400 19900 11400
+Text Label 15800 10100 0    60   ~ 0
+VLED_EN
+Text Label 17400 10100 0    60   ~ 0
+VPWM_EN
+Text Label 17400 11300 0    60   ~ 0
+LVDS_BKL
+Text Notes 19300 8600 0    100  Italic 20
+SOM to EVB - Interconnecting connectors
+Text Notes 18800 12000 0    80   Italic 16
+Note: MiPi_CSI1, MiPi_CSI2 and MiPi_DSI1 are RPi compatible!
+$Comp
+L OLIMEX_Power:VDD_1V8 #PWR?
+U 1 1 610061D1
+P 19900 9200
+AR Path="/607BDADE/610061D1" Ref="#PWR?"  Part="1" 
+AR Path="/62F332D0/610061D1" Ref="#PWR0227"  Part="1" 
+F 0 "#PWR0227" H 19900 9050 50  0001 C CNN
+F 1 "VDD_1V8" H 19750 9350 50  0000 L CNN
+F 2 "" H 19900 9200 60  0000 C CNN
+F 3 "" H 19900 9200 60  0000 C CNN
+	1    19900 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19500 9500 19900 9500
+Wire Wire Line
+	19900 9500 19900 9200
+$Comp
+L OLIMEX_RCL:R R?
+U 1 1 60BD6DD5
+P 13600 6900
+AR Path="/607BDADE/60BD6DD5" Ref="R?"  Part="1" 
+AR Path="/62F332D0/60BD6DD5" Ref="R48"  Part="1" 
+F 0 "R48" H 13800 6950 50  0000 C CNN
+F 1 "NA(10k/R0402)" H 13250 6950 40  0000 C CNN
+F 2 "OLIMEX_RLC-FP:R_0402_5MIL_DWS" V 13530 6900 30  0001 C CNN
+F 3 "" H 13600 6900 30  0000 C CNN
+	1    13600 6900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	13100 6500 13100 6900
+Wire Wire Line
+	13100 6900 13450 6900
+Connection ~ 13100 6500
+Wire Wire Line
+	13100 6500 14100 6500
+Wire Wire Line
+	13750 6900 13900 6900
+Wire Wire Line
+	13900 6900 13900 6700
+Connection ~ 13900 6700
+Wire Wire Line
+	13900 6700 14000 6700
+Text Label 19900 4900 0    60   ~ 0
+I2C2_SDA_3V3
+$Bitmap
+Pos 19450 15010
+Scale 1.000000
+Data
+89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 01 BB 00 00 00 72 08 03 00 00 00 FD 27 8F 
+E4 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 00 90 50 4C 54 45 FF FF FF FF FD FE F5 CF 
+D0 E8 7E 81 E2 50 56 DD 33 39 DA 21 28 EB 85 89 FF FA FA FB E5 E6 FD F2 F3 EF 9D A0 DA 18 20 D6 
+00 00 D9 0E 18 DA 1F 26 DB 26 2D F1 A9 AC EA 91 93 DF 3A 40 D7 00 09 EF 9C 9F DB 23 2A FB E1 E1 
+E8 71 76 FD ED ED F1 B6 B8 DD 2E 36 F6 C1 C3 FE F8 F9 EC 8A 8E DA 1B 23 ED 98 9B E0 45 4B E1 5B 
+5F F9 D6 D7 E6 6A 6E E7 65 6A F0 B0 B2 F5 C6 C7 EF AA AC FC EC ED E1 4E 53 E8 77 7B F9 DB DC E4 
+65 69 F3 BA BB E0 47 4C 10 95 A9 39 00 00 16 A4 49 44 41 54 78 9C ED 9D 8B 96 A2 BA B6 86 89 57 
+C4 48 50 E8 78 45 14 2D F1 EE FB BF DD 49 94 20 90 19 08 94 D5 CD 59 BB FE 31 F6 D8 DD BD 20 26 
+F9 48 32 73 9B D3 30 9A 28 D4 6A 77 BA BD 5E B7 D3 6F FD EB AC 34 44 88 FD CF 1C 0C 50 FC C7 C6 
+CA 1A E2 91 8D 49 AF 47 B0 3D 72 C6 D6 BF CE 4F 13 34 98 B8 DE 88 C9 73 FF 34 B8 3E 50 CB F5 28 
+ED C5 A2 D4 EB B4 1A FD A5 FD 0D 4D 67 9E DD 73 B8 58 7D 78 ED 79 43 2B C4 5A D8 A4 97 11 5E AE 
+1A 9A D7 BF 23 64 8E 97 38 55 1F D4 B6 57 E6 BF CE 14 24 7F E5 D1 1C BB 1E A1 AB 7F 9D AD 7F 28 
+E4 AF 83 6C 8D 10 67 B4 69 1E 3C 84 5A 58 42 D7 EB 05 DB FF 61 93 C5 9C C8 1F B3 33 1A 16 75 45 
+66 81 FC 58 E5 F0 51 FE CD 92 DE 6F 10 06 32 BA 5E CF EE 0F 0A 12 05 54 5E 23 A5 2A EF A7 93 7A 
+28 95 46 62 4A 8D BB 40 8D 38 A3 9D FA 8D C1 B8 AF 52 7B 1F EB EB 50 5A 47 D3 C3 38 AB C8 2F 7A 
+DC 5F 78 89 95 D2 23 EF 3C 53 3B 4A 95 3E 3A 8E 4B B4 B2 8A 2B 0B 59 CF 7C 1D 37 CA 42 F6 27 05 
+95 13 27 B2 FA DA 6B 6A D6 AA DD C7 B5 42 2C A3 63 2D 0F AB 4A 88 A6 ED 91 AD 14 8E 15 8C C6 85 
+24 98 0E D8 CB 68 14 9E 8A 1E 1F 9C 83 04 9C B3 5C 3A 09 3D BB 9D 34 3C 64 EC 6D AF 4C ED 53 51 
+65 F9 83 ED EB 31 75 19 ED E5 A1 A4 68 66 34 0A B0 A6 6C A7 B6 75 31 09 92 AF 99 A4 BE E6 9E BD 
+86 9F 67 E8 52 DF BF 5A CE 68 5C 92 A5 C5 32 9B 0E DE 17 B1 43 2D F1 B3 84 BA FB CD 66 EF F6 E2 
+DC D2 65 32 E2 21 E3 E2 94 E6 CC DE 5F D5 2D CF 8F 96 04 EA 99 D3 22 EE A2 B8 64 28 92 8D 2A 75 
+6A 81 13 D5 83 B7 BB 25 CD 8E 38 DD EE FB 6B A6 36 FC 82 26 3A 0E EF 5E DC F2 AA B1 B3 C6 9E C8 
+67 E7 69 5A AE 44 3B A4 F6 5D 94 5D 8B 5D 0F 87 CA 6E CA 1A D3 5E 69 AD 97 B1 33 77 B6 3E 3A 9E 
+9E 53 3C 5A A8 74 5C 8A 04 7A 8F F6 70 7C D9 8A 04 E9 08 B4 DF B4 D1 71 83 A7 18 5E 35 76 A7 8B 
+1D A7 BB 5D 18 26 C7 B4 58 C6 15 64 0F C5 72 82 16 3B 42 F1 19 CE 19 9A B7 83 D2 D7 4B D9 A1 1D 
+AD 84 8E 8F 01 AB EA F0 10 DA 60 D1 13 85 57 FE 2F D1 59 A4 08 75 9A E8 AA 8D 8E C3 F3 16 45 59 
+AA C8 2E 7C 55 2B C5 ED D8 D8 B8 CE E2 2E C3 9B 88 17 F5 DA 1D 4B C3 85 56 D3 FC 69 A8 83 AE 84 
+9D 39 75 AA A1 E3 ED A6 06 3C F6 A1 D9 71 05 2E 77 DC 58 45 C6 5D 98 9D 38 94 1F BF 5E 6C 6D 74 
+BC 8E BC 43 41 96 2A B2 EB C4 EC 82 49 BC E2 3A 5F C7 99 79 1B 2B 9A EC D8 AC D0 D9 48 8B 47 56 
+B4 05 27 21 92 0A D9 A1 AB 5B 15 5D EF B9 C4 50 19 1E FB 76 5F E5 C7 97 57 C5 99 46 47 14 6F 2B 
+67 AB 1A 3A 26 BB 00 5E DD 76 B7 8E D9 0D FA 82 DD BA 62 BB E3 95 85 D7 83 EC A0 37 3F 76 F5 D0 
+15 B2 43 53 B7 7C C0 04 92 24 A4 32 BC 84 9D 3D 99 C7 A5 BF C5 A5 0F DC 7C B6 AA A3 63 35 7D 50 
+2E 6D 57 63 37 17 E3 1D BE C5 B3 AB 28 9E DD 50 6F 38 17 59 D4 67 C7 BE D6 5D 0A 1E 3A AD 1D DD 
+3A 2F 62 37 3D D7 41 C7 E1 D1 55 C5 4D 80 DD 5E B4 BB F6 29 2E 7D 18 A7 26 B5 BB 1A E8 78 17 77 
+54 65 A9 A2 9D 39 14 23 AD B3 E6 A8 D0 60 1D 67 9D DA C9 B0 AA CF 8E 5B 2C FB B7 79 67 5E 67 A5 
+53 83 F7 AB 6A 76 83 8E 7E 32 79 15 7C E6 60 85 8C 5D F1 53 6E 6C 56 B6 5C C5 78 57 0B 1D AB 59 
+A2 DA 64 AB C6 CE 8F C4 CF 93 65 7F 37 9D B6 FA 34 AE A6 AA F3 BB 58 0C 5E E7 1E 67 CD 8A 3A 9A 
+FD E5 F3 4D 25 BB 41 58 AF D5 BD F2 63 1F 4A 96 7C D2 62 E8 84 61 45 ED 3E EF 42 98 A9 45 C5 3F 
+64 EC 4C 74 9D D5 42 C7 A5 80 57 8D 9D 31 D8 8A 6A 21 D8 E9 74 9C 64 5E 8A 67 A9 75 15 7D 76 BC 
+43 DF BE 3A 85 D3 61 AB 65 60 8A DF 57 B1 1B 7C D5 47 F7 84 A7 EC A3 64 74 43 F7 9D 65 6A EF EF 
+AD D6 3D 69 F3 D9 F9 1D DA D5 47 47 28 BC 3C 56 91 9D 35 4E 72 40 69 90 CA 38 79 CF 44 AA B1 E3 
+DB 7F C3 13 32 06 93 65 15 74 4A 76 83 59 0D 0B 33 9D AE 3E 3C 86 2E B3 6D 87 6D 42 EC A4 10 94 
+64 D0 ED 6B A3 63 79 EA 2E A0 2C 55 64 67 4C 3B 50 0D 53 3C 9B BE F3 59 91 1D 33 11 26 D3 DD A5 
+62 95 2B D8 9D AA A6 23 27 AC 0B 2F D5 61 C6 A2 8E F3 AE 4D 7B 93 7A 16 44 47 55 92 F3 D4 85 86 
+E1 AA EC FC FB 12 A8 9B 60 9B 5A 0D AC CC 8E 4F 8E E0 AD A5 02 C1 EC 4E 7D 6D 43 55 9D B2 1E 3C 
+EB 98 47 97 49 24 70 53 E3 26 84 8E F4 9C A5 42 72 BA 20 BC AA EC 0C 6B E3 04 B9 7C D0 C0 4D 17 
+16 62 57 F2 59 51 0C B6 E6 A2 B7 40 76 F0 1C 43 F9 7D 83 99 79 C2 2B 3F 3F 65 1D 0B 87 67 12 A4 
+B2 B7 BB 01 E8 96 17 E5 0E D9 45 2E 04 E9 CA DF 53 65 76 C6 7C E3 E6 36 AC F0 36 99 DB A9 D8 65 
+4A 05 FC 23 50 85 34 C8 58 FA F9 5A 86 D8 CD 27 60 A7 50 D4 8B 82 B3 09 0E 6F 2E A5 9E 47 07 6D 
+DB BD 93 DD 64 D0 C9 0F 38 ED A9 32 F1 E9 85 48 9F 2A 00 AF 3A 3B D6 CF 87 99 96 17 74 B2 ED 19 
+60 77 1E 0F DF BA 68 CD BE 28 7E 0C D3 DA 3C 72 67 42 64 76 A7 0D B0 83 4D 83 AF 61 81 36 E0 EA 
+29 83 37 29 B1 D9 B6 58 6D 7B 50 BC DC A0 A4 C7 6C 7D 01 AD CE B9 5C 0B 92 9F CE E4 5C 05 D2 F2 
+6F 0D 76 86 B9 C8 E4 5B AC 06 A9 D9 39 B3 F4 7F 1F AC A5 5E 17 AA BC 30 7B 7E C9 BA 65 BF 73 99 
+9D 3F 84 0E 1F E0 AF C2 FD 75 73 15 42 9F 12 A1 DE BA A0 22 98 99 A2 6C 75 CC FE C6 61 6A DB 74 
+17 56 46 C7 E6 F1 7B 60 CC CB C3 AB C3 CE 68 05 69 38 F9 4F 54 62 47 E8 CC 30 51 22 D6 3E D4 25 
+17 6F D8 B3 96 81 D2 B2 BE CA D8 CD 6F 40 53 E0 E8 50 91 CC E8 0B 32 93 58 0E D4 F0 78 AB 03 B3 
+4D 48 80 ED A0 33 89 52 0F B7 81 0E B3 37 2B 46 C7 88 7F C9 BF 40 DC 63 66 9E 57 83 1D 92 D8 95 
+B4 3B CE 2E B3 56 61 8D CF 05 3D 0E 7F 03 F7 AF B9 A3 E1 E5 EC 4E 37 B9 39 DB C5 AD EE A9 16 68 
+E3 16 C0 63 E8 80 8E 83 B0 2C 6D DD F3 6D 9D 3B F2 23 77 CA AC 3E CA 73 B5 03 8E C1 04 61 FA 44 
+57 4D 76 F8 7B EC 0C EB 1E 16 C1 63 23 BD 64 2A 94 B3 1B 48 EC A8 7D 2B AF 24 3E 20 29 0C 96 3E 
+58 17 F2 BC EE F9 78 0F AF EF AB 55 B4 CB BF 23 B1 23 4E 69 AB E3 DA 75 F2 F0 68 10 66 EC 9B 7F 
+D2 EE F8 C2 E8 4C 3D 60 E0 2E B0 06 54 87 9D BD D7 41 57 11 1E 5F 08 03 A7 39 EB 81 FC B0 01 B1 
+DB EB A0 63 B9 7A E4 AA E8 33 EC BE DB EE 9E 9B FF 8A 65 47 8A CF 0B E0 24 4B 0D 76 58 B3 92 0C 
+D4 FA 82 72 C2 E0 B5 A5 DA C8 AC 61 BE 1F ED 05 EB 01 BC 86 9D 67 47 B5 FA 02 AE D6 36 5B 43 4D 
+61 C7 EC E0 35 B8 80 49 ED 2F F0 76 43 75 76 74 B4 D3 DD 11 60 F0 14 63 5E 1E 9E 02 1D DF 45 56 
+FC 58 8E 5D B0 2D 3B 9B 98 64 CA 18 66 CD 9C 86 F4 99 5C 83 A1 2B 0F 7A D4 BE C0 B7 8A AA B3 73 
+46 A6 FE 2E F8 6E 0F 75 03 AC 27 6C 67 DA AE AA D5 A9 D1 49 EC 3A 91 E2 41 59 51 F6 5C 52 73 DA 
+1D 32 E6 87 73 6E EA C3 BE DF 89 E2 DC E6 0F B3 63 33 2A 70 F9 85 E2 B4 61 01 A3 63 66 F1 44 89 
+EE 3B EC 56 4D 65 C7 64 AD 6E D9 82 51 32 54 FD FC 4F B3 33 AE F0 E6 11 0D DE 06 BD F5 A7 0B A2 
+73 36 27 75 EF DC 34 76 1F E9 33 99 FC 4D B6 D7 24 2E 6C AB 19 3F CF 0E 31 78 F0 1E 44 20 AC 55 
+6B A3 40 A7 FC E0 B8 F2 EC CE FF 8D 76 67 A0 71 8E DD F6 9F B1 33 F8 2A 22 BC 6A 4D 5E F0 AC 0D 
+68 5C 3D D1 15 18 45 12 3B FD BB 8A BF EC F4 35 00 0D 96 78 46 E6 2B D1 15 DD 50 46 46 27 B7 86 
+BE BC EC 74 BD 09 34 BA CF 6C 18 3B 25 BC DE 7E 87 36 D0 FE 12 47 57 BC D5 37 CE 77 C4 C4 D1 58 
+11 7B E9 B7 DD 55 D1 40 71 64 82 86 E0 D6 60 39 BA 95 DC 58 89 D3 57 96 32 F7 F2 2F BB 2A 3A B5 
+61 83 85 C0 1D E6 B2 18 1D F2 C1 E9 A0 3B D6 CB CC 6F 9F 59 4D F3 B6 C2 60 A9 81 CE 30 D6 EF F2 
+A5 F2 86 6F 7A 8B 75 BF ED AE A8 24 E9 FF 8B 35 57 2D B4 4A 0A CA 3A 4C C3 78 17 0F 8F 46 C9 0A 
+17 59 EA 35 BC 5F 76 6A F9 D7 FB E1 70 BF E6 9E B2 DA 7A 47 E2 83 D2 56 67 AC 46 E2 18 79 EF B2 
+5A 4D 84 17 16 8A FB 5A A7 08 7F FB 4C 85 CC 55 3B 3C BB 4C E7 B0 9D BD 6C 6E F5 B5 2E 6F 96 A3 
+33 92 AB A6 DD 85 E5 FB 56 4B 1C 6E C5 A1 96 4F 93 DF 76 07 FF 72 B4 77 9D 20 96 E3 DE D2 6E 2A 
+0C 5F 03 1E 43 57 3E 9A C6 AC 98 65 F9 FC AB D9 8A 47 3D 7E 6D 58 43 BF EC C0 D4 C6 2E 7D F7 8C 
+84 50 37 D3 88 CA E1 69 A1 33 62 2B 33 E8 C6 33 BA 81 28 44 F7 58 FE F2 6F 9F 09 27 F6 27 3F 5B 
+23 CB 49 16 9E 7C 42 28 AD 40 0B 9D 11 5F E7 4A CE 48 CF D7 71 B2 7A C6 CA FF 72 BB 53 A6 25 2D 
+76 F0 4C 66 7C 27 FA C3 A2 BB 1F C1 B2 CC F7 C9 4B EF 76 17 DF 12 8E 0B 41 FF 21 BB 4F B5 3B 73 
+F8 83 EC A8 3D 51 A8 0D 1D E4 A4 D9 0B CB 68 A8 76 C8 C0 5A 9D 9E 33 96 F8 B8 10 71 DA 4F AF 18 
+E6 0E 8B F1 EE AE F3 FA DF 6F 77 86 36 3B 84 C6 F6 CF B1 63 55 A6 90 62 F6 9D FB F1 E1 48 71 34 
+9F 74 0B 1D BD A5 24 7A 5E 36 3A F2 BF 5E C5 01 14 1C 6A 2D 69 FE 0B 76 FD EC 68 A2 62 87 FC 71 
+7E D8 A1 CA 23 26 75 CE 89 11 95 DE BF 97 BA 75 95 BF FE 83 14 F0 18 BA B2 2A 12 8A C4 FC AE E7 
+9C 27 7F F6 4E F2 4B 4D 9D DF 19 C6 5A 8F 9D 0F F8 2F A2 2A 6F 47 75 D8 95 89 3E 9D A9 BD 7D 4A 
+3D B2 0D 0F 8D 21 87 64 36 6B 43 DA B7 9A 3D 51 51 FC 72 C8 3B 77 8D 5D 57 D1 64 87 D0 41 5E 25 
+24 94 28 4E 7E FC 00 3B 6A 77 56 96 15 7D 09 3F BC 8E 9D 3F E6 74 04 1C 01 CE 0E 15 9C 79 0F BD 
+E4 D7 52 8D 3D 75 C1 BB 50 8D 65 67 44 2E B8 BE 7B 86 BB 93 1F 60 C7 DD F9 F0 9B 0E 6D 61 30 79 
+FA 57 CD F5 84 8C A5 3C B6 12 E2 6A CD EE 1A DC 67 0E E0 29 14 55 54 E0 E7 D9 05 8F F8 E4 88 F0 
+11 C3 60 7E DA C5 3A 9A 8F F2 F0 08 0D D6 9A 2D B7 B1 ED 2E 4A DD CD A6 E9 3F 2F FF 0E 3B 9A 78 
+D1 F2 FB C2 BF CD 97 C6 25 A8 6A 42 53 69 9E 98 F8 62 2B 55 53 D9 CD 37 49 B3 63 26 83 FD B6 18 
+1C 0F F4 64 F9 79 76 38 5E 49 41 68 1D BF 88 6F 1F 67 67 18 5F F9 E5 B5 7E 99 5F E7 44 4D ED 33 
+93 3B 4A 24 20 EB DD 29 E5 E7 01 36 A0 7F A0 DD 5D A6 CF 5C A1 B9 18 F0 7E 84 5D FE 9C D8 43 6B 
+5A FE 54 53 DB 5D D2 65 92 6E C4 BF FD B7 CB 6C D8 5A F9 FC 78 47 BA 71 0A F7 47 5C BD F6 FA 07 
+42 8A 48 F7 11 B4 B6 10 9E 6A 2A BB 7B E2 88 EC E8 BF 82 E8 B4 E3 AA 77 30 74 4F FF 07 EC 4C BE 
+8B 66 9A DC 6B B0 B0 33 25 17 34 B5 5C CC 67 D5 34 76 DF EF 33 D1 22 1E C3 89 2B CE 09 0B B7 6A 
+8E FD 97 D8 F5 F0 72 1D 45 93 AE 48 D8 B1 F3 C7 48 4C F0 9A 73 59 05 65 D5 34 76 DF 6F 77 E6 21 
+36 55 82 8E D8 42 BE C7 0E 4B 1C EF 53 EC CA D6 C4 28 B1 3D CF 4E FC 61 E0 30 B7 AE 62 84 23 59 
+F6 BA 5A 30 85 FF 1E BB A4 CF EC 75 45 BB 13 6E 1A 1C FB 43 E3 9D C6 5A 74 DA 3B 0E B5 73 9E 4F 
+51 88 A1 B7 49 BF 82 A7 BF E6 B1 FB 80 9D 19 51 31 DE C5 3B D6 7E E2 10 66 FB 19 76 D4 3B 1C 0F 
+90 C6 F0 7D E9 E0 2B DB EC 4C 66 09 83 77 F2 82 4A 71 B6 9A C6 EE 03 ED AE 25 5C 3A 11 E7 60 F9 
+A6 EF 27 07 8F F1 EC 33 EC 9C 11 52 D8 15 D7 33 E0 F4 A9 D7 CD EE 61 F8 A1 62 EB 9C 70 1F B5 FA 
+F0 9A C6 EE 03 ED 6E 20 FC 8E 10 82 2F D1 75 F5 BE 09 60 83 8E E5 65 76 F9 BB BF 15 CE 3C 44 92 
+3F 69 42 96 59 97 FF 7E 88 95 27 FD 08 9E 4D B5 E1 35 8D DD 07 DA 1D 5A 88 9A 26 CF AD 98 84 0C 
+5D 82 AE BC 3E CA CE 8C 1E 59 78 84 35 E3 CC C3 56 A1 63 41 8A 2F DA F0 FE 83 EC 32 CE 5F 68 7A 
+07 74 A2 B5 9E D9 73 8E B9 44 2B 9D F1 6B 7D 2D DF 4E E9 58 A3 EB E4 8E 68 86 85 C7 6B B9 93 F2 
+AB E6 44 AF 69 EC 3E B1 8F 60 2E E0 9B 35 5B 78 03 EF C3 EC 8C D3 30 74 9D 00 E3 00 07 D4 ED 4C 
+B2 66 CA A9 18 DD 13 DE 7E A7 07 AF 69 EC 3E B2 7F 77 9A 00 66 1C 59 2A 42 14 7C 9A 9D 61 CC 0F 
+ED 5B D8 39 77 6E 97 71 6E 2B B4 14 DD B3 A3 DF EB C5 5D FB 4F B2 33 AE 97 FC 51 3B 1A 74 55 E7 
+1E 3F CF 8E 6B 3E BD 0E 24 02 27 2D 27 BA D4 BE 69 C1 FB 6F B2 33 AE ED 4C 14 12 4A 82 AD F2 C8 
+EA 8F B0 7B 46 F0 C9 2F 93 9C BE F4 EE 92 50 3B D4 89 BB D6 34 76 9F 39 6B C4 AA 7B 73 A6 DC 14 
+7F AE 6E 04 78 79 53 47 10 FC 99 76 07 E5 49 DB 47 3F C5 A1 46 0C 9A A6 B1 C3 BD 20 11 F9 06 3B 
+66 AC F7 43 97 62 DB C6 81 B3 DD 6F 0A 8E E0 FC 2D 76 53 D0 B5 58 0F EC 45 19 BC 7B E9 AE 51 C3 
+D8 ED B6 8F 6D A2 87 2B DD 65 D2 67 C7 52 DB 8D D7 ED D9 EC D2 9E 2C 8A BD FC FE 1D 76 53 B8 D5 
+39 21 E4 BC 8F 3B 46 06 23 17 A4 D5 28 76 6C 44 B8 DF 17 29 49 33 9D 2A EC B8 4C CB F2 51 FE FE 
+69 4E 7F 87 DD 15 1E EB E8 65 07 FA 3B E5 51 55 CA 02 08 35 8C 5D 99 AA B2 43 A6 59 BA 2B F6 57 
+D8 29 5A 5D EF 32 30 CC 43 07 74 D7 2A 42 E2 28 F5 1F 67 A7 A3 BF C1 EE 7A 83 5D 02 5C 78 95 A1 
+15 18 0C BB 87 BB C5 C1 14 72 EC 88 B6 0F C6 5F 76 15 74 BD 41 97 4C E8 0B 1D BF B5 7A 83 F7 8E 
+C0 D8 A7 89 F2 EC 74 1D 74 18 BF EC F4 B5 53 A0 4B 82 A1 9A D7 0B 78 1D 36 E8 0E C1 E5 F3 97 F2 
+7E 6B F5 6F A2 18 8B 5F 76 7A DA 81 63 1D 0D DA EF 89 0B 1A F4 C1 EB 5F DC 09 A3 32 DD 3C 3B A7 
+5D 30 13 CA 16 28 B7 47 FC CB 4E A1 1D 38 D6 51 9C AD E9 13 1C E9 AD 08 5E 9E 1D E9 2A 9C 82 4B 
+25 6E E7 8E 54 97 B3 2B 09 84 A3 A3 FF 87 EC 14 E8 72 FE A2 11 F7 A1 09 0D 7A 84 2A 63 D0 C8 7E 
+DA 97 C5 F1 6A 44 81 27 F9 D3 F0 65 EC 82 8E 6E 8B 2E 50 33 D8 D1 91 DA 11 70 5E 2A 74 B2 D7 36 
+6B 08 47 02 D2 F6 D3 CE 8D 9B A2 05 A4 58 FE 46 BA C8 50 C6 8E 7D 40 5A 07 69 D0 34 5A 1C C7 C7 
+C3 7D 07 D8 58 CD 60 97 0A B9 5E A6 16 84 8E 38 70 7C 04 3E D1 83 62 46 AD E3 23 F2 B9 E7 81 60 
+51 41 B7 60 7C 7C 0A 99 43 F9 B5 32 76 3D 12 68 C0 33 5B E3 CB 79 19 04 01 75 6F 93 BB 94 8F 86 
+B0 63 3D 9E 66 14 09 C8 4C 51 06 95 F1 57 5F E0 01 B2 A0 BD 9B 4E 07 D2 A7 0C 6D 28 61 B7 C8 32 
+E5 FC 81 2B C1 EC 17 6E 19 34 32 3B 12 AC 4B E0 A1 C1 30 E4 81 4D F9 E1 46 82 F1 B6 1F E5 C6 95 
+86 B0 63 F0 B4 A2 B7 B4 6E D0 42 98 3A 1E 90 1F ED 81 96 C7 B7 D2 2F 97 F6 7A 9C 0B 91 BE 80 C6 
+C7 60 5B 04 0F A1 A3 23 A3 23 E4 9C F1 BE 24 B3 7B 86 D8 28 84 67 EE 2E 0E 4E 1D 49 25 38 1B 00 
+0F 19 F9 C0 9D 9F 60 E7 4B B6 76 39 3B 1E FB B8 1C 9E 02 5D 41 10 35 56 03 C0 21 32 42 9F D7 D1 
+C9 79 9D 09 CE E1 1F 01 CB 94 06 5B F5 84 1E 19 87 2E 84 EE 91 0B FA 21 B3 7B C2 2B 58 28 78 2E 
+2F 64 8D 02 9C CE 08 32 56 E7 7C 9A 67 2D D7 67 45 32 8F 79 9F 28 34 1F 42 0E 8A C3 C5 4F 26 14 
+7E 37 08 46 47 A8 27 ED 6C A5 DF BA B6 A1 4D A1 57 14 D2 C0 7E A4 43 51 21 FF 00 4E F9 1F EA 75 
+D0 85 74 04 F1 85 2E B7 E6 0F B0 E3 AD BF AF CE F8 55 0E 33 47 03 37 D5 F2 EE 67 A9 32 88 9E DF 
+3A B5 4C 39 30 AE 14 FF 0F BC 4B C2 C6 F7 42 9F F6 28 82 F6 EB 38 BA 42 6B 02 4D C1 C8 B2 E2 37 
+49 3B 65 74 2A E0 05 8F B6 C2 75 CF C6 95 BF 26 42 B6 D2 26 FD 0A 8A 38 4B 08 56 A5 3B 99 CC 00 
+13 99 06 E7 C4 45 42 04 1D 3A 26 DF BB 95 88 22 20 32 01 A1 19 0B 1E 59 33 38 BC 41 47 59 14 2E 
+E8 58 11 33 53 CA 0C 41 1E A0 B4 C0 5F 9C 3D 4B 0F 3B E6 02 8C 6D 19 A8 04 3D 2C A3 53 46 49 51 
+A6 1B 80 39 7E 87 1B 9B C3 81 75 9C C9 37 86 3C 74 3A 83 03 7E F7 90 29 CF 2E 04 EB B1 A0 28 41 
+80 81 8A 62 93 83 52 74 AC A0 05 71 43 79 F8 B5 74 79 7D 10 5E 85 D8 CF C4 BD 43 B1 C9 60 78 1A 
+51 A5 99 91 99 76 F7 12 DB 40 60 D0 55 FE E3 DF E8 35 4D 79 9E FA 54 2E 96 2B DA 81 B1 5B 8B 63 
+64 03 43 06 F5 FE E8 2C 2E 59 87 87 32 00 23 E9 D9 E9 AB C9 C8 5A E8 1E 82 81 93 EB C2 07 63 14 
+F0 4A 15 D8 CB 87 8B C5 A7 17 07 26 46 56 CA 1C C4 9E 9D 64 98 8D 4E B5 1B 1E B2 96 EF 52 E0 D4 
+85 B9 1E 39 66 F7 6C AF 30 BC 4A 22 3D AF 78 F2 F5 AE B9 7B 07 9C E8 3D 53 09 B6 E9 F2 32 78 45 
+91 BA CB B2 A4 40 F7 8A 81 59 F1 C2 68 8F EF 17 FF 69 5D 77 8B 64 3F 32 38 3F 2D 87 43 F2 21 10 
+7B 3F EC 6F 93 06 43 1E FA 2B 54 39 99 0B E1 1D 88 04 CE 6C D2 DE DA A2 C6 F0 25 17 24 FC FB F0 
+58 AB 2B 0C EF 93 96 1F 7D A5 5B 1E 3F 33 E5 25 F7 32 BD EC FE B8 7F AF 0F 6F A9 3E 4B 08 07 30 
+2D 56 3C 3F F1 5B 7B 71 6F 9C B4 5E 53 3B 51 07 6E 34 9D 9F AE 89 27 43 D2 D5 DF 2F CE 09 BD DD 
+5C 84 AD C1 69 D0 4A 3C D7 B3 11 3C F7 EC 35 FC 56 E7 F4 44 A7 BF 1A EF B7 DE DB 34 AC 9B 9C 2D 
+A2 F1 56 7C 3C A4 93 7B F6 AE B6 4C 8B 73 44 A1 38 9C 42 D5 E1 D1 40 B8 00 3A C6 FD 19 B5 D9 F4 
+C3 34 44 5C 6E 8A 5F 87 86 AD 75 E2 86 B0 AF 5D 25 59 21 53 DC 34 09 3A AF 44 AF 62 77 84 15 2B 
+DF 13 4F BF 05 8F 19 19 15 D0 B1 2E 61 DA 16 63 3E C5 E3 A9 65 5A D3 30 FE BB E4 7A B5 5E CB 63 
+03 04 78 A7 2D 51 75 78 89 27 BA 56 3C C0 B1 3E C2 37 4C 53 4C FE F0 E5 F5 AD A0 93 B8 81 E8 EC 
+6B 0E 78 A6 29 7C 21 3A ED D7 BF A0 95 B8 34 8B 25 C7 6C E8 3B F0 58 AB 1B 57 9A CC A0 E4 DB 7D 
+79 27 63 FF B4 8B 9D 64 3A A3 7C 4A F5 5A 5E 50 76 04 B4 2A 3C 92 38 AB DE ED E3 5E 83 B3 43 83 
+38 F6 35 B5 63 A7 BC C8 10 8D 86 EE 8D AA EE 2D 5E 4A D8 BD 1D 57 8A 28 B6 D4 3E 4A 07 CC D0 A0 
+53 77 CC AB 8C 8E E9 D8 8D 8B 67 BF 06 25 64 DC 5E B9 A5 23 C9 B2 B6 16 D0 0E 44 A1 28 BE 97 6E 
+42 56 84 47 1D 51 8D AB C4 B1 0C FB 11 D3 12 EC BC A3 00 F5 A3 EC D8 CF 00 5E E6 6A C2 E3 E8 2A 
+EF 3C 27 63 06 16 AB 3C B1 D7 5E 47 66 87 AC 83 72 4A A8 A8 67 FB A8 51 69 3E 1C 0F 53 25 1E 7F 
+1A 19 08 59 9B 40 DC F9 8F 8C 74 9F B9 8F 2B DE 12 C6 8A 53 77 41 DA 34 BD 77 9F F9 74 A3 83 A2 
+40 D9 67 72 9D 6A C1 AB D3 EA DE ED CE B1 5B D9 76 E7 8C 80 DD 43 6B 51 A9 7B 4B 35 81 42 55 83 
+C7 E6 6B DC 3C 67 93 C3 B8 96 E8 72 C7 33 9E AC 4B E1 C8 30 91 C9 8C 17 E1 36 6C B9 AE 5C 2F 2F 
+21 B3 2B CC CA C7 33 51 63 20 12 A5 8E 64 AB 3C 55 07 1E 33 53 8E 35 CE 7B AC 1E 71 17 80 2F A7 
+E7 D9 EE 9D 70 F1 03 BA 89 67 DD A6 FE 70 4C 47 7A E8 38 3C F0 1C 8D AA A8 CE B9 3D E9 87 5D 51 
+49 78 F6 9C 6A A5 E6 08 DC 9A 19 CC 92 E7 5D 7D 1F 68 39 A1 7D D2 D3 74 16 AC 7E 5A 49 48 64 A2 
+08 9E 8A E6 95 E1 D5 44 67 4C 67 C2 18 A3 CF CB D6 57 61 67 D2 2E F8 BC BF C0 BA 59 73 46 07 ED 
+03 37 8A A8 98 AA C2 F6 9C E5 DB 2B 2B 8D BD 33 BC D7 B6 49 F7 BC FF DA 26 0F 90 B3 5F 6F B8 E3 
+91 7B DE 21 91 DC CE 2D 74 13 73 0D 38 4F F2 12 B2 CE 3A F7 1F 53 A5 61 DD 53 BD 53 56 9B C4 E7 
+C1 32 5C 6F 2E 0F 31 59 F7 FE C0 CF FB AC DB D4 C9 1A 71 46 9A 9E FC 9F 32 2B B5 3C BE 3D 90 FC 
+31 E8 BC 86 6A FF 1D F5 9A 3C 57 3C 93 9C D4 9D DE 71 10 EF 55 C7 67 A2 C9 07 D3 53 CE F7 2B C2 
+23 79 27 ED FA 4A 8C 35 96 C8 72 99 7C 56 D4 53 B9 C9 F4 17 84 AA 3C 2E A5 55 09 1D 2B B1 14 6B 
+45 53 8E 27 26 90 CA B5 E8 DA 4B 62 EC 9B 1A 7B 50 9A 3D 5C 70 A4 01 F9 8F 0A DF A1 53 DF 55 B4 
+99 8A 4F 98 FA 98 BD 8D F2 0D 7F 61 03 7E CA 24 E9 85 3E 49 69 E8 D8 65 02 06 DB 78 25 FA 29 F0 
+64 38 71 F4 4F 72 03 B2 80 DD 48 EE 59 A3 70 99 CD 7C 78 A5 65 11 1A 55 5A 4D C9 0A D8 8C E6 FE 
+5A 0A 3E 55 D3 D2 51 F5 6F 7D F1 67 58 A8 3F 7F DA B6 74 C5 3F 7D 2C 64 00 EC E6 12 72 AB 53 2B 
+89 D0 54 FA 4D BE BB BF 29 1E CA FD 92 A2 A4 0A B5 FA CE 89 E2 95 B4 17 C4 BA E0 C2 D9 86 69 FA 
+65 AA 73 67 17 F4 18 99 91 75 F4 48 2E A3 E9 13 3D A8 25 35 12 12 74 EA DA 29 B1 FC 48 F2 77 4E 
+ED B2 F3 6C 0A F7 97 90 BE 97 BD FB 36 B7 5E 42 6C D9 7B 44 33 E4 47 6E 6A FC A1 D8 CE 9E ED 40 
+BB FC 86 B2 BD AF E6 72 12 90 B9 C3 99 8F 9B 06 78 52 A3 57 F9 21 B5 C2 D4 A6 22 33 53 B6 F3 86 
+A2 33 F8 0A DA 72 64 3F BD 33 04 9E 77 B9 E6 97 83 FD 8B 17 C4 3B D2 D4 A1 76 50 25 92 87 4A E6 
+69 3F 0A 5E EB 6B 94 3A C4 DB AE 3E 90 E8 C7 E4 0F 1D 2F B6 1E 89 87 E5 45 D6 46 09 ED DA 5B 1A 
+04 DD DB 01 18 29 90 31 FD F2 46 4F 4B 61 34 FA 9E 95 92 D6 34 1C 3D 13 F5 46 23 57 77 C1 E1 AF 
+C9 1F 9F 3D 6E 1D 7A 8F 43 D3 B2 96 17 02 FE 94 FD CF BB F1 7A D6 9E 70 37 08 9F FA 08 11 1B 4B 
+C7 FD 4B 7B C3 2D 8B A6 7D D9 3C 3F E6 E0 6A 19 A9 AC FD 1F 95 4C 2F EB AC D9 C6 80 00 00 00 00 
+49 45 4E 44 AE 42 60 82 
+EndData
+$EndBitmap
+$EndSCHEMATC
