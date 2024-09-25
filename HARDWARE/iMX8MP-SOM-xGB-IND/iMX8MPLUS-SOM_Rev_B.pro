@@ -1,4 +1,4 @@
-update=18.05.2023 (чт) 13:59:41 EEST
+update=25.09.2024 (ср) 15:03:01 EEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -11,7 +11,7 @@ version=1
 LibDir=
 [schematic_editor]
 version=1
-PageLayoutDescrFile=/home/penko/SVN_Checkout/important_DOCs/KiCad-New_Page_Layouts/A4-Landscape-1.kicad_wks
+PageLayoutDescrFile=/home/penko/SVN_Checkout/important_DOCs/KiCad-New_Page_Layouts/A4-Landscape-2.kicad_wks
 PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65
@@ -21,7 +21,7 @@ LabSize=60
 ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
-PageLayoutDescrFile=/home/penko/SVN_Checkout/important_DOCs/KiCad-New_Page_Layouts/A4-Landscape-1.kicad_wks
+PageLayoutDescrFile=/home/penko/SVN_Checkout/important_DOCs/KiCad-New_Page_Layouts/A4-Landscape-2.kicad_wks
 LastNetListRead=iMX8MPLUS-SOM_Rev_B.net
 CopperLayerCount=6
 BoardThickness=1
